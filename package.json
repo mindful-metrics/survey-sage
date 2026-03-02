@@ -1,0 +1,17 @@
+{
+  "name": "survey-sage",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "eslint": ">=10",
+    "eslint-config-xo": "^0.50.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "elysia": "^1.4.27"
+  }
+}
