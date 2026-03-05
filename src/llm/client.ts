@@ -38,26 +38,19 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
     if (request.transcript.length === 0) {
       return new Error('Invalid transcript: cannot be empty')
     }
-    if (request.maxTokens !== undefined && request.maxTokens < 1) {
-      return new Error('Invalid maxTokens: must be at least 1')
-    }
-    if (request.temperature !== undefined && (request.temperature < 0 || request.temperature > 2)) {
-      return new Error('Invalid temperature: must be between 0 and 2')
-    }
     return null
   }
 
   const buildRequestBody = (request: LLMRequest): Record<string, unknown> => {
     const messages = truncateContext(
-      createContextWindow(request.transcript, config.contextWindow),
-      request.maxTokens || config.maxTokens
+      createContextWindow(request.transcript, config.contextWindow), config.maxTokens
     )
 
     return {
       model: config.model,
       messages,
-      max_tokens: request.maxTokens || config.maxTokens,
-      temperature: request.temperature ?? config.temperature,
+      max_tokens: config.maxTokens,
+      temperature: config.temperature,
       response_format: { type: 'json_object' }
     }
   }
@@ -65,17 +58,15 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
   const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLMError => {
     if (response.error) {
       return {
-        message: response.error.message,
-        code: response.error.code,
-        details: response
+        action: 'error',
+        content: response.error.message,
       }
     }
 
     if (!response.choices || response.choices.length === 0) {
       return {
-        message: 'No choices returned from LLM',
-        code: 'NO_CHOICES',
-        details: response
+        action: 'error',
+        content: 'No choices returned from LLM',
       }
     }
 
@@ -89,16 +80,14 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
       }
     } catch {
       return {
-        message: 'Failed to parse LLM response as JSON',
-        code: 'PARSE_ERROR',
-        details: { rawContent: content }
+        action: 'error',
+        content: 'Failed to parse LLM response as JSON',
       }
     }
 
     return {
-      message: 'Invalid response format: action must be followup or submit',
-      code: 'INVALID_FORMAT',
-      details: { rawContent: content }
+      action: 'error',
+      content: 'Invalid response format: action must be followup or submit',
     }
   }
 
@@ -106,8 +95,8 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
     const validationError = validateRequest(request)
     if (validationError) {
       return {
-        message: validationError.message,
-        code: 'VALIDATION_ERROR'
+        action: 'error',
+        content: validationError.message,
       }
     }
 
@@ -124,11 +113,9 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
       })
 
       if (!response.ok) {
-        const errorText = await response.text().catch(() => '')
         return {
-          message: `LLM API error: ${response.status} ${response.statusText}`,
-          code: 'API_ERROR',
-          details: errorText
+          action: 'error',
+          content: `LLM API error: ${response.status} ${response.statusText}`,
         }
       }
 
@@ -137,13 +124,13 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
     } catch (error) {
       if (error instanceof Error) {
         return {
-          message: error.message,
-          code: 'NETWORK_ERROR'
+          action: 'error',
+          content: error.message,
         }
       }
       return {
-        message: 'Unknown error occurred',
-        code: 'UNKNOWN_ERROR'
+        action: 'error',
+        content: 'Unknown error occurred',
       }
     }
   }
