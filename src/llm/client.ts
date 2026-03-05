@@ -1,7 +1,7 @@
 import type { LLMConfig } from './config.js'
 import type { Message, LLMRequest, LLMResponse, LLMError } from './types.js'
 import { createContextWindow, truncateContext } from './prompt.js'
-import { getConfig } from './config.js'
+import { getConfig, validateConfig } from './config.js'
 
 interface OpenAIChoice {
   index?: number
@@ -30,7 +30,17 @@ interface OpenAIResponse {
   }
 }
 
+export interface LLMClientOptions {
+  llmClient: {
+    callLLM: (request: LLMRequest) => Promise<LLMResponse | LLMError>
+  },
+}
+
 export const createLLMClient = (config: LLMConfig = getConfig()) => {
+  if (!validateConfig(config)) {
+    throw new Error("Invalid config")
+  }
+
   const validateRequest = (request: LLMRequest): Error | null => {
     if (!request.transcript || !Array.isArray(request.transcript)) {
       return new Error('Invalid transcript: must be an array of messages')
