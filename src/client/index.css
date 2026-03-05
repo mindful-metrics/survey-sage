@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+#chat-interface-background {
+    background-image: url(morning.jpg);
+    /* background position bottom - 10px to move the image up a bit */
+    background-position: center bottom 38%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
