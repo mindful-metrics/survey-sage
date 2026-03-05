@@ -1,7 +1,7 @@
 import { describe, it, expect, mock, beforeAll } from 'bun:test'
 import type { LLMError, LLMRequest, LLMResponse, Message } from './src/llm/types'
 import { treaty } from '@elysiajs/eden'
-import app from '.'
+import createApp from '.'
 
 describe('POST / handler', () => {
   describe('valid transcript', () => {
@@ -9,7 +9,7 @@ describe('POST / handler', () => {
       const mockClient = {
         callLLM: mock(() => Promise.resolve({ action: 'followup', content: 'Test response' } as LLMResponse))
       }
-      const api = treaty(app({
+      const api = treaty(createApp({
         llmClient: mockClient
       }))
       const body = {
@@ -25,7 +25,7 @@ describe('POST / handler', () => {
       const mockClient = {
         callLLM: mock(() => Promise.resolve({ action: 'submit', content: 'Survey completed' } as LLMResponse))
       }
-      const api = treaty(app({
+      const api = treaty(createApp({
         llmClient: mockClient
       }))
       const body = {
@@ -43,7 +43,7 @@ describe('POST / handler', () => {
     const mockClient = {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'Missing transcript field' } as LLMError))
     }
-    const api = treaty(app({
+    const api = treaty(createApp({
       llmClient: mockClient
     }))
     const body = {}
@@ -55,7 +55,7 @@ describe('POST / handler', () => {
     const mockClient = {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'cannot be empty' } as LLMError))
     }
-    const api = treaty(app({
+    const api = treaty(createApp({
       llmClient: mockClient
     }))
     const body: unknown = {
@@ -71,7 +71,7 @@ describe('POST / handler', () => {
     const mockClient = {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'must be valid JSON' } as LLMError))
     }
-    const api = treaty(app({
+    const api = treaty(createApp({
       llmClient: mockClient
     }))
     const body: unknown = {
@@ -86,7 +86,7 @@ describe('POST / handler', () => {
     const mockClient = {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'LLM failed' } as LLMError))
     }
-    const api = treaty(app({
+    const api = treaty(createApp({
       llmClient: mockClient
     }))
     const body = {
