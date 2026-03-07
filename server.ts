@@ -1,5 +1,5 @@
-import createApp from ".";
-import { createLLMClient } from "./src/llm/client";
+import createApp from '.'
+import { createLLMClient } from './src/llm/client'
 
 createApp({
     llmClient: createLLMClient()
