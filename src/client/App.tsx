@@ -46,11 +46,11 @@ export function App() {
     <div className="min-h-screen">
       <div
         id="chat-interface-background"
-        className="max-w-7xl mx-auto h-100 p-8 m-8 rounded-xl text-center relative z-10"
+        className="max-w-7xl mx-auto p-8 m-8 rounded-xl text-center relative z-10"
       >
-        <div className="size-full mx-auto rounded-xl bg-white/75">
+        <div className="size-full mx-auto min-h-96 rounded-xl bg-white/75 flex-row">
           <h1 className="text-5xl font-bold my-4 leading-tight">Good Morning!</h1>
-          <div className="lg:p-32">
+          <div className="lg:p-4 h-full">
             <Chat className="flex-row gap-2">
               {messages.map((message, index) => (
                 <ChatMessage
