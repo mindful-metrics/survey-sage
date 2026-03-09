@@ -11,10 +11,7 @@ type Message = {
 };
 
 export function App() {
-  const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "How are you this morning?" },
-    { role: "user", content: "I'm doing good" },
-  ]);
+  const [messages, setMessages] = useState<Message[]>([]);
 
   const handleSubmit: KeyboardEventHandler = async (event) => {
     const message = (event.target as HTMLInputElement).value;
@@ -60,8 +57,8 @@ export function App() {
                   key={index}
                   className={
                     message.role === "assistant"
-                      ? "w-full flex-row gap-2 inline-flex items-center"
-                      : "w-full flex-row-reverse gap-2 inline-flex items-center"
+                      ? "w-full flex-row gap-2 inline-flex items-center text-left"
+                      : "w-full flex-row-reverse gap-2 inline-flex items-center text-right"
                   }
                 >
                   <ChatIcon />

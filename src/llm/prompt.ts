@@ -1,4 +1,4 @@
-import type { Message } from './types.js'
+import type { Message } from './types'
 
 const SYSTEM_PROMPT = `You are an intelligent survey assistant. Analyze the conversation transcript and determine the next action.
 
@@ -34,17 +34,17 @@ export const truncateContext = (transcript: Message[], maxTokens: number = 4000)
   const systemIndex = transcript.findIndex((m): m is Message => m.role === 'system')
   const system = systemIndex >= 0 ? transcript[systemIndex] : undefined
   const filtered = transcript.filter((m, i): m is Message => i !== systemIndex && m.role !== 'system')
-  
+
   let totalTokens = 0
   const truncated: Message[] = []
-  
+
   for (const message of filtered.reverse()) {
     const tokens = message.content.trim().split(/\s+/).length
     if (totalTokens + tokens > maxTokens) break
     truncated.unshift(message)
     totalTokens += tokens
   }
-  
+
   if (system) truncated.unshift(system)
   return truncated
 }

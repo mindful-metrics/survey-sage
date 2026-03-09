@@ -1,7 +1,6 @@
-import type { LLMConfig } from './config.js'
-import type { Message, LLMRequest, LLMResponse, LLMError } from './types.js'
-import { createContextWindow, truncateContext } from './prompt.js'
-import { getConfig, validateConfig } from './config.js'
+import { getConfig, validateConfig, type LLMConfig } from './config'
+import type { Message, LLMRequest, LLMResponse, LLMError } from './types'
+import { createContextWindow, truncateContext } from './prompt'
 
 interface OpenAIChoice {
   index?: number
