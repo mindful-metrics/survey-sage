@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type KeyboardEventHandler } from "react";
 import { Chat } from "./Chat";
 import { ChatIcon } from "./ChatIcon";
 import { ChatMessage } from "./ChatMessage";
@@ -15,22 +15,25 @@ export function App() {
     { role: "assistant", content: "How are you this morning?" },
     { role: "user", content: "I'm doing good" },
   ]);
-  const [input, setInput] = useState("");
 
-  const handleSubmit = async () => {
-    if (!input.trim()) return;
+  const handleSubmit: KeyboardEventHandler = async (event) => {
+    const message = (event.target as HTMLInputElement).value;
+    if (event.key !== "Enter" || !message.trim()) {
+      return;
+    }
 
-    const nextMessages = [...messages, { role: "user" as const, content: input }];
-    setMessages(nextMessages);
-    setInput("");
 
-    const response = await fetch("http://localhost:3000/", {
+    setMessages([...messages, { role: "user", content: message }]);
+
+    (event.target as HTMLInputElement).value = "";
+
+    const response = await fetch("/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        transcript: nextMessages,
+        transcript: messages,
       }),
     });
 
@@ -78,11 +81,7 @@ export function App() {
               <div className="w-full min-h-6 bg-white rounded-xl p-2 mt-4">
                 <input
                   className="w-full"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") handleSubmit();
-                  }}
+                  onKeyDown={handleSubmit}
                 />
               </div>
             </Chat>

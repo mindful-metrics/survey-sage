@@ -1,6 +1,6 @@
 import { Elysia } from 'elysia'
 import { getConfig } from './src/llm/config'
-import type { LLMClientOptions } from './src/llm/client'
+import { processTranscript, type LLMClientOptions } from './src/llm/client'
 import { TLLMError, TLLMRequest, TLLMResponse, type LLMError, type LLMResponse } from './src/llm/types'
 import staticPlugin from '@elysiajs/static'
 
@@ -19,10 +19,7 @@ const createApp = (options: LLMClientOptions) => {
             '/',
             async ({ body, status }) => {
 
-                const llmResult: LLMResponse | LLMError =
-                    await llmClient.callLLM({
-                        transcript: body.transcript,
-                    })
+                const llmResult: LLMResponse | LLMError = await processTranscript(body.transcript, llmClient)
 
                 if (llmResult.action === 'error') {
                     return status(500, llmResult)

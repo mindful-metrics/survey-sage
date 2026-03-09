@@ -60,8 +60,7 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
       model: config.model,
       messages,
       max_tokens: config.maxTokens,
-      temperature: config.temperature,
-      response_format: { type: 'json_object' }
+      temperature: config.temperature
     }
   }
 
@@ -150,7 +149,10 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
   }
 }
 
-export const processTranscript = async (transcript: Message[], config?: LLMConfig): Promise<LLMResponse | LLMError> => {
-  const client = createLLMClient(config)
+interface LLMClient {
+  callLLM: (request: LLMRequest) => Promise<LLMResponse | LLMError>
+}
+
+export const processTranscript = async (transcript: Message[], client: LLMClient): Promise<LLMResponse | LLMError> => {
   return client.callLLM({ transcript })
 }
