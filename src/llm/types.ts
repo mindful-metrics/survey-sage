@@ -18,12 +18,16 @@ export const TLLMRequest = t.Object({
 
 export type LLMRequest = typeof TLLMRequest.static
 
-export interface LLMResponse {
-  action: 'followup' | 'submit'
-  content: string
-}
+export const TLLMResponse = t.Object({
+  action: t.Union([t.Literal('followup'), t.Literal('submit')]),
+  content: t.String(),
+})
 
-export interface LLMError {
-  action: 'error'
-  content: string
-}
+export type LLMResponse = typeof TLLMResponse.static
+
+export const TLLMError = t.Object({
+  action: t.Literal('error'),
+  content: t.String(),
+})
+
+export type LLMError = typeof TLLMError.static
