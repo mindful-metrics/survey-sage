@@ -1,15 +1,14 @@
-import { getConfig, validateConfig } from '../config'
+import { getConfig, validateConfig, type LLMConfig } from '../config'
 import type { Message } from '../types'
-import type { Schema, Tool } from './types'
+import { getSystemPrompt } from './prompt'
+import type { Survey, Tool } from './types'
 
-// interface Question {
-//   prompt: string
-//   acceptableAnswer: string
-// }
-
+interface DataExtractor {
+  callLLM
+}
 
 export const extractAnswers = async (transcript: Message[], dataExtractor: DataExtractor): Promise<Record<string, string>> => {
-
+  dataExtractor.callLLM()
 }
 
 export const parseSubmissionToolCall = async (response: string) => {
@@ -31,15 +30,26 @@ export const createSubmissionTool = (): Tool => {
   }
 }
 
+interface DataExtractorParams {
+  config?: LLMConfig
+  survey: Survey
+}
 export const createDataExtractor = ({
-  config = getConfig()
-}) => {
+  config = getConfig(),
+  survey
+}: DataExtractorParams) => {
   if (!validateConfig(config)) {
     throw new Error('Invalid config')
   }
 
-  const callLLM = () => {
+  const callLLM = (transcript, systemPrompt = getSystemPrompt()) => {
+    const transcript = [
+      {
+        role: 'system',
+        content: systemPrompt,
+      },
 
+    ]
   }
 
   return {

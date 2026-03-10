@@ -2,8 +2,8 @@ import { Elysia } from 'elysia'
 import { getConfig, processTranscript, type LLMClientOptions, TLLMError, TLLMRequest, TLLMResponse, type LLMError, type LLMResponse } from './src/llm'
 import staticPlugin from '@elysiajs/static'
 import { submitFormData } from './src/api/externalApiClient'
-import { extractAnswers } from './src/llm/extractor/surveyExtractor'
-
+import { createDataExtractor, extractAnswers } from './src/llm/extractor/surveyExtractor'
+import survey from './surveys/GAD.json'
 export const LLM_CONFIG = getConfig()
 
 const createApp = (options: LLMClientOptions) => {
@@ -26,6 +26,10 @@ const createApp = (options: LLMClientOptions) => {
                 }
                 if (llmResult.action === 'submit') {
                     // Handle submission
+                    const dataExtractor = createDataExtractor({
+                        // Hardcoded for now
+                        survey: survey
+                    })
                     const answers = await extractAnswers(body.transcript, dataExtractor)
                     const submit = await submitFormData(body.taskId, answers)
                     if (submit.status === 'failure') {

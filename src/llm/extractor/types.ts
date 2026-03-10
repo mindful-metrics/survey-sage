@@ -1,6 +1,6 @@
 export type Question = Record<string, string>
 
-export type Schema = {
+export type Survey = {
     'questions': Question[]
 }
 
