@@ -2,6 +2,7 @@ import { t } from "elysia"
 import { TMessage } from "../types"
 
 export const TLLMRequest = t.Object({
+    taskId: t.String(),
     transcript: t.Array(TMessage),
 })
 

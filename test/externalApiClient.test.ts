@@ -24,7 +24,7 @@ describe('Integration tests for health app endpoints', () => {
       })
 
       it('returns success for valid taskId and answers', async () => {
-        const result = await submitFormData('task123', { '1': 5, '2': 3 })
+        const result = await submitFormData('task123', { '1': '5', '2': '3' })
 
         expect(result).toEqual({ status: 'success' })
         expect(fetch).toHaveBeenCalledTimes(1)
@@ -50,7 +50,7 @@ describe('Integration tests for health app endpoints', () => {
 
         globalThis.fetch = fetchMock
 
-        const result = await submitFormData('', { '1': 5 })
+        const result = await submitFormData('', { '1': '5' })
 
         expect(result).toEqual({ status: 'failure' })
       })

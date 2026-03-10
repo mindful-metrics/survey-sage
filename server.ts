@@ -2,5 +2,5 @@ import createApp from '.'
 import { createConversationEngine } from './src/llm/'
 
 createApp({
-    createConversationEngine: createConversationEngine()
+    conversationEngine: createConversationEngine()
 }).listen(3000)

@@ -35,7 +35,7 @@ interface LLMClient {
 }
 
 export interface LLMClientOptions {
-  createConversationEngine: LLMClient
+  conversationEngine: LLMClient
 }
 
 export const createLLMClient = (config: LLMConfig = getConfig()): LLMClient => {

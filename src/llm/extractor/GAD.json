@@ -1,0 +1,32 @@
+{
+    "questions": [
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Feeling nervous, anxious, or on edge.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Not being able to stop or control worrying.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Worrying too much about different things.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Trouble relaxing.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Being so restless that it is hard to sit still.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Becoming easily annoyed or irritable.",
+            "acceptableAnswer": "A number between 0 and 3"
+        },
+        {
+            "prompt": "Over the _last two weeks_, how often have you been bothered by the following problem? Feeling afraid, as if something awful will happen.",
+            "acceptableAnswer": "A number between 0 and 3"
+        }
+    ]
+}

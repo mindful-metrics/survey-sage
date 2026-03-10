@@ -1,9 +1,9 @@
-export async function submitFormData(taskId: string, answers: Record<string, number>) {
+export async function submitFormData(taskId: string, answers: Record<string, string>) {
   const formData = new FormData()
   formData.append('taskId', taskId)
 
   for (const [question, answer] of Object.entries(answers)) {
-    formData.append(question, String(answer))
+    formData.append(question, answer)
   }
 
   const response = await fetch(`/tasks/${taskId}/`, {
