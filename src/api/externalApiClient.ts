@@ -6,6 +6,8 @@ export async function submitFormData(taskId: string, answers: Record<string, str
     formData.append(question, answer)
   }
 
+  console.log(formData)
+
   const response = await fetch(`/tasks/${taskId}/`, {
     method: 'POST',
     body: formData,

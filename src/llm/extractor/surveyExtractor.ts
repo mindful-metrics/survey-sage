@@ -1,14 +1,23 @@
-import { getConfig, validateConfig, type LLMConfig } from '../config'
-import type { Message } from '../types'
+import { getConfig, type LLMConfig } from '../config'
+import { buildRequestBody, fetchOpenAI, validateRequest, type LLMClient, type OpenAIResponse } from '../openAi'
+import type { LLMError, LLMRequest, Message } from '../types'
 import { getSystemPrompt } from './prompt'
 import type { Survey, Tool } from './types'
 
-interface DataExtractor {
-  callLLM
+export type DataExtractor = {
+  callLLM: (request: LLMRequest) => Promise<Success | LLMError>
+}
+interface Success {
+  action: 'success',
+  content: unknown,
 }
 
 export const extractAnswers = async (transcript: Message[], dataExtractor: DataExtractor): Promise<Record<string, string>> => {
-  dataExtractor.callLLM()
+  const result = await dataExtractor.callLLM({ transcript })
+  if (result.action === 'error') {
+    throw new Error('Internal server error while processing responses')
+  }
+  return result.content
 }
 
 export const parseSubmissionToolCall = async (response: string) => {
@@ -30,28 +39,64 @@ export const createSubmissionTool = (): Tool => {
   }
 }
 
-interface DataExtractorParams {
-  config?: LLMConfig
-  survey: Survey
-}
-export const createDataExtractor = ({
-  config = getConfig(),
-  survey
-}: DataExtractorParams) => {
-  if (!validateConfig(config)) {
-    throw new Error('Invalid config')
+export const createDataExtractor = (survey: Survey, config: LLMConfig = getConfig()) => {
+  const callLLM = async (request: LLMRequest): Promise<Success | LLMError> => {
+    const validationError = validateRequest(request)
+    if (validationError) {
+      return {
+        action: 'error',
+        content: validationError.message,
+      }
+    }
+
+    const body = buildRequestBody(config, request, getSystemPrompt(JSON.stringify(survey)))
+
+    try {
+      const response = await fetchOpenAI(config, body)
+
+
+      if (!response.ok) {
+        return {
+          action: 'error',
+          content: `LLM API error: ${response.status} ${response.statusText}`,
+        }
+      }
+      const data = (await response.json()) as OpenAIResponse
+
+      if (data.error) {
+        return {
+          action: 'error',
+          content: data.error.message,
+        }
+      }
+
+      if (!data.choices || data.choices.length === 0) {
+        return {
+          action: 'error',
+          content: 'No choices returned from LLM',
+        }
+      }
+
+      const choice = data.choices[0]
+      const content = choice?.message?.content || ''
+      const parsed = JSON.parse(content)
+      return {
+        action: 'success',
+        content: parsed,
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        return {
+          action: 'error',
+          content: error.message,
+        }
+      }
+      return {
+        action: 'error',
+        content: 'Unknown error occurred',
+      }
+    }
   }
-
-  const callLLM = (transcript, systemPrompt = getSystemPrompt()) => {
-    const transcript = [
-      {
-        role: 'system',
-        content: systemPrompt,
-      },
-
-    ]
-  }
-
   return {
     callLLM
   }

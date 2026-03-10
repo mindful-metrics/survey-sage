@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, mock } from 'bun:test'
-import { DEFAULT_CONFIG, type Message, createConversationEngine, getConfig, getSystemPrompt, processTranscript, validateConfig } from '../src/llm'
+import { DEFAULT_CONFIG, type Message, createConversationEngine, getConfig, validateConfig } from '../src/llm'
+import { processTranscript } from '../src/llm/openAi'
 
 // describe('prompt', () => {
 //   describe('getSystemPrompt', () => {

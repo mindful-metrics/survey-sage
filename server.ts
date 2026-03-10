@@ -1,6 +1,7 @@
 import createApp from '.'
-import { createConversationEngine } from './src/llm/'
-
+import { createConversationEngine, createDataExtractor } from './src/llm/'
+import survey from './surveys/GAD.json'
 createApp({
-    conversationEngine: createConversationEngine()
+    conversationEngine: createConversationEngine(),
+    dataExtractor: createDataExtractor(survey)
 }).listen(3000)

@@ -11,7 +11,12 @@ type Message = {
 };
 
 export function App() {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      role: "assistant",
+      content: `Hi, thanks for taking the time to speak with me today. I'm going to ask you some questions about how you've been feeling over the past week — there are no right or wrong answers. How has your mood been lately?`,
+    },
+  ]);
 
   const handleSubmit: KeyboardEventHandler = async (event) => {
     const message = (event.target as HTMLInputElement).value;
@@ -19,28 +24,33 @@ export function App() {
       return;
     }
 
+    const postMessages = async (messages: Message[]) => {
+      await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          transcript: messages,
+          taskId: '1'
+        }),
+      })
+        .then(data => data.json())
+        .then(data => {
+          setMessages([...messages, { role: "assistant", content: data.content }])
+        });
+    };
 
-    setMessages([...messages, { role: "user", content: message }]);
-
-    (event.target as HTMLInputElement).value = "";
-
-    const response = await fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        transcript: messages,
-      }),
+    setMessages((prev) => {
+      (event.target as HTMLInputElement).value = "";
+      const messages = [
+        ...prev,
+        { role: "user", content: message } as Message,
+      ];
+      postMessages(messages);
+      return messages
     });
-
-    const data = await response.json();
-
-    setMessages((prev) => [
-      ...prev,
-      { role: "assistant", content: data.content },
-    ]);
-  };
+  }
 
   return (
     <div className="min-h-screen">

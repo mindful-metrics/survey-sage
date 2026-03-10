@@ -17,6 +17,11 @@ export const TLLMRequest = t.Object({
 
 export type LLMRequest = typeof TLLMRequest.static
 
+export const TLLMSubmitRequest = t.Object({
+  transcript: t.Array(TMessage),
+  taskId: t.String(),
+})
+
 export const TLLMResponse = t.Object({
   action: t.Union([t.Literal('followup'), t.Literal('submit')]),
   content: t.String(),
@@ -30,30 +35,3 @@ export const TLLMError = t.Object({
 })
 
 export type LLMError = typeof TLLMError.static
-
-export interface OpenAIChoice {
-  index?: number
-  message: {
-    role: string
-    content: string
-  }
-  finish_reason?: string
-}
-
-export interface OpenAIResponse {
-  id?: string
-  object?: string
-  created?: number
-  model?: string
-  choices: OpenAIChoice[]
-  usage?: {
-    prompt_tokens: number
-    completion_tokens: number
-    total_tokens: number
-  }
-  error?: {
-    message: string
-    type: string
-    code?: string
-  }
-}
