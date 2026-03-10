@@ -1,5 +1,5 @@
 import { describe, it, expect, mock, beforeAll } from 'bun:test'
-import type { LLMError, LLMRequest, LLMResponse, Message } from './src/llm/types'
+import type { LLMError, LLMRequest, LLMResponse, Message } from './src/llm'
 import { treaty } from '@elysiajs/eden'
 import createApp from '.'
 

@@ -1,7 +1,5 @@
 import { Elysia } from 'elysia'
-import { getConfig } from './src/llm/config'
-import { processTranscript, type LLMClientOptions } from './src/llm/client'
-import { TLLMError, TLLMRequest, TLLMResponse, type LLMError, type LLMResponse } from './src/llm/types'
+import { getConfig, processTranscript, type LLMClientOptions, TLLMError, TLLMRequest, TLLMResponse, type LLMError, type LLMResponse } from './src/llm'
 import staticPlugin from '@elysiajs/static'
 
 export const LLM_CONFIG = getConfig()

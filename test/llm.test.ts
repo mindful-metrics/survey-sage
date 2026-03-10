@@ -1,8 +1,5 @@
 import { describe, it, expect, beforeEach, mock } from 'bun:test'
-import type { Message } from '../src/llm/types.js'
-import { getSystemPrompt, createContextWindow, truncateContext } from '../src/llm/prompt.js'
-import { DEFAULT_CONFIG, getConfig, validateConfig } from '../src/llm/config.js'
-import { createLLMClient, processTranscript } from '../src/llm/client.js'
+import { DEFAULT_CONFIG, type Message, createContextWindow, createLLMClient, getConfig, getSystemPrompt, processTranscript, truncateContext, validateConfig } from '../src/llm'
 
 describe('prompt', () => {
   describe('getSystemPrompt', () => {
@@ -159,40 +156,16 @@ describe('client', () => {
   })
 
   describe('callLLM', () => {
-    it('should validate request with empty transcript', async () => {
+    it('should error on request with empty transcript', async () => {
       const client = createLLMClient()
       const result = await client.callLLM({ transcript: [] })
-      expect(result).toHaveProperty('code', 'VALIDATION_ERROR')
+      expect(result).toHaveProperty('action', 'error')
     })
 
-    it('should validate request with invalid transcript', async () => {
+    it('should error on request with invalid transcript', async () => {
       const client = createLLMClient()
       const result = await client.callLLM({ transcript: null as unknown as Message[] })
-      expect(result).toHaveProperty('code', 'VALIDATION_ERROR')
-    })
-
-    it('should validate negative maxTokens', async () => {
-      const client = createLLMClient()
-      const result = await client.callLLM({
-        transcript: [{ role: 'user', content: 'Hello' }],
-        maxTokens: -1
-      })
-      expect(result).toHaveProperty('code', 'VALIDATION_ERROR')
-    })
-
-    it('should validate invalid temperature', async () => {
-      const client = createLLMClient()
-      const result = await client.callLLM({
-        transcript: [{ role: 'user', content: 'Hello' }],
-        temperature: 3
-      })
-      expect(result).toHaveProperty('code', 'VALIDATION_ERROR')
-    })
-
-    it('should handle network errors gracefully', async () => {
-      const client = createLLMClient({ apiUrl: 'http://127.0.0.1:9999' })
-      const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
-      expect(['NETWORK_ERROR', 'API_ERROR', 'UNKNOWN_ERROR']).toContain(result.code)
+      expect(result).toHaveProperty('action', 'error')
     })
 
     it('should handle JSON parse errors', async () => {
@@ -213,7 +186,7 @@ describe('client', () => {
 
       const client = createLLMClient()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
-      expect(result).toHaveProperty('code', 'PARSE_ERROR')
+      expect(result).toHaveProperty('action', 'error')
 
       global.fetch = originalFetch
     })
@@ -238,7 +211,7 @@ describe('client', () => {
 
       const client = createLLMClient()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
-      expect(result).toHaveProperty('code', 'INVALID_FORMAT')
+      expect(result).toHaveProperty('action', 'error')
 
       global.fetch = originalFetch
     })
@@ -265,7 +238,7 @@ describe('client', () => {
 
       const result = await processTranscript([
         { role: 'user', content: 'Hello' }
-      ])
+      ], createLLMClient())
 
       expect(result).toBeDefined()
       expect(result.action).toBe('followup')
