@@ -5,7 +5,7 @@ import staticPlugin from '@elysiajs/static'
 export const LLM_CONFIG = getConfig()
 
 const createApp = (options: LLMClientOptions) => {
-    const { llmClient } = options;
+    const { createConversationEngine: llmClient } = options;
     return new Elysia()
         .use(
             staticPlugin({

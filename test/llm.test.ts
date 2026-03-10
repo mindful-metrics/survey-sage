@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, mock } from 'bun:test'
-import { DEFAULT_CONFIG, type Message, createLLMClient, getConfig, getSystemPrompt, processTranscript, validateConfig } from '../src/llm'
+import { DEFAULT_CONFIG, type Message, createConversationEngine, getConfig, getSystemPrompt, processTranscript, validateConfig } from '../src/llm'
 
 // describe('prompt', () => {
 //   describe('getSystemPrompt', () => {
@@ -137,9 +137,9 @@ describe('config', () => {
 })
 
 describe('client', () => {
-  describe('createLLMClient', () => {
+  describe('createConversationEngine', () => {
     it('should create a client with default config', () => {
-      const client = createLLMClient()
+      const client = createConversationEngine()
       expect(client).toBeDefined()
       expect(typeof client.callLLM).toBe('function')
     })
@@ -150,20 +150,20 @@ describe('client', () => {
         model: 'gpt-4',
         maxTokens: 8000
       }
-      const client = createLLMClient(customConfig)
+      const client = createConversationEngine(customConfig)
       expect(client).toBeDefined()
     })
   })
 
   describe('callLLM', () => {
     it('should error on request with empty transcript', async () => {
-      const client = createLLMClient()
+      const client = createConversationEngine()
       const result = await client.callLLM({ transcript: [] })
       expect(result).toHaveProperty('action', 'error')
     })
 
     it('should error on request with invalid transcript', async () => {
-      const client = createLLMClient()
+      const client = createConversationEngine()
       const result = await client.callLLM({ transcript: null as unknown as Message[] })
       expect(result).toHaveProperty('action', 'error')
     })
@@ -184,7 +184,7 @@ describe('client', () => {
       const originalFetch = global.fetch
       global.fetch = mockFetch
 
-      const client = createLLMClient()
+      const client = createConversationEngine()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
       expect(result).toHaveProperty('action', 'error')
 
@@ -209,7 +209,7 @@ describe('client', () => {
       const originalFetch = global.fetch
       global.fetch = mockFetch
 
-      const client = createLLMClient()
+      const client = createConversationEngine()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
       expect(result).toHaveProperty('action', 'error')
 
@@ -238,7 +238,7 @@ describe('client', () => {
 
       const result = await processTranscript([
         { role: 'user', content: 'Hello' }
-      ], createLLMClient())
+      ], createConversationEngine())
 
       expect(result).toBeDefined()
       expect(result.action).toBe('followup')

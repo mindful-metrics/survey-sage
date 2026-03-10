@@ -10,7 +10,7 @@ describe('POST / handler', () => {
         callLLM: mock(() => Promise.resolve({ action: 'followup', content: 'Test response' } as LLMResponse))
       }
       const api = treaty(createApp({
-        llmClient: mockClient
+        createConversationEngine: mockClient
       }))
       const body = {
         transcript: [{ role: 'user', content: 'Hello' } as Message]
@@ -26,7 +26,7 @@ describe('POST / handler', () => {
         callLLM: mock(() => Promise.resolve({ action: 'submit', content: 'Survey completed' } as LLMResponse))
       }
       const api = treaty(createApp({
-        llmClient: mockClient
+        createConversationEngine: mockClient
       }))
       const body = {
         transcript: [{ role: 'user', content: 'Hello' } as Message]
@@ -44,7 +44,7 @@ describe('POST / handler', () => {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'Missing transcript field' } as LLMError))
     }
     const api = treaty(createApp({
-      llmClient: mockClient
+      createConversationEngine: mockClient
     }))
     const body = {}
     const result = await api.post(body as LLMRequest)
@@ -56,7 +56,7 @@ describe('POST / handler', () => {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'cannot be empty' } as LLMError))
     }
     const api = treaty(createApp({
-      llmClient: mockClient
+      createConversationEngine: mockClient
     }))
     const body: unknown = {
       transcript: JSON.stringify([])
@@ -72,7 +72,7 @@ describe('POST / handler', () => {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'must be valid JSON' } as LLMError))
     }
     const api = treaty(createApp({
-      llmClient: mockClient
+      createConversationEngine: mockClient
     }))
     const body: unknown = {
       transcript: 'not valid json'
@@ -87,7 +87,7 @@ describe('POST / handler', () => {
       callLLM: mock(() => Promise.resolve({ action: 'error', content: 'LLM failed' } as LLMError))
     }
     const api = treaty(createApp({
-      llmClient: mockClient
+      createConversationEngine: mockClient
     }))
     const body = {
       transcript: [{ role: 'user', content: 'Hello' } as Message]

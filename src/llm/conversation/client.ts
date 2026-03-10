@@ -1,7 +1,7 @@
 import { getConfig, validateConfig, type LLMConfig } from '../config'
 import type { LLMRequest, LLMResponse, LLMError } from './types'
-import { createContextWindow, truncateContext } from './prompt'
 import type { Message } from '../types'
+import { getSystemPrompt } from './prompt'
 
 interface OpenAIChoice {
   index?: number
@@ -30,13 +30,15 @@ interface OpenAIResponse {
   }
 }
 
-export interface LLMClientOptions {
-  llmClient: {
-    callLLM: (request: LLMRequest) => Promise<LLMResponse | LLMError>
-  },
+interface LLMClient {
+  callLLM: (request: LLMRequest) => Promise<LLMResponse | LLMError>
 }
 
-export const createLLMClient = (config: LLMConfig = getConfig()) => {
+export interface LLMClientOptions {
+  createConversationEngine: LLMClient
+}
+
+export const createLLMClient = (config: LLMConfig = getConfig()): LLMClient => {
   if (!validateConfig(config)) {
     throw new Error("Invalid config")
   }
@@ -52,9 +54,7 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
   }
 
   const buildRequestBody = (request: LLMRequest): Record<string, unknown> => {
-    const messages = truncateContext(
-      createContextWindow(request.transcript, config.contextWindow), config.maxTokens
-    )
+    const messages = [...request.transcript]
 
     return {
       model: config.model,
@@ -106,7 +106,7 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
     }
   }
 
-  const callLLM = async (request: LLMRequest): Promise<LLMResponse | LLMError> => {
+  const callLLM = async (request: LLMRequest, systemPrompt = getSystemPrompt()): Promise<LLMResponse | LLMError> => {
     const validationError = validateRequest(request)
     if (validationError) {
       return {
@@ -114,6 +114,13 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
         content: validationError.message,
       }
     }
+
+    request.transcript = [
+      {
+        role: 'system',
+        content: systemPrompt,
+      }, ...request.transcript
+    ]
 
     const body = buildRequestBody(request)
 
@@ -155,9 +162,6 @@ export const createLLMClient = (config: LLMConfig = getConfig()) => {
   }
 }
 
-interface LLMClient {
-  callLLM: (request: LLMRequest) => Promise<LLMResponse | LLMError>
-}
 
 export const processTranscript = async (transcript: Message[], client: LLMClient): Promise<LLMResponse | LLMError> => {
   return client.callLLM({ transcript })

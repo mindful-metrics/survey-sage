@@ -1,6 +1,6 @@
 import createApp from '.'
-import { createLLMClient } from './src/llm'
+import { createConversationEngine } from './src/llm/'
 
 createApp({
-    llmClient: createLLMClient()
+    createConversationEngine: createConversationEngine()
 }).listen(3000)
