@@ -22,6 +22,10 @@ const createApp = (options: LLMClientOptions) => {
                 if (llmResult.action === 'error') {
                     return status(500, llmResult)
                 }
+                if (llmResult.action === 'submit') {
+                    // Handle submission
+                    return llmResult
+                }
 
                 return llmResult
             },

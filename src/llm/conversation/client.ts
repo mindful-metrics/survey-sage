@@ -85,12 +85,6 @@ export const createLLMClient = (config: LLMConfig = getConfig()): LLMClient => {
     try {
       const parsed = JSON.parse(content)
       if (parsed.action && (parsed.action === 'followup' || parsed.action === 'submit')) {
-        if (parsed.action === 'submit') {
-          // Handle submission
-        }
-        else {
-          // Handle followup questions
-        }
         return parsed
       }
     } catch {
