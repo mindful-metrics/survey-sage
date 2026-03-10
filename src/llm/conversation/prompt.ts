@@ -1,4 +1,4 @@
-import type { Message } from './types'
+import type { Message } from '../types'
 
 const SYSTEM_PROMPT = `You are an intelligent survey assistant. Analyze the conversation transcript and determine the next action.
 

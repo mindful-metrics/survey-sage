@@ -1,7 +1,8 @@
-import { type LLMRequest, type LLMError, type LLMResponse, type Message, TLLMError, TLLMRequest, TLLMResponse } from './types'
+import { type Message } from './types'
 import { getConfig, DEFAULT_CONFIG, validateConfig } from './config'
-import { createLLMClient, processTranscript, type LLMClientOptions } from './client'
-import { getSystemPrompt, createContextWindow, truncateContext } from './prompt'
+import { createLLMClient, processTranscript, type LLMClientOptions } from './conversation/client'
+import { getSystemPrompt, createContextWindow, truncateContext } from './conversation/prompt'
+import { type LLMRequest, type LLMError, type LLMResponse, TLLMError, TLLMRequest, TLLMResponse } from './conversation/types'
 
 export {
     type LLMRequest,
