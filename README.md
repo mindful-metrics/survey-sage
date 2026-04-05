@@ -1,4 +1,6 @@
-# survey-sage
+# Survey Sage
+
+Survey Sage is a chatbot app that analyzes conversations to infer psychological data.
 
 To install dependencies:
 
@@ -9,7 +11,7 @@ bun install
 To run:
 
 ```bash
-bun run index.ts
+bun run server.ts
 ```
 
-This project was created using `bun init` in bun v1.3.10. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+The project should be running at `localhost:3000/index.html`

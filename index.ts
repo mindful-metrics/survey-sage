@@ -24,7 +24,7 @@ const createApp = (options: LLMClientOptions) => {
         .post(
             '/',
             async ({ body, status }) => {
-                const llmResult: LLMResponse | LLMError = await processTranscript(body.transcript, conversationEngine)
+                const llmResult: LLMResponse | LLMError = await processTranscript(body.transcript.slice(1), conversationEngine)
 
                 if (llmResult.action === 'error') {
                     return status(500, llmResult)
