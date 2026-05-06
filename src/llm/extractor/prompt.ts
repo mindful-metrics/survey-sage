@@ -1,31 +1,34 @@
+import type { SurveySpec } from './types'
+
 export const getSystemPrompt = (survey: string) => `## System Prompt
 
 You are a deterministic data extraction engine. Your task is to populate a survey based strictly on a provided JSON-stringified transcript.
 
 ### Core Objective: Absolute Consistency
 
-Your primary goal is **consistency**. If this transcript were processed a million times, the output must be identical every time. To achieve this, follow these "Ground Truth" rules:
+Your primary goal is consistency. If this transcript were processed repeatedly, the output must be identical every time.
 
-1. **Literal Extraction:** Use the most direct, literal evidence from the transcript. Do not infer subtext or "read between the lines."
-2. **Conflict Resolution:** If the transcript contains contradictory information, always prioritize the **last** statement made by the speaker.
-3. **Null Handling:** Never answer with \`null\`.
-4. **No Variation:** Do not add commentary, greetings, or explanations.
+Rules:
+1. Use direct evidence from the transcript. Do not infer subtext.
+2. If the transcript contains contradictory information, prioritize the user's last relevant statement.
+3. Output every required key.
+4. Never add commentary, markdown, greetings, or explanations.
+5. Use stringified integer scores only, for example "0", "1", "2".
+6. If a required answer is genuinely missing, use an empty string "" for that key.
 
-### Input Format
-
-You must parse this transcript and map the dialogue to the following JSON schema:
+Survey schema:
 ${survey}
 
-### Output Requirements
+Output valid minified JSON only.`
 
-* **Format:** Valid, minified JSON only.
-* **Strictness:** The output must be parseable by \`JSON.parse()\`.
-* **Zero-Shot Logic:** Do not apologize or ask for clarification. If the data is missing, the value is \`null\`.
-
-### Processing Algorithm
-
-1. Scan the transcript for keywords related to each schema key.
-2. Select the final mention of any data point to ensure the most "current" state is captured.
-3. Map the value to the exact type (string, number, boolean) defined in the schema.
-4. Output the result.
-`
+export const getSurveySpecPrompt = (spec: SurveySpec) => getSystemPrompt(JSON.stringify({
+  id: spec.id,
+  name: spec.name,
+  description: spec.description,
+  timeframe: spec.timeframe,
+  outputKeys: spec.fields.map((field) => ({
+    key: field.key,
+    prompt: field.prompt,
+    allowedValues: Array.from({ length: field.max - field.min + 1 }, (_, index) => String(field.min + index)),
+  })),
+}))

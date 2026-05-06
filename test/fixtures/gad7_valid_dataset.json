@@ -1,0 +1,886 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi, thanks for taking the time today. I'd like to ask you some questions about how you've been feeling over the past two weeks. There are no right or wrong answers. To start \u2014 how often over the last two weeks have you felt nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Not very often. I get a little nervous before exams, but that's pretty normal. Most days I'm fine."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that nervousness has come up on just a few days, more than half the days, or pretty much every day?"
+      },
+      {
+        "role": "user",
+        "content": "Just a few days. Really only when I had a midterm this week."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it. Over the past two weeks, how often have you found it hard to stop or control your worrying once it starts?"
+      },
+      {
+        "role": "user",
+        "content": "It mostly stops on its own once the thing I'm worried about is over. I don't feel like I'm stuck in a worry loop or anything."
+      },
+      {
+        "role": "assistant",
+        "content": "So that hasn't really been a problem in the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Right. Maybe once or twice, but it passed pretty quickly."
+      },
+      {
+        "role": "assistant",
+        "content": "How about worrying too much about different things \u2014 not just one specific thing, but lots of different areas of your life? Has that been happening over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "A bit. I thought about my grades, whether I'm keeping up with my friends, normal stuff. But I wouldn't say it was excessive. It didn't take over my day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often would you say that kind of general worrying was happening?"
+      },
+      {
+        "role": "user",
+        "content": "Several days, maybe. Not constant."
+      },
+      {
+        "role": "assistant",
+        "content": "How about trouble relaxing \u2014 over the last two weeks, how often have you had a hard time unwinding or settling down?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I watch shows in the evening and that helps. I'd say I had a hard time relaxing maybe one or two nights during exam week, but other than that I'm pretty good at switching off."
+      },
+      {
+        "role": "assistant",
+        "content": "How often over the last two weeks have you felt so restless that it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Not at all, honestly. I'm pretty calm physically."
+      },
+      {
+        "role": "assistant",
+        "content": "How about becoming easily annoyed or irritable? Has that been coming up over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "I snapped at my roommate once when I was stressed about the midterm, but it was a one-off. I'm not usually irritable."
+      },
+      {
+        "role": "assistant",
+        "content": "So that happened on just a single occasion rather than being a pattern?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, definitely just the once."
+      },
+      {
+        "role": "assistant",
+        "content": "Last question on the feelings themselves \u2014 over the past two weeks, how often have you felt afraid, like something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I'm not a catastrophic thinker. I didn't really feel that way at all."
+      },
+      {
+        "role": "assistant",
+        "content": "Okay. Looking at everything you've described \u2014 the occasional nervousness, the bit of general worrying \u2014 how much difficulty have these things caused you in your day-to-day life? Like your work, responsibilities at home, or relationships with other people?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly, not much. I'm keeping up with my classes, I'm social. The nervousness is just a normal part of exam season for me. I'd say it's not difficult at all overall."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "0",
+      "q3": "1",
+      "q4": "1",
+      "q5": "0",
+      "q6": "0",
+      "q7": "0",
+      "functional_impairment": "Not difficult at all"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for taking the time. I want to ask about the past two weeks specifically. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Pretty regularly. Not every single day, but most days there's something that gets me wound up. Work stuff, the kids' schedules, whether I'm keeping up with everything."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that's been happening more than half the days over the past two weeks, or closer to several days?"
+      },
+      {
+        "role": "user",
+        "content": "More than half the days, probably. Especially workdays."
+      },
+      {
+        "role": "assistant",
+        "content": "When you start worrying, how easy is it to stop? Over the last two weeks, have you found it hard to control your worrying once it starts?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I can let it go, but other times it just keeps running in the background. Like I'll be reading to my kids and part of my brain is still going over my to-do list. That happens several days a week."
+      },
+      {
+        "role": "assistant",
+        "content": "Has that worrying spread across different areas \u2014 not just one thing, but lots of different concerns at once?"
+      },
+      {
+        "role": "user",
+        "content": "Absolutely. Work deadlines, my daughter's school situation, whether my mom is okay, whether we're saving enough money. It's like a rotating cast of worries."
+      },
+      {
+        "role": "assistant",
+        "content": "How often would you say that multi-topic worrying has been happening?"
+      },
+      {
+        "role": "user",
+        "content": "More than half the days. It's kind of constant, but at a low hum rather than a roar."
+      },
+      {
+        "role": "assistant",
+        "content": "How about trouble relaxing \u2014 in the last two weeks, how often have you struggled to unwind?"
+      },
+      {
+        "role": "user",
+        "content": "Most evenings I sit down to watch something and I realize I'm still tense. I have to make a deliberate effort to relax and it doesn't always work. I'd say that's been more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "How about physical restlessness \u2014 feeling so on edge that it's hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "That's not really my thing. I sit still fine. Maybe a couple of days I've felt jittery but not often."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you been irritable or easily annoyed over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "More than I'd like. I've been short with my husband a few times. I get annoyed faster when I'm stretched thin. Several days for sure."
+      },
+      {
+        "role": "assistant",
+        "content": "Finally, how often over the past two weeks have you felt afraid, like something bad was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "Not dramatically, but there's a low-level dread sometimes. Like something's about to go wrong and I won't be on top of it. Several days I'd say."
+      },
+      {
+        "role": "assistant",
+        "content": "Pulling it all together \u2014 how much have these feelings of anxiety and worry made things difficult for you \u2014 at work, at home, or with the people in your life?"
+      },
+      {
+        "role": "user",
+        "content": "It's somewhat difficult. I'm managing, but I'm not fully present. I'm snappier than I want to be. Things take more effort. I wouldn't say it's out of control, but it's definitely slowing me down."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "1",
+      "q3": "2",
+      "q4": "2",
+      "q5": "0",
+      "q6": "1",
+      "q7": "1",
+      "functional_impairment": "Somewhat difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for making time today. I'd like to ask about the past two weeks. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Pretty much every day. I run a team of twelve people and there's always something going wrong or about to go wrong. I haven't had a day in the last two weeks where I wasn't anxious about something."
+      },
+      {
+        "role": "assistant",
+        "content": "So that would be nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Maybe one day last weekend was okay, but even then I was checking my work email."
+      },
+      {
+        "role": "assistant",
+        "content": "When worry starts, how hard is it for you to stop it? How often over the past two weeks has it felt like you couldn't control the worrying once it started?"
+      },
+      {
+        "role": "user",
+        "content": "Very hard to stop. I'll start thinking about a project risk and then suddenly I'm catastrophizing about losing the client, losing my job, everything. It spirals. That happens more than half the days for sure."
+      },
+      {
+        "role": "assistant",
+        "content": "Has that worrying extended across multiple areas of your life, or is it more focused on work?"
+      },
+      {
+        "role": "user",
+        "content": "It starts at work but it spreads. I end up worrying about my health, whether my marriage is okay, my kids' futures. By the evening I'm worried about things that have nothing to do with work. That's been nearly every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How about trouble relaxing \u2014 how often in the past two weeks have you had difficulty unwinding?"
+      },
+      {
+        "role": "user",
+        "content": "Every evening. My wife tells me I look tense even when I'm sitting on the couch. I can't turn my brain off. I've been on my phone at 11 PM checking work messages."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you felt physically restless \u2014 so on edge that it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Several days. I pace in my office. I've been tapping my foot constantly in meetings. My team has noticed."
+      },
+      {
+        "role": "assistant",
+        "content": "How about irritability \u2014 how often have you become easily annoyed over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Too often. I snapped at someone in a meeting last week. I've been short with my wife. I feel bad about it. It's happening more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often over the past two weeks have you felt afraid, like something awful was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "Several times a week. I'll be in the middle of something and get this wave of dread. Like I'm about to get terrible news. Sometimes there's a specific trigger, sometimes there isn't."
+      },
+      {
+        "role": "assistant",
+        "content": "Given everything you've described, how much have these feelings been interfering with your daily life \u2014 work, home, relationships?"
+      },
+      {
+        "role": "user",
+        "content": "Very difficult. My work output has slipped. My wife and I had a real argument about how distracted and irritable I've been. I'm not sleeping well. It's affecting everything."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "3",
+      "q4": "3",
+      "q5": "1",
+      "q6": "2",
+      "q7": "2",
+      "functional_impairment": "Very difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. I want to ask about the past two weeks. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Every day. Honestly every single day. Sometimes every hour. I wake up anxious and I go to bed anxious. It's exhausting."
+      },
+      {
+        "role": "assistant",
+        "content": "Over the last two weeks, how often have you found it impossible or very hard to stop the worrying once it starts?"
+      },
+      {
+        "role": "user",
+        "content": "It's basically constant. I can't stop it. I'll try to distract myself and it comes right back. Every day for the past two weeks, for sure."
+      },
+      {
+        "role": "assistant",
+        "content": "What kinds of things are you worrying about? Is it one main thing or many different areas?"
+      },
+      {
+        "role": "user",
+        "content": "Everything. My thesis, whether my advisor thinks I'm incompetent, whether I'll graduate, whether I'll get a job, whether my relationship is okay, whether my parents are healthy, whether something bad is going to happen that I can't predict. It's every area of my life, every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How about trouble relaxing \u2014 how often in the past two weeks have you struggled to unwind or feel calm?"
+      },
+      {
+        "role": "user",
+        "content": "I can't remember the last time I actually relaxed. Even when I'm watching TV my leg is bouncing. When I try to meditate I just end up more aware of how anxious I am. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you felt so restless that it's been physically hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. I pace around my apartment. I can't stay in one position. In class I have to grip the desk to keep from getting up. That's been nearly every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How about irritability \u2014 how often have you become easily annoyed or frustrated over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "All the time. I've cried from frustration twice this week. I got into an argument with my partner over something trivial. I feel so on edge that everything feels like too much. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often over the past two weeks have you felt afraid, like something terrible was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "Almost constantly. I have a persistent feeling of dread. Like something is wrong and I just don't know what it is yet. It's there when I wake up, it's there when I go to sleep. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "With everything you've described \u2014 the constant anxiety, the worry, the restlessness \u2014 how much has this been interfering with your life? Your studies, your relationships, your ability to function day to day?"
+      },
+      {
+        "role": "user",
+        "content": "Extremely. I missed two days of class because I couldn't get myself out of the apartment. I'm behind on my thesis. My partner is worried about me. I can't concentrate. I'm barely sleeping. I feel like I'm drowning."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "3",
+      "q3": "3",
+      "q4": "3",
+      "q5": "3",
+      "q6": "3",
+      "q7": "3",
+      "functional_impairment": "Extremely difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for speaking with me today. I'd like to ask about the past two weeks. How often have you been feeling nervous or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Most days, I suppose. My son thinks I worry too much, but I think I have good reasons for it. My health, my wife's health, money in retirement. These are real things."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand those are real concerns. How many of the past fourteen days would you say you felt anxious or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Probably ten or eleven days out of fourteen. There were a few quieter days."
+      },
+      {
+        "role": "assistant",
+        "content": "When you find yourself worrying, how easy is it to put it aside? Over the last two weeks, how often has worrying felt out of your control?"
+      },
+      {
+        "role": "user",
+        "content": "I try to think about something else but it doesn't always work. Especially at night. I tell myself the doctor said I'm fine, but then I start thinking \u2014 what if he missed something? What if the test was wrong? I can't always shut it down. More than half the days I'd say."
+      },
+      {
+        "role": "assistant",
+        "content": "Is the worrying mainly about health, or does it spread to other areas?"
+      },
+      {
+        "role": "user",
+        "content": "It starts with my health but then it goes to my wife \u2014 she's been having some knee problems. Then I worry about whether we have enough savings if one of us needs long-term care. Then about my grandkids. It fans out. That's been most days."
+      },
+      {
+        "role": "assistant",
+        "content": "How about relaxing \u2014 how often in the past two weeks have you had difficulty unwinding?"
+      },
+      {
+        "role": "user",
+        "content": "I used to enjoy watching the game in the evenings. Now I'm half-watching and half-thinking about whatever I'm worried about. My wife says I'm not really there. Most evenings that's been the case."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you felt physically restless \u2014 like you couldn't sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I get up and walk around the house when I can't settle. A few times I've gotten up in the middle of the night because I couldn't lie there anymore. I'd say that's happened several days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you become easily annoyed or irritable over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "My wife would say too often. I snapped at her when she tried to reassure me. I don't like that about myself. It's been more than half the days, probably."
+      },
+      {
+        "role": "assistant",
+        "content": "Over the past two weeks, how often have you felt afraid, like something terrible was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "That's the one that gets me the most. I'll be sitting there and suddenly I'm certain something is wrong. That one of my kids has been in an accident, or that my heart is about to give out. The feeling just comes. Several days, definitely."
+      },
+      {
+        "role": "assistant",
+        "content": "Overall \u2014 how much have these worries and this anxiety been making things difficult for you in your daily life? Getting things done, relationships, taking care of yourself?"
+      },
+      {
+        "role": "user",
+        "content": "More than I'd like to admit. I've canceled plans because I wasn't feeling up to being around people. I don't enjoy things the way I used to. My wife and I have had some tense moments. I'd say it's been very difficult. I just don't think it's a mental health thing \u2014 I think these are real problems that would worry any sensible person."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "3",
+      "q4": "2",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1",
+      "functional_impairment": "Very difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here. I'd like to ask about the past two weeks specifically. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "It depends on the context. At work I'm pretty keyed up most days. I have a department review coming up and my principal has been sitting in on classes. When I'm being observed I get really tense. That's been more than half the days easily."
+      },
+      {
+        "role": "assistant",
+        "content": "And outside of those observation situations \u2014 on days when things are more routine, have you still felt on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Less so, but it's still there. Even on a normal teaching day I'm aware of whether the students seem engaged, whether the lesson is going well. There's a background hum of \"am I doing this right?\" that doesn't fully go away."
+      },
+      {
+        "role": "assistant",
+        "content": "Once worrying starts for you, how hard is it to stop? Over the past two weeks, how often have you felt like you couldn't control the worry once it got going?"
+      },
+      {
+        "role": "user",
+        "content": "It's hard to let go. After a class that didn't go well I'll be replaying it for hours. I'll be making dinner and still running through what I should have said or done differently. That happens several days a week."
+      },
+      {
+        "role": "assistant",
+        "content": "Has the worrying been focused mainly on work, or has it spread to other areas over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Mostly work, but it bleeds into other things. I worry about whether I'm a good enough husband, whether I'm letting my friends down by canceling plans. It starts at school and then generalizes. Several days that's been happening."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the past two weeks have you had trouble relaxing \u2014 unwinding at the end of the day?"
+      },
+      {
+        "role": "user",
+        "content": "Almost every evening. I get home and I'm still in teacher mode, still thinking about tomorrow's lessons or what happened today. My wife has said I'm not really present. That's more than half the days for sure."
+      },
+      {
+        "role": "assistant",
+        "content": "How about physical restlessness \u2014 feeling so tense or on edge that it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "A few times. Before the observation visits I was pacing around the classroom before the students arrived. During particularly bad afternoons I can't settle on the couch. I'd say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you been easily annoyed or irritable over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "More than I'm proud of. I've been short with my wife twice. I snapped at a student once, which I felt terrible about afterward. When I'm wound up it takes very little to set me off. More than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Over the past two weeks, how often have you felt afraid \u2014 like something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "Occasionally. Like the night before the observation I had a strong feeling that it was going to go badly, that I'd lose the respect of my colleagues. Not every day, but several times this past two weeks."
+      },
+      {
+        "role": "assistant",
+        "content": "Looking at everything you've shared \u2014 how much have these feelings been interfering with your life, your work, or your relationships?"
+      },
+      {
+        "role": "user",
+        "content": "Quite a bit, honestly. I cancelled a weekend trip with friends because I needed to prep. My wife has noticed I'm not fully present. And I think the anxiety actually makes me a worse teacher sometimes \u2014 I'm so focused on being evaluated that I lose the thread of the lesson. I'd say very difficult."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "1",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1",
+      "functional_impairment": "Very difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for making time today, I know things are very busy for you. I want to ask about the past two weeks. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Every day. I don't think I've had a single calm day in months, let alone the past two weeks. My mother wandered out of the house last month and I haven't been able to relax since. Every time I'm not in the room with her I'm waiting for something to go wrong."
+      },
+      {
+        "role": "assistant",
+        "content": "So that would be nearly every day for the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Once you start worrying, how often over the past two weeks has it felt like you couldn't stop or control it?"
+      },
+      {
+        "role": "user",
+        "content": "I can't stop it at all. I try. My sister tells me to take a break and I physically cannot stop my brain from going back to \u2014 is she okay right now, did I lock the door, what if she falls while I'm sleeping? Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Does the worry stay focused on your mother, or does it spread to other things as well?"
+      },
+      {
+        "role": "user",
+        "content": "It spreads everywhere. I worry about whether I'm doing enough at my job, whether my marriage is suffering \u2014 it is \u2014 whether I'm going to burn out completely, what happens when I can't manage her at home anymore. It's all connected and it's all the time. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the past two weeks have you had trouble relaxing \u2014 actually unwinding?"
+      },
+      {
+        "role": "user",
+        "content": "I haven't been able to relax. When she goes to sleep I should rest but I lie there listening for her. I can't watch something without half my attention being on whether she's okay. Every evening \u2014 every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you felt so restless that it was physically hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Several days. I find myself getting up and down, checking on her, checking the locks. I can't just sit. My husband says I'm like a caged animal some evenings."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you become easily annoyed or irritable over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Too often. I've snapped at my husband, at my sister when she offers advice, even at my mother a couple of times, which I feel awful about afterward. She can't help it. But I'm just so worn down. That's been nearly every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often over the past two weeks have you felt afraid, like something terrible was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "Almost every day. I have this constant sense of dread that she's going to fall, or choke, or get out again and something is going to happen to her. Or that I'm going to reach a breaking point. The dread is just always there."
+      },
+      {
+        "role": "assistant",
+        "content": "Given everything you've described, how much has this anxiety been making things difficult for you \u2014 your work, your relationships, your ability to take care of yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Extremely difficult. I'm barely holding things together. My work has suffered \u2014 I've made errors I normally wouldn't. My marriage is strained. I haven't seen friends in months. And I can't take care of myself properly when I'm this stretched. I know it's bad. I just don't know what to do about it because the situation is real."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "3",
+      "q3": "3",
+      "q4": "3",
+      "q5": "1",
+      "q6": "3",
+      "q7": "3",
+      "functional_impairment": "Extremely difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hey, thanks for talking with me today. I want to ask about the past two weeks \u2014 how often have you been feeling nervous or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "I mean\u2026 a lot? But I think that's pretty normal right now. College applications are due, I have APs coming up. Everyone in my grade is stressed."
+      },
+      {
+        "role": "assistant",
+        "content": "Fair enough. Comparing to what feels typical for you personally \u2014 how many of the past fourteen days would you say you felt noticeably on edge or anxious?"
+      },
+      {
+        "role": "user",
+        "content": "Probably like ten days. The weekdays especially. Weekends are a bit better."
+      },
+      {
+        "role": "assistant",
+        "content": "When you start worrying about something \u2014 like college apps or exams \u2014 how easy is it to stop? How often in the past two weeks has the worry felt like it was running on its own and you couldn't turn it off?"
+      },
+      {
+        "role": "user",
+        "content": "That happens a lot. I'll be trying to play a game to take a break and my brain keeps going back to \u2014 did I word that essay right, what if I don't get in anywhere, what am I going to do with my life. It's hard to actually switch off. More than half the days I'd say."
+      },
+      {
+        "role": "assistant",
+        "content": "Is most of the worrying about college and school, or does it spill into other things too?"
+      },
+      {
+        "role": "user",
+        "content": "It starts there but goes other places. I worry about whether my friends actually like me or just hang out with me out of habit. Whether I'm going to be a complete failure as an adult. Whether I'm choosing the right path. It kind of spirals. Several days that's happened."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the past two weeks have you had trouble relaxing or unwinding?"
+      },
+      {
+        "role": "user",
+        "content": "Most evenings. I try to watch something but I feel guilty because I should be working on applications. And even if I let myself take a break my brain doesn't really slow down. More than half the days for sure."
+      },
+      {
+        "role": "assistant",
+        "content": "How about feeling physically restless \u2014 like it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Not really that much. Maybe a couple of times when I had a big deadline coming up I was kind of bouncing my leg constantly. But mostly I just feel mentally restless, not physically."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you been irritable or easily annoyed over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "My mom would say a lot. I snapped at her twice this week. I got annoyed at my friend for something dumb. When I'm stressed I have a shorter fuse. Several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Over the past two weeks, how often have you felt scared or like something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "A few times. Like a wave of \"what if everything goes wrong\" hits me out of nowhere. Usually at night. I'd say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "With all of this going on \u2014 how much has it been affecting your daily life? School, relationships, things you normally do?"
+      },
+      {
+        "role": "user",
+        "content": "It's somewhat difficult. I'm still doing my work and seeing my friends, but I'm not fully there. I've been sleeping less. I snapped at my mom. I think it's in the range of normal senior year stuff, but maybe a bit more than that."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1",
+      "functional_impairment": "Somewhat difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for speaking with me. I want to focus on the past two weeks. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Every single day. I was diagnosed with MS eight weeks ago and I don't think I've had a calm moment since. I'm constantly waiting for the next symptom, the next thing to go wrong with my body."
+      },
+      {
+        "role": "assistant",
+        "content": "Every day for the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Without exception."
+      },
+      {
+        "role": "assistant",
+        "content": "Once the worrying starts, how often in the past two weeks has it felt like you couldn't stop or control it?"
+      },
+      {
+        "role": "user",
+        "content": "I can't stop it at all. I'll notice a twitch in my hand and immediately I'm spiraling \u2014 is this a relapse, is this progressing, am I going to lose function in my hand, will I be able to work? By the time I've finished that thought chain I'm convinced something catastrophic is happening. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Does the worry stay focused on your health, or has it spread to other things as well?"
+      },
+      {
+        "role": "user",
+        "content": "It started with my health but now it's everywhere. I worry about whether I'll be able to keep working as my symptoms progress, whether my husband is going to get tired of dealing with a sick wife, whether I'll be able to have children before things get worse. It's consumed everything. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the past two weeks have you had trouble relaxing or winding down?"
+      },
+      {
+        "role": "user",
+        "content": "I can't relax at all. When I try to read something my eyes go back to the same paragraph because I'm not actually taking it in. I tried meditation and it made things worse \u2014 when I slow down, the thoughts get louder. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you felt so restless that it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Most days. I pace. I get up and down. I reorganize things that don't need reorganizing. My husband pointed out that I haven't been able to sit through a meal without getting up at least once. More than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you been irritable or easily annoyed over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Almost every day. I don't mean to be but I'm so on edge that the smallest things set me off. My husband asked an innocent question about dinner and I burst into tears. I snapped at my sister for trying to be positive. I feel terrible about it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often over the past two weeks have you felt afraid, like something awful was about to happen?"
+      },
+      {
+        "role": "user",
+        "content": "Every day. I wake up with it. The feeling that today is the day something gets measurably worse. Or that I'm going to find out at my next appointment that it's progressing faster than expected. The dread is constant."
+      },
+      {
+        "role": "assistant",
+        "content": "With all of this \u2014 how much is it interfering with your daily life?"
+      },
+      {
+        "role": "user",
+        "content": "Extremely. My work has suffered enormously \u2014 I missed two client deadlines, which has never happened before. I've pulled back from friends because I don't want to talk about it and I can't talk about anything else. My husband and I are both struggling. I know I need help. I can't live like this on top of everything else."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "3",
+      "q3": "3",
+      "q4": "3",
+      "q5": "2",
+      "q6": "3",
+      "q7": "3",
+      "functional_impairment": "Extremely difficult"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for making time. I'd like to ask about the past two weeks. How often have you been feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Constantly, but I think that's just the job. A CFO who isn't anxious isn't paying attention. We're in the middle of an acquisition and the stakes are high."
+      },
+      {
+        "role": "assistant",
+        "content": "Setting the job context aside for a moment \u2014 how many of the past fourteen days would you say you personally felt noticeably on edge, even beyond what you'd expect from the workload?"
+      },
+      {
+        "role": "user",
+        "content": "All of them, honestly. I'm wound up when I wake up and I'm wound up when I go to bed. My wife says I've been like this for years but it's been worse the past few months."
+      },
+      {
+        "role": "assistant",
+        "content": "When you start worrying, how hard is it to stop? How often in the past two weeks has the worry felt out of your control?"
+      },
+      {
+        "role": "user",
+        "content": "I can discipline it during work hours \u2014 I channel it. But at night it runs free. I lie there running financial scenarios, deal risks, personnel decisions. I can't choose to stop. Every night for the past two weeks, so every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Does the worrying stay focused on work, or does it move into other areas?"
+      },
+      {
+        "role": "user",
+        "content": "It's mostly work, but it bleeds. I worry about my health \u2014 I've had some chest tightness lately. I worry about whether I've been present enough for my kids before they left for college. Whether my wife resents the time I've given to the company over the years. It fans out once I let it start. Nearly every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the past two weeks have you had trouble relaxing or unwinding?"
+      },
+      {
+        "role": "user",
+        "content": "Every evening. I don't really have a concept of relaxing. My wife bought me a fly fishing trip for my birthday two years ago and I spent the whole time thinking about work. I've never been able to turn it off fully. Every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you felt physically restless \u2014 like it was hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Several days. I pace during phone calls \u2014 my assistant knows to give me the room. I get up from the dinner table before everyone's finished. My wife calls it \"absent pacing\" \u2014 I don't always realize I'm doing it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often have you become easily annoyed or irritable over the past two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "At home, nearly every day. At work I control it. But I get home and someone asks me what I want for dinner and I'm curt about it. My wife has told me I'm difficult to be around in the evenings. I know she's right."
+      },
+      {
+        "role": "assistant",
+        "content": "Over the past two weeks, how often have you felt afraid \u2014 like something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I don't think of it as fear exactly, but yes \u2014 there's a persistent sense that something is going to collapse. The deal, my health, a relationship. It's there most days. I'd say more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Putting it all together \u2014 how much have these feelings been making things difficult for you \u2014 at work, at home, or in your relationships?"
+      },
+      {
+        "role": "user",
+        "content": "At work I manage it. At home it's very difficult. My wife and I have had serious conversations about the state of our marriage. I haven't been sleeping properly in months. I have the chest tightness I mentioned. I know something has to change, but I've been telling myself that for three years."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "3",
+      "q3": "3",
+      "q4": "3",
+      "q5": "1",
+      "q6": "3",
+      "q7": "2",
+      "functional_impairment": "Very difficult"
+    }
+  }
+]

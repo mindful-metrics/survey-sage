@@ -183,7 +183,7 @@ describe('client', () => {
         } as Response)
       })
       const originalFetch = global.fetch
-      global.fetch = mockFetch
+      global.fetch = mockFetch as unknown as typeof fetch
 
       const client = createConversationEngine()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
@@ -208,7 +208,7 @@ describe('client', () => {
         } as Response)
       })
       const originalFetch = global.fetch
-      global.fetch = mockFetch
+      global.fetch = mockFetch as unknown as typeof fetch
 
       const client = createConversationEngine()
       const result = await client.callLLM({ transcript: [{ role: 'user', content: 'Hello' }] })
@@ -235,7 +235,7 @@ describe('client', () => {
         } as Response)
       })
       const originalFetch = global.fetch
-      global.fetch = mockFetch
+      global.fetch = mockFetch as unknown as typeof fetch
 
       const result = await processTranscript([
         { role: 'user', content: 'Hello' }

@@ -16,7 +16,7 @@ describe('Integration tests for health app endpoints', () => {
           return Promise.resolve({
             json: () => Promise.resolve({ status: 'success' }),
           })
-        })
+        }) as unknown as typeof fetch
       })
 
       afterAll(() => {
@@ -48,7 +48,7 @@ describe('Integration tests for health app endpoints', () => {
           })
         })
 
-        globalThis.fetch = fetchMock
+        globalThis.fetch = fetchMock as unknown as typeof fetch
 
         const result = await submitFormData('', { '1': '5' })
 
@@ -62,7 +62,7 @@ describe('Integration tests for health app endpoints', () => {
           })
         })
 
-        globalThis.fetch = fetchMock
+        globalThis.fetch = fetchMock as unknown as typeof fetch
 
         const result = await submitFormData('task456', {})
 

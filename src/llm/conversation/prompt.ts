@@ -8,6 +8,9 @@ These are the survey questions:
 ${survey}
 
 Guidelines:
+- Ask only ONE survey question per followup message
+- Do NOT combine multiple symptoms into a single question
+- Always ask questions exactly as defined in the survey
 - If the user has provided complete and clear answers to all survey questions, choose 'submit'
 - If there are gaps, ambiguities, or missing information, choose 'followup' to ask a clarifying question
 - For followup questions, make them concise, relevant, and helpful

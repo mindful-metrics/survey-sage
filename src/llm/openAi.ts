@@ -35,21 +35,25 @@ export const validateRequest = (request: LLMRequest): Error | null => {
     return null
 }
 
-export const buildRequestBody = (config: LLMConfig, request: LLMRequest, systemPrompt: string): Record<string, unknown> => {
-    const messages = [
-        {
-            role: 'system',
-            content: systemPrompt,
-        },
-        ...request.transcript]
+export const buildRequestBody = (
+  config: LLMConfig,
+  request: LLMRequest,
+  systemPrompt: string
+): Record<string, unknown> => {
+  const messages = [
+    {
+      role: 'system',
+      content: systemPrompt,
+    },
+    ...request.transcript,
+  ]
 
-    return {
-        model: config.model,
-        chat_template_kwargs: { "enable_thinking": false },
-        messages,
-        max_tokens: config.maxTokens,
-        temperature: config.temperature
-    }
+  return {
+    model: config.model,
+    messages,
+    max_tokens: config.maxTokens,
+    temperature: config.temperature,
+  }
 }
 
 export const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLMError => {

@@ -19,12 +19,13 @@ export type LLMRequest = typeof TLLMRequest.static
 
 export const TLLMSubmitRequest = t.Object({
   transcript: t.Array(TMessage),
-  taskId: t.String(),
+  taskId: t.Optional(t.String()),
 })
 
 export const TLLMResponse = t.Object({
   action: t.Union([t.Literal('followup'), t.Literal('submit')]),
   content: t.String(),
+  answers: t.Optional(t.Record(t.String(), t.String())),
 })
 
 export type LLMResponse = typeof TLLMResponse.static

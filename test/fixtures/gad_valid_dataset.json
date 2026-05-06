@@ -1,0 +1,1276 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to help you with a few questions. Let's start. Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "I guess a bit, but not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to clarify, would you say it's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, maybe several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Now, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes, but it varies."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you indicate if that's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Uh, I would say more than half the days, actually."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that! Next question: over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "I tend to worry, it\u2019s just part of life, right?"
+      },
+      {
+        "role": "assistant",
+        "content": "Just to help me gauge this better: would you say that's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood. Now, over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "It's been a bit tough sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Would that be not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for clarifying! Now, how often have you been bothered by being so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I have days where I just can't sit still."
+      },
+      {
+        "role": "assistant",
+        "content": "Is that not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I would say nearly every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Great, thank you! Now, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I feel it sometimes, like it\u2019s hard to manage."
+      },
+      {
+        "role": "assistant",
+        "content": "To clarify, would that be not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I'd say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Last question: how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I have those moments occasionally."
+      },
+      {
+        "role": "assistant",
+        "content": "Is that not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I think that's several days too."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your answers! You've completed the survey."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "2",
+      "q3": "1",
+      "q4": "2",
+      "q5": "3",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I\u2019m here to ask you a few questions about your feelings over the past two weeks. Let\u2019s start with the first one: Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Well, there were a couple of moments, but nothing too serious."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Just to clarify, would you say that was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, maybe several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Next question: Over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "I mean, it\u2019s come up a little, but I guess I managed it."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing! To better gauge it, would you say it was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I would say it was just a couple of days."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood! Moving on: Over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, it happens from time to time, I guess."
+      },
+      {
+        "role": "assistant",
+        "content": "Okay! Would you categorize that as not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Next: Over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "I just felt a bit tense, but I thought it was normal."
+      },
+      {
+        "role": "assistant",
+        "content": "I see! Would you say this happened not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe several days as well."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that! Now for the next one: Over the last two weeks, how often have you been bothered by being so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, there were a few times I felt fidgety."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! When you say 'a few times,' would you say that was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I'd go with several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Next: Over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I guess I got annoyed a bit more than usual."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing that! Would you classify that as not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for your honesty! Last question: Over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I wouldn\u2019t say it\u2019s often, but there were times I felt uneasy."
+      },
+      {
+        "role": "assistant",
+        "content": "To clarify, would you say that was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Definitely not at all."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for answering all the questions! I appreciate your time."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "1",
+      "q4": "1",
+      "q5": "1",
+      "q6": "2",
+      "q7": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to help with a few questions about how you've been feeling lately. First, over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "I guess... I mean, sometimes I feel a bit on edge."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for sharing that. Just to clarify, would you say that feeling on edge has been happening not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, probably just several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Now, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Well, I worry sometimes, but it's not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand. Would you say this difficulty in controlling worry occurred not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm... maybe several days again?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for clarifying! Next question: Over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, I think that happens too sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to specify, would you categorize that as not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Now, over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "I don\u2019t find it easy to relax, especially in the evenings."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say this trouble with relaxing has been not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Definitely more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! How about being so restless that it is hard to sit still, over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I sometimes feel fidgety, but it\u2019s not that bad."
+      },
+      {
+        "role": "assistant",
+        "content": "To clarify, would you rate that feeling as not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say it\u2019s probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing! Over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I can get a bit annoyed, but that depends on the situation."
+      },
+      {
+        "role": "assistant",
+        "content": "That makes sense. Would you say that happens not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I think that\u2019s often, maybe several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your responses. Finally, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I don\u2019t really think about it too much, but it crosses my mind sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you consider that feeling to occur not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe several days."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "2",
+      "q4": "2",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to help you with a few questions about how you've been feeling. Let's start with the first one. Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I mean, I've felt that way a bit, I guess. Just sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to clarify, when you say 'sometimes,' would that be 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I would say... maybe 'several days'?"
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! How about the next question? Over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, a little, I think. It's just, you know, life has its worries."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand. Could you specify how often that bothered you? Was it 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Probably 'not at all' then."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for clarifying! Moving on to the next question: Over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "I think that might have happened a few times."
+      },
+      {
+        "role": "assistant",
+        "content": "So, would you say that was 'several days'?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, I\u2019d go with that."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! Now, how about trouble relaxing? Over the last two weeks, how often have you been bothered by that?"
+      },
+      {
+        "role": "user",
+        "content": "It's been kind of hard to unwind sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that's 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe 'more than half the days'."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Alright, next: Over the last two weeks, how often have you been bothered by being so restless that it's hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "I've felt a bit restless here and there."
+      },
+      {
+        "role": "assistant",
+        "content": "So would you say that feeling was 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Probably just 'several days'."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Now, Over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019ve had my moments, but it's not too bad."
+      },
+      {
+        "role": "assistant",
+        "content": "So, would that be more like 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say 'several days'."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Finally, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I guess I\u2019ve had that feeling a couple of times."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you consider that 'not at all,' 'several days,' 'more than half the days,' or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "That sounds like 'several days' to me."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for sharing your answers! You're all done!"
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "0",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to ask you a few questions about how you've been feeling lately. Let's start with the first one: Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "I mean, I've had my moments but nothing too serious."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Just to clarify, would you say that feeling nervous has been happening not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Next question: Over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, a bit. Sometimes it's hard to shake off my thoughts."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand. Would you say this happens not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for clarifying! Now, how often have you been bothered by worrying too much about different things over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "It's just a lot on my mind, you know? I guess it happens often."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to be clear, would you say it's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Definitely more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Moving on to the next one: How often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly, I find it hard sometimes, but I wouldn\u2019t say it's all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood! Would you rate that as not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Now, how often have you been bothered by being so restless that it\u2019s hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "I guess it happens occasionally but sometimes I manage."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing! Just to clarify, would you say this happens not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I would say it's several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Great, thank you! Next question: How often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, that can happen a fair bit."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say this is not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I think it\u2019s more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your honesty! Lastly, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I sometimes feel that way, like a sense of dread."
+      },
+      {
+        "role": "assistant",
+        "content": "To nail it down, would you say that feeling happens not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say several days."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "2",
+      "q3": "2",
+      "q4": "1",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I\u2019d like to ask you a few questions about how you've been feeling lately. First, over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I don\u2019t know... maybe a bit?"
+      },
+      {
+        "role": "assistant",
+        "content": "Could you clarify that? Would you say it was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I guess a few days, not too often."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it, so that sounds like a '1' for several days. Now, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Well, I do worry sometimes, but it\u2019s not terrible."
+      },
+      {
+        "role": "assistant",
+        "content": "I see. Would you say that this happened not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably just a couple of days when I was really stressed."
+      },
+      {
+        "role": "assistant",
+        "content": "That sounds like a '1' as well. Next question: how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, I think I'm generally okay with that. Just the usual worries."
+      },
+      {
+        "role": "assistant",
+        "content": "So it sounds like it didn't happen often, but could you specify?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe once or twice, but I can handle it."
+      },
+      {
+        "role": "assistant",
+        "content": "Alright, so let's say that's a '1' for several days. Now, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "Not all the time, but it definitely happens."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you rate that for me? Not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I don\u2019t know... maybe just a few days."
+      },
+      {
+        "role": "assistant",
+        "content": "It sounds like that's also a '1'. Next question: how often have you been so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I feel a little restless, but it's manageable."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that\u2019s not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say it\u2019s been a few days, nothing major."
+      },
+      {
+        "role": "assistant",
+        "content": "So, that's another '1' for several days. Moving on, over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I mean, it happens, but not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Would you say that was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Just a couple of times, so maybe '1'."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Finally, how often have you felt afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "That\u2019s kind of rare for me, maybe once or twice."
+      },
+      {
+        "role": "assistant",
+        "content": "So that sounds like a '1' for several days. Thank you for answering all these questions!"
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "1",
+      "q4": "1",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to help you with a few questions about how you've been feeling lately. To start, over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Well, I guess there were a couple of days I felt a bit off."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to clarify, would you say that feeling nervous or anxious bothered you 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, maybe several days, I think."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Now, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "I mean, I do worry sometimes but it\u2019s nothing too crazy."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that. Just to better understand, would you say it's 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I suppose it's just a few days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Next, over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, I think there were moments when I just couldn't stop thinking."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you rate that as 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Probably more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for sharing. Moving on, over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "Relaxing has been a bit tough, I guess."
+      },
+      {
+        "role": "assistant",
+        "content": "To clarify, would you say it was 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say it happened most days."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your honesty. Now, over the last two weeks, how often have you been bothered by being so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I feel like I can't just sit there."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you categorize that as 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe several days, I think."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Next, over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I do get annoyed sometimes, especially with work."
+      },
+      {
+        "role": "assistant",
+        "content": "To narrow it down, would you say that happens 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Finally, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I've had a few moments where I felt that way."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that you felt this way 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "That would be several days."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "2",
+      "q4": "2",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hello! I'm here to help you with the GAD-7 survey. Let's get started. Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, I guess I felt a bit that way sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing! Just to clarify, would you say that feeling was not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Great, thank you! The next question: Over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "I mean, I do worry sometimes, but it\u2019s not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "I see. Would you say that's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe around several days as well."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Now for the next question: Over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I think I worry about work a lot."
+      },
+      {
+        "role": "assistant",
+        "content": "That's understandable. So, in terms of frequency, was it not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I guess it's more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for clarifying! Now, how often have you been bothered by trouble relaxing over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "I struggle with that sometimes, but it\u2019s not always."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Can you specify if that's not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Next question: Over the last two weeks, how often have you been bothered by being so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Well, that happens now and then."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that happens not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, I think several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Okay! How about becoming easily annoyed or irritable over the last two weeks?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I do feel annoyed, but I don't know if it's too often."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing! Just to clarify, would you say that feeling is not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "Probably several days as well."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Lastly, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019ve had thoughts like that occasionally."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for your honesty! Was that not at all, several days, more than half the days, or nearly every day?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for completing the survey! I appreciate your responses."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "2",
+      "q4": "1",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I\u2019m here to help you with a few questions about how you've been feeling lately. Let's start with the first one. Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, I guess I've felt that way a little, but it varies."
+      },
+      {
+        "role": "assistant",
+        "content": "Okay, could you tell me how often you've experienced that feeling? You can rate it on a scale of 0 to 3, with 0 being not at all and 3 being nearly every day."
+      },
+      {
+        "role": "user",
+        "content": "Oh, probably a 1."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that. Next, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, it feels like sometimes I can't help but worry about things."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand. Can you rate that experience on the same scale? Just a number from 0 to 3?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe a 2? Not all the time, but often."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it, thank you! Now, over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "Uh, I don\u2019t know, I think it\u2019s just kind of there."
+      },
+      {
+        "role": "assistant",
+        "content": "I see. Could you provide a specific frequency? On the scale of 0 to 3?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say 1, I guess."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that! Moving on, over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "Relaxing has been tough sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often would you say that happens? Please rate it from 0 to 3."
+      },
+      {
+        "role": "user",
+        "content": "Maybe a 2?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Now, over the last two weeks, how often have you been bothered by being so restless that it\u2019s hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Well, I think it depends. Some days I\u2019m fine, but other days..."
+      },
+      {
+        "role": "assistant",
+        "content": "That makes sense. Could you give a number from 0 to 3 for that?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d put that as a 1."
+      },
+      {
+        "role": "assistant",
+        "content": "Alright! Next question. Over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "I can be a bit short with people sometimes, I suppose."
+      },
+      {
+        "role": "assistant",
+        "content": "How frequently does that happen? Please rate it from 0 to 3."
+      },
+      {
+        "role": "user",
+        "content": "Probably a 2."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you! Lastly, over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I get these thoughts, but not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Understood. Can you provide a number for that feeling from the scale of 0 to 3?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d say a 1."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "2",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi there! I'm here to help you with the GAD-7 survey. Let's get started. Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I guess a little, maybe not too much."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to clarify, would you say that was 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Now, over the last two weeks, how often have you been bothered by not being able to stop or control worrying?"
+      },
+      {
+        "role": "user",
+        "content": "Well, sometimes I can't really help but worry."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you tell me if that happens 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I think it's more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it! Next question: over the last two weeks, how often have you been bothered by worrying too much about different things?"
+      },
+      {
+        "role": "user",
+        "content": "I just tend to think about stuff a lot."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that happens 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe several days or so."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for that! For clarity, let's go with 'several days,' then?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, let's go with that."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Now, over the last two weeks, how often have you been bothered by trouble relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "I find it hard sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you specify how often? Is it 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Probably several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! Next question: over the last two weeks, how often have you been bothered by being so restless that it is hard to sit still?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, I've felt a bit restless."
+      },
+      {
+        "role": "assistant",
+        "content": "Would you say that's 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Let's go with several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Perfect! Now, over the last two weeks, how often have you been bothered by becoming easily annoyed or irritable?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly, I can get a bit annoyed more often than not."
+      },
+      {
+        "role": "assistant",
+        "content": "So would you say that's 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "Hmm, probably more than half the days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks! Last question: over the last two weeks, how often have you been bothered by feeling afraid, as if something awful might happen?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I feel that way, but not all the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Can you specify? Is it 'not at all', 'several days', 'more than half the days', or 'nearly every day'?"
+      },
+      {
+        "role": "user",
+        "content": "I would say several days."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your responses! That's all the questions I have for you."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "2",
+      "q3": "1",
+      "q4": "1",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1"
+    }
+  }
+]

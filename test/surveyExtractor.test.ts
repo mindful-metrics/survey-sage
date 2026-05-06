@@ -137,7 +137,7 @@ describe('surveyExtractor', () => {
 
     const customLlmClient = {
       callLLM: mock(async (request: { transcript: Message[] }) => {
-        promptContent = request.transcript[0].content
+        promptContent = request.transcript[0]?.content ?? ''
         return {
           action: 'submit' as const,
           content: JSON.stringify({

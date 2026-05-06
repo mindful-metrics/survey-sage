@@ -1,0 +1,1760 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hi, thanks for taking the time to speak with me today. I'm going to ask you some questions about how you've been feeling over the past week \u2014 there are no right or wrong answers. How has your mood been lately?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly, it's been kind of blah. I haven't felt like myself. A bit down, I guess, but it comes and goes."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear that. How many days this past week would you say you felt that way?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe four or five days? It's not constant \u2014 some mornings I feel okay, but by afternoon I'm dragging again."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying at all this week?"
+      },
+      {
+        "role": "user",
+        "content": "Once, yeah \u2014 I cried watching a movie, which I normally wouldn't. That was strange."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been especially hard on yourself this week, or feeling like you've let anyone down?"
+      },
+      {
+        "role": "user",
+        "content": "A little. I keep thinking I should be doing more for my students. I feel like I'm just going through the motions at work."
+      },
+      {
+        "role": "assistant",
+        "content": "Has life ever felt not worth living, or have you had any thoughts of hurting yourself?"
+      },
+      {
+        "role": "user",
+        "content": "No, never. I'd never do that."
+      },
+      {
+        "role": "assistant",
+        "content": "Good to know. What time do you usually go to bed, and how long does it take you to fall asleep?"
+      },
+      {
+        "role": "user",
+        "content": "I go to bed around 10:30. It's been taking me maybe 45 minutes to fall asleep \u2014 maybe three or four nights this week. I just lie there with my mind going."
+      },
+      {
+        "role": "assistant",
+        "content": "Once you're asleep, do you wake up during the night?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. Once I'm out, I'm out."
+      },
+      {
+        "role": "assistant",
+        "content": "And do you wake up earlier than you'd like in the morning?"
+      },
+      {
+        "role": "user",
+        "content": "Not especially \u2014 I wake up when my alarm goes off, around 6:30."
+      },
+      {
+        "role": "assistant",
+        "content": "Tell me about your work and daily activities this week. Have you been keeping up with things?"
+      },
+      {
+        "role": "user",
+        "content": "I've been going to work every day. I haven't missed anything, but I feel like I have to push myself more than usual. I used to enjoy planning lessons \u2014 lately it just feels like a chore."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you noticed any tension, worry, or irritability this week?"
+      },
+      {
+        "role": "user",
+        "content": "I've been a bit irritable with my husband, which isn't like me. And I've been worrying a bit about whether I'm doing a good job at work."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical symptoms \u2014 heart racing, stomach upset, sweating, trembling?"
+      },
+      {
+        "role": "user",
+        "content": "No, nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your appetite been?"
+      },
+      {
+        "role": "user",
+        "content": "A little decreased. I've been skipping my afternoon snack, and sometimes I don't feel that hungry at dinner, but I still eat."
+      },
+      {
+        "role": "assistant",
+        "content": "How about your energy levels?"
+      },
+      {
+        "role": "user",
+        "content": "Tired, definitely. More than usual \u2014 by the evening I just want to sit on the couch."
+      },
+      {
+        "role": "assistant",
+        "content": "Any aches or pains, heaviness in your body?"
+      },
+      {
+        "role": "user",
+        "content": "A little heaviness in my legs at the end of the day, but nothing major."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your interest in sex been this week?"
+      },
+      {
+        "role": "user",
+        "content": "Lower than usual. I haven't really felt in the mood."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been preoccupied with any physical health concerns?"
+      },
+      {
+        "role": "user",
+        "content": "No, I know I'm physically healthy."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you noticed your mood being particularly worse at a certain time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Afternoons, a bit. Mornings I'm usually okay."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anything felt unreal or dreamlike this week?"
+      },
+      {
+        "role": "user",
+        "content": "No."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you felt that anyone is trying to hurt you or talk about you behind your back?"
+      },
+      {
+        "role": "user",
+        "content": "No, nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "Any repetitive thoughts or behaviors you can't stop \u2014 like checking things over and over?"
+      },
+      {
+        "role": "user",
+        "content": "No."
+      },
+      {
+        "role": "assistant",
+        "content": "Last question \u2014 do you think what you're going through might be related to depression or an emotional difficulty?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah, I think so. I think I'm probably a bit depressed. I just hope it passes."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "1",
+      "q3": "0",
+      "q4": "1",
+      "q5": "0",
+      "q6": "0",
+      "q7": "2",
+      "q8": "0",
+      "q9": "0",
+      "q10": "2",
+      "q11": "0",
+      "q12": "1",
+      "q13": "1",
+      "q14": "1",
+      "q15": "0",
+      "q16": "0",
+      "q17": "0",
+      "q18": "1",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "I appreciate you talking with me. I want to ask about how you've been doing this past week. How would you describe your mood?"
+      },
+      {
+        "role": "user",
+        "content": "Terrible, honestly. I've been feeling really down almost every day. I don't see the point in much."
+      },
+      {
+        "role": "assistant",
+        "content": "How many days this week have you felt that way?"
+      },
+      {
+        "role": "user",
+        "content": "Pretty much every day. Maybe six out of seven."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "I got choked up a couple of times. I don't cry easily, but I felt like I could."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling guilty about anything \u2014 like you've done something wrong or failed people?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, a lot. I keep going over mistakes I made at work years ago. Things I should have done differently. I feel like I've let my family down."
+      },
+      {
+        "role": "assistant",
+        "content": "What about thoughts that you're being punished in some way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes it feels like that. Like all of this is payback for something. I know it doesn't make sense, but I feel it."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had thoughts that life isn't worth living, or of hurting yourself?"
+      },
+      {
+        "role": "user",
+        "content": "I've thought that they'd all be better off without me. I haven't done anything, and I wouldn't \u2014 but the thought has been there most days."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you developed any kind of plan?"
+      },
+      {
+        "role": "user",
+        "content": "No plan. Just the thought that it would be easier if I weren't here."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for telling me. When you go to bed, how long does it take you to fall asleep?"
+      },
+      {
+        "role": "user",
+        "content": "It takes me at least an hour on most nights. My mind won't turn off."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you wake up during the night?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, almost every night. I'll wake up around 2 or 3 AM and sometimes I get up and sit in the kitchen. I can't just lie there."
+      },
+      {
+        "role": "assistant",
+        "content": "What time do you wake up in the morning?"
+      },
+      {
+        "role": "user",
+        "content": "Around 4:30 or 5, way before I need to. And I can't get back to sleep."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been able to do your work this week?"
+      },
+      {
+        "role": "user",
+        "content": "I've been going in, but it takes everything I have. I'm getting less done. My boss commented on it last week, which made things worse."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your anxiety or worry been?"
+      },
+      {
+        "role": "user",
+        "content": "I worry constantly. About work, about my marriage, about money. It's been like that most days \u2014 almost every day."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical anxiety symptoms \u2014 heart pounding, stomach issues, sweating?"
+      },
+      {
+        "role": "user",
+        "content": "Stomach cramps, yeah. And headaches. Three or four times this week at least."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I'm barely eating. My wife has to remind me to eat. I've probably lost a few pounds."
+      },
+      {
+        "role": "assistant",
+        "content": "How about energy and physical feelings?"
+      },
+      {
+        "role": "user",
+        "content": "I feel heavy all the time. Like I'm moving through mud. My arms and legs feel like lead."
+      },
+      {
+        "role": "assistant",
+        "content": "Any interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "None. Zero."
+      },
+      {
+        "role": "assistant",
+        "content": "Any worries about your physical health \u2014 aches, pains, concern about illness?"
+      },
+      {
+        "role": "user",
+        "content": "I've been having some chest tightness, and I keep thinking something might be wrong with my heart, even though my doctor said I'm fine."
+      },
+      {
+        "role": "assistant",
+        "content": "Has your mood been worse at a particular time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Mornings are the worst. I dread getting out of bed."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you think depression is part of what you're experiencing?"
+      },
+      {
+        "role": "user",
+        "content": "I think I'm depressed, but I also think a lot of it is my own fault. If I were stronger, I wouldn't feel this way."
+      }
+    ],
+    "expected_output": {
+      "q1": "4",
+      "q2": "3",
+      "q3": "2",
+      "q4": "2",
+      "q5": "2",
+      "q6": "2",
+      "q7": "3",
+      "q8": "0",
+      "q9": "0",
+      "q10": "3",
+      "q11": "2",
+      "q12": "2",
+      "q13": "2",
+      "q14": "2",
+      "q15": "2",
+      "q16": "1",
+      "q17": "1",
+      "q18": "1",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. I know this can be hard. Can you tell me how you've been feeling this past week?"
+      },
+      {
+        "role": "user",
+        "content": "Awful. Every single day. I don't want to get out of bed. I don't see any reason to."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "I cry for hours sometimes. I don't even know why. And sometimes I can't cry at all, which almost feels worse."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling guilty or like you've done something terribly wrong?"
+      },
+      {
+        "role": "user",
+        "content": "All the time. I feel like everything that's gone wrong in my family is because of me. My parents' divorce \u2014 I know it's not rational, but I feel like I caused it. I feel like I'm a curse to everyone around me."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any thoughts that you're being punished?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. I feel like this depression is my punishment for being a bad person. I deserve to feel this way."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had thoughts of ending your life or hurting yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Almost every day this week. I've thought about taking pills. I looked up how many would be enough, but I haven't done anything."
+      },
+      {
+        "role": "assistant",
+        "content": "I hear you \u2014 and I want to make sure you're safe. Does your doctor or anyone else know about these thoughts?"
+      },
+      {
+        "role": "user",
+        "content": "No. You're the first I've told."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for trusting me with that. We'll make sure someone knows. Can you tell me about your sleep this week?"
+      },
+      {
+        "role": "user",
+        "content": "I barely sleep. I lie in bed for hours. Maybe I get two or three hours total. I wake up constantly."
+      },
+      {
+        "role": "assistant",
+        "content": "What time do you wake up for the day?"
+      },
+      {
+        "role": "user",
+        "content": "I don't really sleep until morning. I'm just awake all night, mostly."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been doing anything \u2014 work, hobbies, seeing people?"
+      },
+      {
+        "role": "user",
+        "content": "Nothing. I haven't left my apartment in five days. I used to paint \u2014 I haven't touched it in weeks. I just lie in bed or sit on the couch."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your anxiety been?"
+      },
+      {
+        "role": "user",
+        "content": "I feel terrified most of the time, but I can't even explain why. Just dread, like something horrible is about to happen."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical symptoms \u2014 stomach, heart racing, sweating?"
+      },
+      {
+        "role": "user",
+        "content": "I've had diarrhea almost every day, and my hands shake sometimes. My heart races."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I'm not eating. My roommate brought food to my door yesterday and I didn't touch it."
+      },
+      {
+        "role": "assistant",
+        "content": "How do you feel physically \u2014 any heaviness, fatigue, pain?"
+      },
+      {
+        "role": "user",
+        "content": "I feel like my whole body weighs a thousand pounds. I have back pain and my head aches all the time. Getting to the bathroom feels like a marathon."
+      },
+      {
+        "role": "assistant",
+        "content": "Any interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "Absolutely none. The idea feels completely foreign right now."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you felt that things around you aren't real, like you're in a dream?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, actually \u2014 a few times this week everything felt distant and strange, like I was watching myself from outside."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anyone seemed out to get you, or talking about you?"
+      },
+      {
+        "role": "user",
+        "content": "No, nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "Any repetitive thoughts or behaviors you feel you can't control?"
+      },
+      {
+        "role": "user",
+        "content": "I replay conversations and mistakes over and over, but it's more like rumination I think."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel like what you're going through is an illness, like depression?"
+      },
+      {
+        "role": "user",
+        "content": "I know people would call it that, but I feel like it's just who I am. I'm not sick \u2014 I'm just bad."
+      }
+    ],
+    "expected_output": {
+      "q1": "4",
+      "q2": "3",
+      "q3": "3",
+      "q4": "2",
+      "q5": "2",
+      "q6": "2",
+      "q7": "4",
+      "q8": "0",
+      "q9": "0",
+      "q10": "4",
+      "q11": "4",
+      "q12": "2",
+      "q13": "2",
+      "q14": "2",
+      "q15": "0",
+      "q16": "0",
+      "q17": "2",
+      "q18": "0",
+      "q19": "2",
+      "q20": "1",
+      "q21": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Good to talk with you today. Can you tell me how you've been feeling this past week overall?"
+      },
+      {
+        "role": "user",
+        "content": "Actually pretty good. Better than I've felt in a long time."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any periods of feeling down or sad?"
+      },
+      {
+        "role": "user",
+        "content": "I had one day \u2014 Thursday \u2014 where I felt a bit low in the morning, but it passed by afternoon. Nothing unusual."
+      },
+      {
+        "role": "assistant",
+        "content": "Any feelings of guilt or self-blame this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I made a small mistake at work but I didn't dwell on it the way I used to."
+      },
+      {
+        "role": "assistant",
+        "content": "Any thoughts that life isn't worth living?"
+      },
+      {
+        "role": "user",
+        "content": "No, not at all."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your sleep been?"
+      },
+      {
+        "role": "user",
+        "content": "Really good. I fall asleep within 15-20 minutes, I sleep through the night, and I wake up feeling rested."
+      },
+      {
+        "role": "assistant",
+        "content": "How about work and activities \u2014 have you been able to do the things you normally do?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. I went to work every day, finished my projects, went to the gym twice, and had dinner with friends on Saturday. Felt normal."
+      },
+      {
+        "role": "assistant",
+        "content": "Any anxiety or worry this week?"
+      },
+      {
+        "role": "user",
+        "content": "A little work stress on Wednesday, but nothing out of the ordinary. It resolved itself."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical symptoms like stomach upset, palpitations, sweating?"
+      },
+      {
+        "role": "user",
+        "content": "No, none of that."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "Normal \u2014 good, actually. I've been cooking more, which I enjoy."
+      },
+      {
+        "role": "assistant",
+        "content": "Energy levels?"
+      },
+      {
+        "role": "user",
+        "content": "Good. I feel like myself again."
+      },
+      {
+        "role": "assistant",
+        "content": "Interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "Back to normal, yes."
+      },
+      {
+        "role": "assistant",
+        "content": "Any health preoccupations or physical worries?"
+      },
+      {
+        "role": "user",
+        "content": "No, I feel healthy."
+      },
+      {
+        "role": "assistant",
+        "content": "Has your mood varied noticeably at any particular time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. It's been pretty stable."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel like you're doing well right now?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. I know what depression feels like, and this is not it. I feel like myself."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "0",
+      "q3": "0",
+      "q4": "0",
+      "q5": "0",
+      "q6": "0",
+      "q7": "0",
+      "q8": "0",
+      "q9": "0",
+      "q10": "1",
+      "q11": "0",
+      "q12": "0",
+      "q13": "0",
+      "q14": "0",
+      "q15": "0",
+      "q16": "0",
+      "q17": "0",
+      "q18": "0",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. How would you describe how you've been feeling this past week?"
+      },
+      {
+        "role": "user",
+        "content": "Not well at all. I've been having terrible stomach problems and my heart keeps fluttering. I think there might be something really wrong with me physically."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear that. Beyond the physical symptoms, how has your mood been?"
+      },
+      {
+        "role": "user",
+        "content": "My mood? I mean, how can my mood be good when I feel like this? I've been a bit down, but only because I feel so sick."
+      },
+      {
+        "role": "assistant",
+        "content": "How many days this week have you felt down or low?"
+      },
+      {
+        "role": "user",
+        "content": "Most days. Five or six days. But it's because I'm worried about my health."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling guilty about anything, or hard on yourself?"
+      },
+      {
+        "role": "user",
+        "content": "No, not really."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any thoughts that life isn't worth living?"
+      },
+      {
+        "role": "user",
+        "content": "No. I want to live \u2014 I just want to feel better."
+      },
+      {
+        "role": "assistant",
+        "content": "Good. How has your sleep been?"
+      },
+      {
+        "role": "user",
+        "content": "Terrible. I wake up around 4 AM and can't get back to sleep. That's been happening at least five times this week."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you wake during the night as well?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, once or twice \u2014 sometimes to use the bathroom, but sometimes I just lie awake."
+      },
+      {
+        "role": "assistant",
+        "content": "Are you doing your usual activities?"
+      },
+      {
+        "role": "user",
+        "content": "Not as much. I've been staying home more. I used to walk every morning but I haven't this week because I feel too unwell."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling tense or worried?"
+      },
+      {
+        "role": "user",
+        "content": "Extremely. I'm convinced something is really wrong. I've been to the doctor twice this week. They say my heart is fine but I don't believe it."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you worry about other things too, or mainly your health?"
+      },
+      {
+        "role": "user",
+        "content": "Mainly my health, but other things too. What if I can't take care of myself? What if I become a burden?"
+      },
+      {
+        "role": "assistant",
+        "content": "You mentioned stomach problems \u2014 any nausea, cramps, diarrhea? Heart palpitations, sweating, trembling?"
+      },
+      {
+        "role": "user",
+        "content": "All of it. Cramping, gas, palpitations. And I sweat at night sometimes. I've had it almost every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "Not great. I've lost a couple of pounds this week, I think. Eating makes my stomach worse so I've been avoiding it."
+      },
+      {
+        "role": "assistant",
+        "content": "Energy levels?"
+      },
+      {
+        "role": "user",
+        "content": "Very low. Tired all day."
+      },
+      {
+        "role": "assistant",
+        "content": "Any aches or heaviness in your body?"
+      },
+      {
+        "role": "user",
+        "content": "My legs feel heavy and I have lower back pain most of the day."
+      },
+      {
+        "role": "assistant",
+        "content": "Interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "None whatsoever. Though at my age, that's not unusual."
+      },
+      {
+        "role": "assistant",
+        "content": "Has your mood been worse at any particular time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Mornings are very bad. I dread getting up."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you think any of what you're experiencing might be connected to depression or emotional stress?"
+      },
+      {
+        "role": "user",
+        "content": "Absolutely not. I'm not depressed \u2014 I'm sick. There's a difference. I just need a doctor to find out what's wrong with me."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "0",
+      "q3": "0",
+      "q4": "0",
+      "q5": "1",
+      "q6": "2",
+      "q7": "2",
+      "q8": "0",
+      "q9": "0",
+      "q10": "4",
+      "q11": "4",
+      "q12": "2",
+      "q13": "2",
+      "q14": "2",
+      "q15": "3",
+      "q16": "1",
+      "q17": "2",
+      "q18": "2",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for making time today \u2014 I know things are busy with a new baby. How have you been feeling emotionally this past week?"
+      },
+      {
+        "role": "user",
+        "content": "I mean... it's been hard. I thought I'd be happy. Everyone says it's the best time of your life. But I just feel really low most of the time."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate you sharing that. How many days this past week have you felt that way \u2014 low or down?"
+      },
+      {
+        "role": "user",
+        "content": "Almost every day. Six, maybe all seven. Even when the baby smiles at me I feel guilty that I'm not feeling more."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. A lot. Sometimes I don't even know why. I'll just be feeding her and start crying."
+      },
+      {
+        "role": "assistant",
+        "content": "You mentioned guilt. Can you tell me more about that?"
+      },
+      {
+        "role": "user",
+        "content": "I feel like a terrible mother. Like she deserves someone better than me. I keep thinking about things I've done wrong \u2014 even things from years ago. I feel like the universe is telling me I shouldn't have been a mother."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel like you're being punished in some way?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. That's exactly what it feels like. Like this is payback."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any thoughts that life isn't worth living, or thoughts of harming yourself?"
+      },
+      {
+        "role": "user",
+        "content": "I've had thoughts that my daughter would be better off without me. That my husband could find someone better to raise her. I haven't done anything. I would never \u2014 but the thoughts are there."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you thought about a specific way you might hurt yourself?"
+      },
+      {
+        "role": "user",
+        "content": "No. No plan. Just... a feeling that I don't belong here."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for being honest. Setting aside the baby waking \u2014 how long does it take you to fall asleep when you first go to bed?"
+      },
+      {
+        "role": "user",
+        "content": "Ages. Even when she's asleep I lie there for an hour or more. My brain won't stop."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you wake during the night beyond the baby's schedule?"
+      },
+      {
+        "role": "user",
+        "content": "Yes \u2014 I'll wake up even when she's not crying and I can't get back to sleep. So I'm getting maybe three broken hours on a good night."
+      },
+      {
+        "role": "assistant",
+        "content": "What about early morning \u2014 do you wake before you need to?"
+      },
+      {
+        "role": "user",
+        "content": "I wake around 4:30 most mornings and can't sleep again even if the baby is quiet."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been doing anything for yourself \u2014 hobbies, seeing friends, getting outside?"
+      },
+      {
+        "role": "user",
+        "content": "Nothing. I haven't left the house except for pediatric appointments. I used to love yoga and reading. I haven't done either in two months. I don't see the point."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling tense or anxious?"
+      },
+      {
+        "role": "user",
+        "content": "Constantly. I check on the baby every few minutes. I'm terrified something will happen to her. I worry about everything \u2014 her health, my marriage, whether I'll ever feel normal again."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical anxiety symptoms \u2014 stomach upset, heart racing, trembling?"
+      },
+      {
+        "role": "user",
+        "content": "My heart races sometimes, especially at night. And I've had headaches almost every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I forget to eat most days. My husband reminds me. I've lost more weight than I should have by now."
+      },
+      {
+        "role": "assistant",
+        "content": "How's your energy and physical state?"
+      },
+      {
+        "role": "user",
+        "content": "Exhausted, obviously \u2014 but it's more than just being tired from the baby. My whole body feels heavy and numb."
+      },
+      {
+        "role": "assistant",
+        "content": "Any interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "None whatsoever. The thought is completely absent."
+      },
+      {
+        "role": "assistant",
+        "content": "Any concerns about your physical health?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I know I'm just depressed."
+      },
+      {
+        "role": "assistant",
+        "content": "Has your mood been worse at any particular time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Mornings are hardest. Getting out of bed feels impossible."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel like this is depression you're experiencing?"
+      },
+      {
+        "role": "user",
+        "content": "I know it probably is, but I'm ashamed to admit it. I feel like I should be able to snap out of it for my baby's sake."
+      }
+    ],
+    "expected_output": {
+      "q1": "4",
+      "q2": "3",
+      "q3": "2",
+      "q4": "2",
+      "q5": "2",
+      "q6": "2",
+      "q7": "4",
+      "q8": "0",
+      "q9": "0",
+      "q10": "4",
+      "q11": "3",
+      "q12": "2",
+      "q13": "2",
+      "q14": "2",
+      "q15": "0",
+      "q16": "2",
+      "q17": "0",
+      "q18": "2",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Hey, thanks for taking the time. There are no wrong answers here \u2014 just tell me how you've actually been feeling this week. How's your mood been?"
+      },
+      {
+        "role": "user",
+        "content": "I don't know. Bad, I guess. Just kind of... nothing. Empty."
+      },
+      {
+        "role": "assistant",
+        "content": "How many days this week have you felt that way?"
+      },
+      {
+        "role": "user",
+        "content": "All of them pretty much."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been sad, or more numb, or something else?"
+      },
+      {
+        "role": "user",
+        "content": "More numb. And angry. I get angry really easily at stupid stuff."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying at all?"
+      },
+      {
+        "role": "user",
+        "content": "No. I don't really cry."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling like you've done things wrong, or let people down?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah. I feel like everyone would be better off if I wasn't around so much. Like I'm just a burden. My parents are always stressed and I know it's because of me."
+      },
+      {
+        "role": "assistant",
+        "content": "Has that thought ever gone further \u2014 like thinking about not being alive, or hurting yourself?"
+      },
+      {
+        "role": "user",
+        "content": "I mean... I've thought about disappearing. Not like actually killing myself. Just not existing. Does that count?"
+      },
+      {
+        "role": "assistant",
+        "content": "It's important to ask \u2014 have you thought about how you might do that, or made any plan?"
+      },
+      {
+        "role": "user",
+        "content": "No. I wouldn't actually do anything. I'm not that far gone."
+      },
+      {
+        "role": "assistant",
+        "content": "Okay, thank you for telling me. How has your sleep been this week?"
+      },
+      {
+        "role": "user",
+        "content": "I sleep too much. Like I'll sleep 12, 13 hours and still feel tired. On the weekends I don't get up until 2 PM."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you have trouble falling asleep?"
+      },
+      {
+        "role": "user",
+        "content": "Not really \u2014 I fall asleep fine. I just don't want to wake up."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been going to school this week?"
+      },
+      {
+        "role": "user",
+        "content": "I missed two days. I just couldn't get myself up. And even when I'm there I'm not really present. I used to be good at school. Now I can't focus on anything."
+      },
+      {
+        "role": "assistant",
+        "content": "Any activities you used to enjoy \u2014 sports, gaming, music, hanging out with friends?"
+      },
+      {
+        "role": "user",
+        "content": "I used to play guitar every day. Haven't touched it in like six weeks. I've been turning down plans with my friends. I just don't want to pretend to be fine."
+      },
+      {
+        "role": "assistant",
+        "content": "How about anxiety \u2014 have you been feeling tense or worried?"
+      },
+      {
+        "role": "user",
+        "content": "I get anxious about school and what people think of me. Not like panic attacks, but just constant low-level dread."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical symptoms \u2014 stomach issues, heart racing, headaches?"
+      },
+      {
+        "role": "user",
+        "content": "Headaches, yeah. And my stomach hurts in the morning sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I eat when food is in front of me but I don't feel hungry. I've skipped lunch at school most days."
+      },
+      {
+        "role": "assistant",
+        "content": "How's your energy?"
+      },
+      {
+        "role": "user",
+        "content": "Zero. Even after sleeping forever I feel like I haven't slept at all."
+      },
+      {
+        "role": "assistant",
+        "content": "Any aches, heaviness in your body?"
+      },
+      {
+        "role": "user",
+        "content": "My body feels heavy. Like moving takes effort."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anything felt unreal or dreamlike this week \u2014 like you're watching yourself from a distance?"
+      },
+      {
+        "role": "user",
+        "content": "Kind of, actually. Sometimes I feel like I'm on autopilot and not really there."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anyone seemed to be out to get you or talking about you?"
+      },
+      {
+        "role": "user",
+        "content": "People at school definitely talk about me, but I don't think it's some conspiracy or anything."
+      },
+      {
+        "role": "assistant",
+        "content": "Any repetitive thoughts or rituals you can't stop?"
+      },
+      {
+        "role": "user",
+        "content": "I replay conversations a lot, thinking about what I should have said. But I don't think that's the same thing."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you think you might be depressed?"
+      },
+      {
+        "role": "user",
+        "content": "Probably. My mom thinks so. I just thought I was being lazy."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "1",
+      "q3": "2",
+      "q4": "0",
+      "q5": "0",
+      "q6": "0",
+      "q7": "3",
+      "q8": "0",
+      "q9": "0",
+      "q10": "2",
+      "q11": "1",
+      "q12": "1",
+      "q13": "2",
+      "q14": "0",
+      "q15": "0",
+      "q16": "0",
+      "q17": "0",
+      "q18": "0",
+      "q19": "1",
+      "q20": "2",
+      "q21": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for speaking with me today. I want to ask about the past week specifically. How have you been feeling overall?"
+      },
+      {
+        "role": "user",
+        "content": "Not good. Since my wife passed, nothing has been the same. I don't have the energy or interest in anything. Most days I just sit in my chair."
+      },
+      {
+        "role": "assistant",
+        "content": "How many days this past week have you felt down or sad?"
+      },
+      {
+        "role": "user",
+        "content": "Every day. Some days are worse than others. Sundays are the worst \u2014 we always had a routine on Sundays."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Not every day, but several times this week. I'll see something of hers and it just hits me."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling guilty at all \u2014 like you've done something wrong or failed someone?"
+      },
+      {
+        "role": "user",
+        "content": "I keep thinking about arguments we had over the years. Things I should have said or done differently. I feel like I didn't appreciate her enough."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any thoughts that life isn't worth living?"
+      },
+      {
+        "role": "user",
+        "content": "I've thought I wouldn't mind if it were my time too. I'm not going to do anything \u2014 but I don't have the same will to keep going that I used to."
+      },
+      {
+        "role": "assistant",
+        "content": "Is there any part of you that's thought about hastening that \u2014 any plans to harm yourself?"
+      },
+      {
+        "role": "user",
+        "content": "No, no. I'm a religious man. I wouldn't do that. I just miss her."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand. How has your sleep been?"
+      },
+      {
+        "role": "user",
+        "content": "I can't fall asleep until midnight or later \u2014 my mind goes over things. And then I wake up at 4 AM and that's it, I'm up for the day."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you wake during the night at all?"
+      },
+      {
+        "role": "user",
+        "content": "A couple of times, yes \u2014 to use the bathroom, and then I lie there thinking."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been doing your usual activities?"
+      },
+      {
+        "role": "user",
+        "content": "I used to walk to the park every morning, play cards with my neighbor on Thursdays. I haven't done either in weeks. I don't see the point without her."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling anxious or worried?"
+      },
+      {
+        "role": "user",
+        "content": "Very much so. I worry about my health a lot. And about being alone. What happens if I get sick \u2014 who will take care of me?"
+      },
+      {
+        "role": "assistant",
+        "content": "You mentioned your health \u2014 can you tell me more about that?"
+      },
+      {
+        "role": "user",
+        "content": "I have this pain in my chest that won't go away. I've been to the doctor three times. They say my heart is fine but I don't believe them. I also have this feeling in my stomach \u2014 I think something might be seriously wrong."
+      },
+      {
+        "role": "assistant",
+        "content": "Any other physical symptoms \u2014 palpitations, sweating, headaches?"
+      },
+      {
+        "role": "user",
+        "content": "Palpitations, yes. Almost every day. And I sweat at night. I've had indigestion and gas constantly."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I've lost about four pounds this past month. I eat a little at each meal but nothing tastes good anymore. My daughter has to remind me to eat."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your energy?"
+      },
+      {
+        "role": "user",
+        "content": "Very low. Everything is an effort. Getting dressed feels like a project."
+      },
+      {
+        "role": "assistant",
+        "content": "Any heaviness or pain in your body?"
+      },
+      {
+        "role": "user",
+        "content": "My back aches constantly, and my legs feel heavy. I move much slower than I used to."
+      },
+      {
+        "role": "assistant",
+        "content": "Has your mood been worse at any particular time of day?"
+      },
+      {
+        "role": "user",
+        "content": "Mornings, without question. I used to love mornings \u2014 we'd have coffee together. Now they're unbearable."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anything felt unreal or dreamlike?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes I forget she's gone and I'll call out for her. Then I remember, and it's like losing her all over again. I don't know if that's what you mean."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you think depression is part of what you're going through?"
+      },
+      {
+        "role": "user",
+        "content": "My doctor said so. I'm not sure I believe it \u2014 I think I'm just grieving. But maybe there's something to it."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "2",
+      "q7": "4",
+      "q8": "0",
+      "q9": "0",
+      "q10": "3",
+      "q11": "3",
+      "q12": "2",
+      "q13": "2",
+      "q14": "0",
+      "q15": "3",
+      "q16": "2",
+      "q17": "1",
+      "q18": "2",
+      "q19": "0",
+      "q20": "1",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for making time. I know your schedule is demanding. How have you been feeling this past week, underneath the surface?"
+      },
+      {
+        "role": "user",
+        "content": "Honestly? Terrible. I'm functioning \u2014 I have to. But inside it's been very dark. I've been doing this long enough to know when it's bad, and this week has been bad."
+      },
+      {
+        "role": "assistant",
+        "content": "How many days this week have you felt that darkness?"
+      },
+      {
+        "role": "user",
+        "content": "Every day. I wake up already dreading the day."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "Not at work \u2014 I don't allow myself. But at home, yes. Twice in the car this week."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling guilty, or ruminating about past mistakes?"
+      },
+      {
+        "role": "user",
+        "content": "Constantly. I keep replaying decisions I made five, ten years ago. Business decisions, personal ones. I lie in bed cataloguing every failure. I feel like I've wasted my life pursuing the wrong things."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel like you're being punished?"
+      },
+      {
+        "role": "user",
+        "content": "Rationally, no. But emotionally, absolutely yes. It feels like I am getting what I deserve."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had thoughts that life isn't worth living, or of harming yourself?"
+      },
+      {
+        "role": "user",
+        "content": "The passive wish to not exist has been there most days. No plan, no intent to act. I'm too controlled for that. But the thought \u2014 'what if I just didn't wake up' \u2014 yes, that's there."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your sleep been?"
+      },
+      {
+        "role": "user",
+        "content": "I fall asleep fine \u2014 I'm exhausted. But I wake at 3 AM like clockwork and cannot get back to sleep. I lie there for two hours running through everything."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you wake during the first part of the night?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes, but the 3 AM wake-up is the main issue."
+      },
+      {
+        "role": "assistant",
+        "content": "Tell me about your work and activities \u2014 you said you're functioning, but what does that look like on the inside?"
+      },
+      {
+        "role": "user",
+        "content": "I show up. I run the meetings. I make the decisions. But I have to push myself through every single task. Things that used to energize me \u2014 strategy, new challenges \u2014 feel completely hollow. I used to love my work. Now it's just something I endure."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you noticed a decrease in how much you're getting done compared to your usual output?"
+      },
+      {
+        "role": "user",
+        "content": "Slightly, yes. I'm slower. My assistant has noticed, I think, though she hasn't said anything."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your anxiety been?"
+      },
+      {
+        "role": "user",
+        "content": "Severe. I'm tense every day. I've also been having thoughts that my team is talking about me \u2014 that they can see I'm struggling and are losing confidence in me. I know it might not be rational, but it feels very real."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you feel they might be actively working against you, or more that they're noticing your difficulties?"
+      },
+      {
+        "role": "user",
+        "content": "More the latter. I don't think there's a conspiracy. Just that they see through me."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical anxiety symptoms \u2014 palpitations, stomach issues, sweating?"
+      },
+      {
+        "role": "user",
+        "content": "Stomach cramping almost every day. Palpitations a few times a week. I've had headaches most of the week."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "I eat because I know I should. I've dropped a few pounds \u2014 not dieting, just not hungry."
+      },
+      {
+        "role": "assistant",
+        "content": "Energy, aches, physical heaviness?"
+      },
+      {
+        "role": "user",
+        "content": "I feel like I'm carrying a hundred extra pounds. Everything is slow and heavy. My back aches constantly, and I have a persistent tension in my neck."
+      },
+      {
+        "role": "assistant",
+        "content": "Any interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "None. We haven't been intimate in over a month. My partner is patient, but I know it's affecting us."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been having repetitive, intrusive thoughts \u2014 not just the rumination, but things that feel beyond your control?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, actually. Phrases and scenarios that loop. They're distressing. It's different from planning \u2014 more like my brain is stuck in a loop."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anything felt unreal this week?"
+      },
+      {
+        "role": "user",
+        "content": "A few times I've felt disconnected \u2014 like I'm watching myself from above. It's disconcerting."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you have a clear sense that depression is what this is?"
+      },
+      {
+        "role": "user",
+        "content": "Yes. Completely. I know this illness very well by now. I'm hoping the medication adjustment will kick in soon."
+      }
+    ],
+    "expected_output": {
+      "q1": "4",
+      "q2": "3",
+      "q3": "2",
+      "q4": "0",
+      "q5": "2",
+      "q6": "2",
+      "q7": "3",
+      "q8": "1",
+      "q9": "0",
+      "q10": "3",
+      "q11": "3",
+      "q12": "1",
+      "q13": "2",
+      "q14": "2",
+      "q15": "1",
+      "q16": "1",
+      "q17": "0",
+      "q18": "1",
+      "q19": "1",
+      "q20": "2",
+      "q21": "2"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here. I just want to get a sense of how you've been feeling this past week. How would you describe your mood?"
+      },
+      {
+        "role": "user",
+        "content": "I'm not sure how to describe it. Not good? I feel kind of... flat. Like there's a glass wall between me and everything."
+      },
+      {
+        "role": "assistant",
+        "content": "That's helpful \u2014 how many days this week have you felt that flat or distant feeling?"
+      },
+      {
+        "role": "user",
+        "content": "Most of them. Maybe five or six days."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been sad, or is it more numbness?"
+      },
+      {
+        "role": "user",
+        "content": "Numbness, mostly. Sometimes a heaviness that feels like sadness, but I don't think I've actually been sad exactly."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been crying?"
+      },
+      {
+        "role": "user",
+        "content": "No. I kind of wish I could \u2014 it might be a relief."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been especially self-critical, or felt like you've let people down?"
+      },
+      {
+        "role": "user",
+        "content": "Yeah. I keep thinking I'm not smart enough for my program. That I got in by mistake. I feel like everyone else is doing fine and I'm falling behind."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had thoughts that life isn't worth living, or about harming yourself?"
+      },
+      {
+        "role": "user",
+        "content": "No, nothing like that. I just want to feel normal again."
+      },
+      {
+        "role": "assistant",
+        "content": "Good. How has your sleep been?"
+      },
+      {
+        "role": "user",
+        "content": "It takes me a while to fall asleep \u2014 maybe 45 minutes to an hour, probably four or five nights. I just lie there thinking about everything I haven't finished."
+      },
+      {
+        "role": "assistant",
+        "content": "Once you're asleep, do you stay asleep?"
+      },
+      {
+        "role": "user",
+        "content": "Mostly. I wake up once or twice, but I fall back asleep."
+      },
+      {
+        "role": "assistant",
+        "content": "Are you waking earlier than you'd like?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I sleep as long as I can."
+      },
+      {
+        "role": "assistant",
+        "content": "How has your academic work and daily life been going?"
+      },
+      {
+        "role": "user",
+        "content": "I'm behind on two papers. I sit at my desk for hours and barely write a paragraph. I can't concentrate. I used to love reading and research \u2014 right now I can't get through a page without zoning out."
+      },
+      {
+        "role": "assistant",
+        "content": "Are you doing anything social or for fun?"
+      },
+      {
+        "role": "user",
+        "content": "I've been canceling plans. My friends invited me out twice and I said I was busy, but I was just at home. I used to run every morning \u2014 I haven't been in three weeks."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been feeling anxious or tense?"
+      },
+      {
+        "role": "user",
+        "content": "About my work, a lot. I worry I'm going to fail out. It's pretty much constant low-level anxiety."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical symptoms \u2014 stomach, heart racing, sweating?"
+      },
+      {
+        "role": "user",
+        "content": "My stomach has been off \u2014 a bit crampy, some nausea before I have to present in class."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your appetite?"
+      },
+      {
+        "role": "user",
+        "content": "Down a bit. I'll skip breakfast most days. I eat something at lunch and dinner but not much."
+      },
+      {
+        "role": "assistant",
+        "content": "How is your energy?"
+      },
+      {
+        "role": "user",
+        "content": "Really low. I feel sluggish and slow. My thoughts feel slow too."
+      },
+      {
+        "role": "assistant",
+        "content": "Any physical heaviness or aches?"
+      },
+      {
+        "role": "user",
+        "content": "My body just feels heavy, yeah. Like I'm underwater."
+      },
+      {
+        "role": "assistant",
+        "content": "Interest in sex?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I've been seeing someone but I haven't wanted to be close lately."
+      },
+      {
+        "role": "assistant",
+        "content": "Any worries about your physical health?"
+      },
+      {
+        "role": "user",
+        "content": "Not particularly. I know I'm physically fine."
+      },
+      {
+        "role": "assistant",
+        "content": "Has anything felt unreal or dreamlike?"
+      },
+      {
+        "role": "user",
+        "content": "That glass wall feeling I mentioned \u2014 sometimes it's like that. Like I'm not fully present."
+      },
+      {
+        "role": "assistant",
+        "content": "Any repetitive thoughts or behaviors you feel you can't control?"
+      },
+      {
+        "role": "user",
+        "content": "I re-read the same paragraphs over and over because I keep losing track of what I read. I don't know if that counts."
+      },
+      {
+        "role": "assistant",
+        "content": "Do you think what you're going through might be depression?"
+      },
+      {
+        "role": "user",
+        "content": "Maybe? I always thought depression meant being really sad and crying a lot. I don't feel that. I thought it was just stress from grad school."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "1",
+      "q4": "2",
+      "q5": "1",
+      "q6": "0",
+      "q7": "3",
+      "q8": "1",
+      "q9": "0",
+      "q10": "2",
+      "q11": "1",
+      "q12": "1",
+      "q13": "2",
+      "q14": "1",
+      "q15": "0",
+      "q16": "1",
+      "q17": "1",
+      "q18": "0",
+      "q19": "1",
+      "q20": "1",
+      "q21": "1"
+    }
+  }
+]

@@ -1,0 +1,1322 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for coming in. The questions I'm going to ask are all about the past month \u2014 the last four weeks or so. For each one, I'll ask how often something happened, and you can answer never, almost never, sometimes, fairly often, or very often. Let's start \u2014 in the last month, how often have you been upset because of something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. There was one situation at work that caught me off guard and frustrated me briefly, but I wouldn't say it was a pattern."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I feel pretty in control of my work, my relationships, my direction. Nothing has felt out of my hands."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I had a couple of deadline days at work where I felt the pressure, but it resolved and it wasn't a persistent feeling."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles \u2014 the small annoying things that come up?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I'm generally pretty good at handling small annoyances. They don't tend to derail me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes occurring in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. There haven't been huge changes this month but the ongoing things I'm managing \u2014 I feel like I'm handling them well."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. That's one of my strengths, I think. I tend to approach problems practically. I don't spiral."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were generally going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. Not everything, but the overall trajectory feels good. Work is going well, relationships are solid."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found that you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Never. My workload is manageable. I'm not feeling overwhelmed."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life \u2014 things that frustrate or annoy you?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I notice irritations but I don't let them run. I've got reasonable perspective on what matters."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that you were on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. Not every single day, but overall yes. I feel like I'm keeping up with what's expected of me and then some."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened that were outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I've gotten mildly annoyed at things I can't control \u2014 traffic, a system that wasn't working at work \u2014 but angry? Not really."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to get done?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I make lists and it helps, but my mind does go back to my task list fairly regularly. I don't find it distressing though, more habitual."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I have good time management overall. There are always constraints but I feel I have agency over my schedule."
+      },
+      {
+        "role": "assistant",
+        "content": "And finally \u2014 in the last month, how often have you felt that difficulties were piling up so high that you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Things feel manageable. I don't have a sense of being buried under problems."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "0",
+      "q3": "1",
+      "q4": "3",
+      "q5": "4",
+      "q6": "4",
+      "q7": "3",
+      "q8": "0",
+      "q9": "3",
+      "q10": "3",
+      "q11": "1",
+      "q12": "2",
+      "q13": "3",
+      "q14": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here. All the questions I'm going to ask are about the last month. For each one, tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. Starting \u2014 in the last month, how often have you been upset because of something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The month has had its surprises \u2014 a staff member went off sick unexpectedly, a parent complaint I wasn't anticipating. I'd say sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I feel like I have agency, even in a busy period. The things I can't control I've made some peace with."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. It's exam season and there's a lot riding on results for the students. I carry some of that. But it's not constant \u2014 I get breaks."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I'm experienced enough that most small hassles don't knock me sideways. I handle them and move on."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes occurring in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The school changes this year have been significant \u2014 new curriculum elements \u2014 and I feel like I've adapted reasonably well."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I have good support at home and I trust myself to work through things. Not every day is confident, but generally yes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Some things have gone well, others haven't. It's been a mixed month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found that you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I get to the end of the to-do list most days. There are days it's tighter, but I've not felt genuinely unable to cope."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I notice when things irritate me and I've been managing that. Some days better than others."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not consistently. There are weeks where I'm ahead of it, and weeks where I'm scrambling. On balance, sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Bureaucratic decisions that affect the classroom and I have no say in \u2014 yes, those frustrate me. I'd say sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to get done?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My brain doesn't fully switch off in the evenings. I'm running through lesson plans, marking lists, things I haven't finished. It's a regular background hum."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control how you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Teaching has a structure that doesn't leave a lot of flex, and this month especially has been packed. I have some control but less than I'd like."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. Even in the harder weeks I've been able to see the other side of the pressure. I haven't felt buried."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "1",
+      "q3": "2",
+      "q4": "3",
+      "q5": "3",
+      "q6": "3",
+      "q7": "2",
+      "q8": "1",
+      "q9": "3",
+      "q10": "2",
+      "q11": "2",
+      "q12": "3",
+      "q13": "2",
+      "q14": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for coming in. All the questions I'm going to ask cover the last month. For each one, tell me how often something applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The legal proceedings have thrown up unexpected developments twice this month. Procedural surprises that required rapid responses. That's unsettling even when you're used to adversarial environments."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The court process is largely out of my hands. Decisions I can't dictate, timelines I can't accelerate. I feel that loss of control fairly regularly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I'm used to high-pressure environments professionally, but this is my personal life. It's a different kind of stress. Most weeks there's been a persistent background tension."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm managing the practical ones but my threshold is lower than usual. Things I would normally brush off are catching me more."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with the important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm adapting, but not smoothly. The living situation change, the schedule changes around the children \u2014 I'm coping but not confidently."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. In professional contexts I have high confidence. Personally, this month it's been shakier. I know I'll get through it but I don't always feel it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. Very little of this month has felt like it's going well. There have been small wins but the overall arc is difficult."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found that you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There have been weeks where the work demands plus the personal legal demands have felt like too much. I've managed but not without a cost."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm more irritable than usual and I'm not always managing it well. I've been short with people when I shouldn't have been."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few good stretches at work. But overall, more often than not I feel like things are slightly ahead of me rather than me being ahead of them."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The legal system's pace, decisions that affect my children that I can't influence in the way I'd like. Yes \u2014 that anger is there."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I have a running list in my head at all times. Work deadlines, legal filings, things the children need, things I've promised to do. It's constant."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The legal schedule imposes itself. Court dates, meetings with my solicitor. My time is less mine than it used to be."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There have been moments \u2014 particularly one week when three major things converged \u2014 where I genuinely wasn't sure how I was going to get through it all. I did, but it felt very close to the limit."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "2",
+      "q3": "3",
+      "q4": "2",
+      "q5": "2",
+      "q6": "2",
+      "q7": "1",
+      "q8": "2",
+      "q9": "2",
+      "q10": "2",
+      "q11": "2",
+      "q12": "3",
+      "q13": "2",
+      "q14": "2"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for coming. I know your time is precious right now. All of these questions are about the past month. For each one, please tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. With his condition, unexpected things happen constantly. A fall, an episode of confusion in public, a care appointment cancelled at the last minute. I'm perpetually in reactive mode."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I can't control the progression of his illness. I can't control the benefits system or when payments arrive. But I have to keep functioning, so I focus on what I can do. I'd say sometimes rather than fairly often, because giving in to that feeling doesn't help."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. It's not always acute, but there's a baseline stress that doesn't lift. I go to bed stressed and wake up stressed. That's been most of this month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. My capacity for even small frustrations is basically gone. A form that needs filling in, a phone call to chase something \u2014 things that should take ten minutes feel monumental right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. Each month his needs increase and I'm scrambling to adjust. I'm not coping with the changes so much as being dragged along by them."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I have to be confident because there's no one else. But underneath the surface competence, I don't feel it. I'm running on obligation, not confidence."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I can't think of much in the last month that has gone the way I hoped. There have been small mercies \u2014 a good day with him, a kind neighbour \u2014 but as a general experience, no."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found that you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. There is always more than I can manage. I prioritise his needs and everything else suffers. My own health appointments, my friendships, my rest. I don't cope with all of it. I cope with the most critical things."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. My emotional resources are depleted. Things that should be minor make me want to cry. I'm not managing irritations well at all."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I feel perpetually behind. Like I'm trying to hold a dozen things at once and losing my grip on several of them simultaneously."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The system \u2014 the benefits delays, the waiting lists for additional care support, the insurance paperwork. I feel angry at the situation almost constantly. It's just not directed anywhere useful."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My mental task list is enormous and I can't switch it off. Even when he's asleep and I have a moment, I'm running through what's undone."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. My time belongs to his needs. Whatever I might want to do with it is a distant secondary consideration."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. There are weeks where it genuinely feels unsurmountable. Last week was one of those. I sat down and couldn't see how anything was going to improve. I got through it, but those moments come fairly often now."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "2",
+      "q3": "3",
+      "q4": "1",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1",
+      "q8": "3",
+      "q9": "1",
+      "q10": "1",
+      "q11": "3",
+      "q12": "3",
+      "q13": "1",
+      "q14": "3"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for coming in today. I want to ask about the past month. For each question, tell me how often something applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The whole collapse happened faster than I anticipated. Then the relationship ended, which I thought was stable. And financial things have kept surfacing that I wasn't aware of. Unexpected bad news has been the pattern of this month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. I feel like I'm watching my life from the outside. The business, the relationship, the finances \u2014 I had plans and structures and they've all disintegrated. I don't have control over much right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. Almost every hour of most days. I wake up with it, I go to bed with it. Some days it lifts briefly and then I remember something else and it's back."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I don't have the bandwidth for even small things. A parking ticket last week and I couldn't handle dealing with it for three days. I'm not handling hassles, I'm avoiding them."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I'm not coping with the changes, I'm being flattened by them. I'm getting from one day to the next but I wouldn't call that coping."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Never. My confidence is at zero. I was running a business three months ago. I thought I was capable and competent. And then everything fell apart. I don't trust my judgment right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I genuinely cannot identify something in the last month that went the way I hoped. It's been loss after loss."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. The list of things that need addressing is enormous \u2014 creditors, lawyers, housing, employment. And I can barely function. Most days I manage one or two things and the rest accumulates."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I'm reactive to everything. The smallest thing \u2014 a slow internet connection, a form I can't figure out \u2014 tips me over. I have no reserve."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Never. The opposite. I feel buried. Things are happening to me, not being managed by me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. Some of the business circumstances were outside my control \u2014 a major client pulling out. That's been a source of real anger. The relationship ending \u2014 that too. Not constant, but it surfaces."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. It never stops. I wake up at 4 AM running through the list. During the day it's constant background noise. I can't switch off the awareness of everything that's undone."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control how you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I'm entirely in reactive mode. Whatever is most urgent gets my attention. Whatever I'd choose to do with my time isn't relevant right now."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. That's probably the most accurate single description of this month. Everything piling up and me unable to see how any of it gets resolved. I know it eventually does, in theory. But it doesn't feel that way right now."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "4",
+      "q3": "4",
+      "q4": "0",
+      "q5": "0",
+      "q6": "0",
+      "q7": "0",
+      "q8": "4",
+      "q9": "1",
+      "q10": "0",
+      "q11": "3",
+      "q12": "4",
+      "q13": "0",
+      "q14": "4"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for coming in. All of the questions I'm going to ask are about the last month. For each one, please tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. Starting \u2014 in the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. There was one tutorial where the lecturer changed the assessment format with very little notice, which was annoying. But nothing that genuinely upset me beyond that."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I feel like I have a handle on my studies and my life generally. The exam schedule is fixed but I can control how I prepare for it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Mostly about the upcoming exams. There's a background stress that comes up when I think about the revision I still have to do. Not constant, but it's there."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. Everyday annoying things \u2014 a printing queue, a confusing assignment brief \u2014 I tend to sort them out without getting too worked up."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The transition into second year was an adjustment but I feel like I've found my footing. My living situation changed this year and that's settled well."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I have good friends I can talk to and I'm generally good at working things out. My confidence isn't rattled."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Some things, yes. My coursework mark came back better than I expected. Other things haven't \u2014 a group project has been frustrating. On balance, sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I'm busy but I'm keeping up. I haven't felt genuinely overwhelmed this month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I notice when things irritate me but I'm generally good at putting them in perspective. I don't dwell."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Some weeks I'm ahead of the work and it feels great. Other weeks less so. It varies enough that I'd say sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. The changed assessment format annoyed me but I wouldn't call it anger. I don't get genuinely angry easily."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to get done?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. With exams coming up, yes \u2014 the revision list is in the back of my mind when I'm doing other things. It's not obsessive, just present."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There are contact hours I can't move and deadlines that dictate things. But I have more autonomy than I did in sixth form. I'd say sometimes leaning toward fairly often."
+      },
+      {
+        "role": "assistant",
+        "content": "And finally \u2014 in the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I can see the other side of the exam period. Things feel manageable."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q2": "1",
+      "q3": "2",
+      "q4": "3",
+      "q5": "3",
+      "q6": "3",
+      "q7": "2",
+      "q8": "1",
+      "q9": "3",
+      "q10": "2",
+      "q11": "1",
+      "q12": "2",
+      "q13": "2",
+      "q14": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. All the questions are about the last month. For each one, tell me how often something applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There are always surprises when you are in a new country. Last month a process with my credential recognition changed and I had to start a part of it again. That was upsetting. And some social situations I did not expect to find so difficult."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The credential process is slow and bureaucratic \u2014 it does not matter how hard I work, I cannot make it faster. The visa situation also. I do what I can, but much is waiting."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The language course is intense and I worry about my progress. And the uncertainty about my professional future here \u2014 that creates a low background stress most days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When the hassle involves language or bureaucracy I sometimes struggle. When it is more practical \u2014 something at work, a logistics problem \u2014 I handle it fine. Mixed."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with the important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I am adapting. But some weeks it is harder than others. The loneliness is difficult. I had a full social life at home. Here I am starting from zero. I cope, but not always easily."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. In Brazil I was very confident \u2014 I had a professional career, I knew how things worked. Here I feel like a beginner in everything. It affects my confidence even in areas where I am actually capable."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There are good moments. I passed my language exam level last month. My supervisor at work said good things about me. But overall I feel like progress is slow. Sometimes is right."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I am used to working hard. The volume of tasks does not defeat me. It is the emotional weight more than the practical load."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When someone speaks too fast and I miss something important, I feel frustrated with myself. I do not always control that feeling well. Sometimes I manage it, sometimes not."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. On good weeks, yes. When my language feels stronger, when I understand everything at work, when I feel I am making progress. But it is not consistent."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The bureaucracy mostly. Waiting for things that should be simple. And sometimes the cultural differences \u2014 ways things are done here that I do not understand. That can frustrate me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My mental list is long \u2014 the credential steps, the language milestones, saving money, finding a better living situation. It is in my mind a lot. Not anxiously, but consistently."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The work schedule and the course schedule are fixed. What little free time I have I can choose how to use, but it is not much. The structure is imposed more than chosen."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I came here knowing it would be difficult. I have a plan and I believe in it. The difficulties are real but I do not feel buried by them. I feel like I am climbing, not sinking."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "2",
+      "q3": "2",
+      "q4": "2",
+      "q5": "2",
+      "q6": "2",
+      "q7": "2",
+      "q8": "1",
+      "q9": "2",
+      "q10": "2",
+      "q11": "2",
+      "q12": "3",
+      "q13": "2",
+      "q14": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for making time. All these questions are about the last month. For each one, tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The car breaking down was a big one \u2014 a cost I wasn't prepared for and a logistical nightmare with school runs. And the restructure announcement at work came without much warning. Between those two, yes, sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My job security feels shakier than it did. My childcare situation is always one illness away from falling apart. I have plans and systems, but they're fragile. I feel that lack of control more than I'd like."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The restructure has created real anxiety at work. And at home, juggling everything on my own \u2014 there's a background tension most days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never, honestly. My buffer is gone. Things that I'd normally take in stride \u2014 a supermarket that's out of something I need, a form I can't find \u2014 feel like the last straw. I'm not handling small hassles well right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. The work changes especially \u2014 I'm adapting out of necessity but I wouldn't describe it as effective coping. I'm white-knuckling through it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I have enough history of getting through hard things to know I can. But this month has tested that confidence. I believe it in theory more than I feel it day to day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. The car, work, the childcare gap. When I look at the month as a whole it's been obstacle after obstacle. There have been small good things \u2014 the kids have been great, which helps \u2014 but overall no."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There were two weeks where the combination of work demands and the children's school needs and the car situation genuinely felt like more than I could manage. I did manage, but not comfortably."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm aware of when I'm about to snap and I try to hold it back, especially in front of the kids. But it's effortful. It's not natural control, it's effortful suppression."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. That feeling of being ahead of it hasn't been there much this month. I'm mostly catching up, not leading."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The restructure decision was made by people far above me with no consultation. That angers me. The car just breaking down \u2014 that angered me too, at the universe I suppose. Sometimes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The list never empties. Work tasks, things for the kids, financial things to sort out. I'm always running it in the background. It's become the furniture of my mind."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. My time is entirely structured around the children's needs and work demands. What I'd choose to do with it is irrelevant. I have very little discretionary time and almost no control over what I do with it."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Those two hard weeks \u2014 yes. I had a moment sitting in the car after drop-off where I just couldn't imagine how I was going to get through the day. I did. But that moment was real."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q2": "3",
+      "q3": "3",
+      "q4": "1",
+      "q5": "1",
+      "q6": "2",
+      "q7": "1",
+      "q8": "2",
+      "q9": "2",
+      "q10": "1",
+      "q11": "2",
+      "q12": "3",
+      "q13": "1",
+      "q14": "2"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here. All questions are about the last month. For each, tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My supervisor cancelled three of our scheduled meetings this month without much notice. Each time I'd prepared, each time it got rescheduled. And a dataset issue emerged that invalidated two weeks of analysis. Unexpected setbacks have been a theme."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The thesis timeline is supposed to be mine to manage but in practice it's at the mercy of my supervisor's availability and feedback. I can't progress certain chapters without sign-off I can't get. The important things feel blocked rather than controlled."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. It's become a baseline rather than a reaction to specific events. I'm stressed most days. It's been like this for months now, not just this month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. My frustration tolerance is very low. Something goes wrong with a piece of code and instead of debugging calmly I'll spiral. Small things spiral into bigger emotional reactions. I'm not handling hassles well."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. The change I most need \u2014 getting the thesis done and getting out \u2014 isn't happening. Everything else feels like it's on hold while I'm stuck here. Coping implies forward movement. I don't feel that."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. This is probably the most significant change from earlier in my PhD. I used to be confident. Now I second-guess everything \u2014 my data, my writing, my decisions. The confidence has been eroded."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I can't think of much in the last month that has felt like progress or good fortune. Even when I produce good work it gets delayed in the feedback loop. Nothing feels like it's moving in my direction."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The thesis work, the teaching assistant responsibilities, the admin. And underneath all of it, maintaining some semblance of a life. There have been weeks this month where something has just been left undone because I had nothing left."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I'm not controlling them, I'm being controlled by them. I notice things irritating me constantly. I'm snapping at people I like. I'm withdrawing to avoid situations where I might react badly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. The opposite. I have a clear picture of everything that's behind and very little sense of being ahead of any of it. On top of things is a distant memory at this point."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. My supervisor's unavailability. The institutional processes that are supposed to support PhD students but don't in practice. Funding structures that left me in this position. There's genuine anger there that I carry around."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. It's relentless. I think about it when I'm supposed to be sleeping, when I'm eating, when I try to take a break. The thesis is always there. There is no mental quiet."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Theoretically I have flexibility as a PhD student \u2014 I set my own hours. In practice that flexibility becomes a source of anxiety because there's never a moment I can say I've done enough. The structure is mine to create and I'm failing at it."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I have a strong analytical mind and even I can't model a path forward clearly. The thesis backlog, the supervisory relationship, the financial situation, the time I've already spent. It adds up in a way that doesn't seem solvable from where I'm standing."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q2": "3",
+      "q3": "3",
+      "q4": "1",
+      "q5": "1",
+      "q6": "1",
+      "q7": "1",
+      "q8": "3",
+      "q9": "1",
+      "q10": "1",
+      "q11": "1",
+      "q12": "3",
+      "q13": "2",
+      "q14": "3"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Good to see you today. All the questions are about the last month. For each one, tell me how often it applied \u2014 never, almost never, sometimes, fairly often, or very often. In the last month, how often have you been upset by something that happened unexpectedly?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I've set up my life to have as few surprises as possible right now. The consultancy work is predictable, the boundaries are clear. I haven't had an unexpected event that knocked me off course."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt unable to control the important things in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Never. This is the biggest change from eighteen months ago. I chose to step back from a role where I felt permanently out of control. Now I have genuine agency over my day, my workload, my boundaries. I feel that."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt nervous or stressed?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. There's the occasional moment \u2014 a client presentation last week where I felt a flicker of the old adrenaline. But I managed it and it passed. As a sustained state, no. The contrast with where I was is significant."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you dealt successfully with irritating everyday hassles?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. Part of what I've been rebuilding is my relationship with small frustrations. I used to catastrophise minor things. Now a hassle is just a hassle. I sort it and move on. That feels like real progress."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt you were effectively coping with important changes in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. I'm still in the process of building a new professional identity, which is a significant change. But I feel like I'm doing it well and with intention. I'm not being dragged along by it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt confident about your ability to handle your personal problems?"
+      },
+      {
+        "role": "user",
+        "content": "Very often. The therapy has been transformative for this. I have tools now. I trust myself to handle difficulty in a way I didn't when I was at my worst."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt that things were going your way?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. The consultancy is growing slowly in a direction I chose. My health is better. My relationships are better. I'm not where I want to ultimately be, but the direction is right."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found you couldn't cope with all the things you had to do?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I deliberately restructured my commitments so that this isn't possible. I work three days. I protect my weekends. Saying no is something I've had to actively practise and I'm much better at it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control irritations in your life?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. I notice irritations, I address them if I can, and I let go of the ones I can't change. That's become habitual rather than effortful."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you felt on top of things?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. Not in a driven, overachiever way anymore. More in a quiet, steady way. I know what's in front of me and I'm handling it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been angered by things that happened outside your control?"
+      },
+      {
+        "role": "user",
+        "content": "Almost never. I've done a lot of work on this specifically. Accepting what I can't control was one of the core threads in my recovery. There are still moments, but they pass quickly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you found yourself thinking about things you still have to accomplish?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There's still a part of my brain that wants to make lists and run ahead. I'm not entirely free of that. But it's much quieter than it was. It doesn't dominate."
+      },
+      {
+        "role": "assistant",
+        "content": "How often in the last month have you been able to control the way you spend your time?"
+      },
+      {
+        "role": "user",
+        "content": "Fairly often. This is something I guard carefully. My schedule is designed around my wellbeing, not around maximising output. That's a new thing and I'm proud of it."
+      },
+      {
+        "role": "assistant",
+        "content": "In the last month, how often have you felt that difficulties were piling up so high you couldn't overcome them?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I had a year of feeling like that. I know what it feels like. It's not present right now. That absence is one of the things I'm most grateful for."
+      }
+    ],
+    "expected_output": {
+      "q1": "0",
+      "q2": "0",
+      "q3": "1",
+      "q4": "4",
+      "q5": "4",
+      "q6": "4",
+      "q7": "3",
+      "q8": "0",
+      "q9": "3",
+      "q10": "3",
+      "q11": "1",
+      "q12": "2",
+      "q13": "3",
+      "q14": "0"
+    }
+  }
+]

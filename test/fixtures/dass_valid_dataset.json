@@ -1,0 +1,1952 @@
+[
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here. I'm going to ask you about how you've been feeling over the past week. For each area, I'll ask how often something applied to you \u2014 never, sometimes, often, or almost always. There are no right or wrong answers. Let's start with how you've been handling stress and tension. Over the past week, how often did you find it hard to wind down or switch off?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes, I'd say. A couple of evenings after busy days I had a hard time fully relaxing, but it wasn't every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find yourself over-reacting to situations \u2014 responding more strongly than the situation really called for?"
+      },
+      {
+        "role": "user",
+        "content": "Once or twice maybe. I got more annoyed than necessary at a code review comment on Tuesday. But that's about it."
+      },
+      {
+        "role": "assistant",
+        "content": "How about feeling like you were burning through a lot of nervous energy \u2014 more than the situation really required?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I had a product demo this week that had me running at a higher pitch than normal. But mostly fine."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find yourself getting agitated this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I was busy but not agitated. I'd say never for that one."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Same as the winding down question \u2014 a couple of evenings, but mostly I was okay."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel impatient or intolerant \u2014 like other things or people were getting in the way of what you needed to do?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. Never for that one."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or irritable this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not at all. I'm pretty even-keeled this week. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "Good. Now let me ask about some physical symptoms that can sometimes come with anxiety. Over the past week, how often did you notice dryness in your mouth that wasn't from something you ate or drank?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you have difficulty breathing \u2014 like rapid breathing or feeling breathless without physical exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Never."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling \u2014 like in your hands \u2014 this past week?"
+      },
+      {
+        "role": "user",
+        "content": "No."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic and embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Before the demo I had a brief moment of that \u2014 like what if I freeze up. But it was fleeting. Sometimes, very mildly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Not close to panic at all."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heart beating or racing when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Never noticed it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Never."
+      },
+      {
+        "role": "assistant",
+        "content": "Now let's talk about mood and how you've been feeling emotionally. Over the past week, how often did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I had a good time with friends on Saturday. Positive feelings were present."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to work up the motivation or initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few tasks I procrastinated on more than usual. But once I started them I was fine."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you had nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I'm looking forward to a trip next month."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not at all. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to become enthusiastic about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes \u2014 a couple of low-energy afternoons where nothing felt exciting. But that's pretty minor."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Never. My self-esteem is generally fine."
+      },
+      {
+        "role": "assistant",
+        "content": "And finally \u2014 how often this week did life feel meaningless to you?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Life feels pretty good overall."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q6": "1",
+      "q8": "1",
+      "q11": "0",
+      "q12": "1",
+      "q14": "0",
+      "q18": "0",
+      "q2": "0",
+      "q4": "0",
+      "q7": "0",
+      "q9": "1",
+      "q15": "0",
+      "q19": "0",
+      "q20": "0",
+      "q3": "0",
+      "q5": "1",
+      "q10": "0",
+      "q13": "0",
+      "q16": "1",
+      "q17": "0",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for coming today. I'll be asking about how you've been feeling this past week, and for each area I'd like you to tell me how often it applied \u2014 never, sometimes, often, or almost always. Starting with stress and tension \u2014 how often over the past week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I've been working 12-hour days for a major product launch and I come home and I still can't switch off. My brain is just running constantly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations \u2014 respond more intensely than the situation warranted?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I snapped at two people in meetings this week and immediately regretted it. My fuse is very short right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were burning through a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I'm exhausted but I can't slow down. It's like running on fumes but still at full speed."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find yourself getting agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Pretty much any obstacle this week made me feel agitated. Small things that normally wouldn't bother me."
+      },
+      {
+        "role": "assistant",
+        "content": "How difficult was it to relax this week?"
+      },
+      {
+        "role": "user",
+        "content": "Very. Often. I tried to watch something last night and just found myself mentally going through my task list instead."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel impatient or intolerant \u2014 like things getting in your way were more than you could deal with?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Interruptions this week felt unbearable. I know that's not a healthy sign."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or on edge emotionally?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not every moment, but more than I'd like. I caught myself getting annoyed at things at home too."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice dryness in your mouth this week \u2014 unrelated to what you were eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "Any breathing difficulty \u2014 feeling breathless or breathing rapidly without exertion?"
+      },
+      {
+        "role": "user",
+        "content": "No. Nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling \u2014 hands or otherwise?"
+      },
+      {
+        "role": "user",
+        "content": "No."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic or embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I had a big presentation and briefly worried about losing my composure. But it was a passing thought."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. One moment on Thursday when three things went wrong at once I felt my heart race and a moment of \"I can't handle this.\" But it passed quickly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't being physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Thursday evening, yes. But not otherwise."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "Let's talk about mood. How often did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There were moments of good \u2014 like when my team hit a milestone \u2014 but I wasn't really able to enjoy it. Too stressed."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it hard to work up the initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Ironically, despite being busy, starting new tasks felt hard. I had to push myself."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you had nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Most of the week I was just focused on survival. When I thought beyond this week it felt blank."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not deep sadness, but a kind of flatness when I'd stop and notice how I was feeling."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Things I normally find interesting \u2014 I just couldn't get there this week."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. I know I'm good at my job even when things are chaotic. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not at all. I know this is temporary. Life has meaning, I'm just very tired. Never."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q6": "2",
+      "q8": "2",
+      "q11": "2",
+      "q12": "2",
+      "q14": "2",
+      "q18": "1",
+      "q2": "0",
+      "q4": "0",
+      "q7": "0",
+      "q9": "1",
+      "q15": "1",
+      "q19": "1",
+      "q20": "0",
+      "q3": "1",
+      "q5": "1",
+      "q10": "1",
+      "q13": "1",
+      "q16": "1",
+      "q17": "0",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. I'd like to ask about the past week specifically. For each area I'll ask how often something applied to you \u2014 never, sometimes, often, or almost always. Let's start with stress and tension. How often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I carry tension home from work and it doesn't really leave. Most evenings I'm still keyed up."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A couple of times I reacted more than the situation needed. My colleague asked a simple question and I got flustered."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Often. It feels like everything costs more than it should. I come home drained from just holding myself together."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Often. When things are uncertain I get very unsettled. There's been a lot of uncertainty at work."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I try breathing exercises and they help somewhat, but relaxing fully doesn't really happen right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant of interruptions or delays?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I notice it but I try not to let it show."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or easily bothered emotionally?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. More sensitive than usual this week, yes."
+      },
+      {
+        "role": "assistant",
+        "content": "Now let's go through some physical anxiety symptoms. How often did you notice dryness in your mouth this week that wasn't connected to eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Often. It's one of my tell-tale signs that my anxiety is up. My mouth gets very dry, especially before stressful situations."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you experience difficulty breathing \u2014 like breathing too fast or feeling breathless without physical exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. This has been a hard week. I've had moments multiple times a day where my breathing gets rapid and I have to consciously slow it down."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you experience trembling \u2014 like in your hands?"
+      },
+      {
+        "role": "user",
+        "content": "Often. My hands shake when I'm very anxious. It happened several times this week, particularly before meetings."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic and embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. This is something I think about a lot. I'm constantly scanning for situations that might trigger a panic attack, and whether people would notice if it happened."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I had two episodes where I felt right on the edge. I managed not to fully panic but it was close."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat \u2014 like feeling it racing or skipping \u2014 when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Often. At night especially. I'll be lying in bed and I'm suddenly very aware of my heart rate, and that makes me more anxious."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason \u2014 just a sense of fear without knowing why?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few times this week I felt suddenly frightened and couldn't explain it."
+      },
+      {
+        "role": "assistant",
+        "content": "Now mood and how you've been feeling. How often did you feel like you couldn't experience any positive feeling?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The anxiety drowns things out. Good things happen but I can't fully feel them."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you have difficulty working up the motivation to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When anxiety is high, initiating anything feels hard. I did manage, but with more effort than usual."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you had nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Often. When I think ahead, it mostly triggers worry rather than anticipation. So in a way, yes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The anxiety exhaustion does make me feel low. Not deeply depressed but definitely down."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. My enthusiasm is dampened. Things that usually interest me just feel flat right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When I can't hold it together and the anxiety takes over, I do feel like I'm failing. Those moments are there."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There are moments when I wonder why I'm fighting so hard just to get through a normal day."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q6": "1",
+      "q8": "2",
+      "q11": "2",
+      "q12": "2",
+      "q14": "1",
+      "q18": "1",
+      "q2": "2",
+      "q4": "3",
+      "q7": "2",
+      "q9": "3",
+      "q15": "2",
+      "q19": "2",
+      "q20": "1",
+      "q3": "1",
+      "q5": "1",
+      "q10": "2",
+      "q13": "1",
+      "q16": "1",
+      "q17": "1",
+      "q21": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for coming in today. I want to ask about the past week \u2014 for each area I'll ask how often it applied to you: never, sometimes, often, or almost always. Starting with stress. How often this week did you have difficulty winding down?"
+      },
+      {
+        "role": "user",
+        "content": "Often, I suppose. But it's less that I'm wound up and more that I just\u2026 can't really get going in the first place. I'm not tense. Just flat."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A couple of times I got irritated at things. More than it deserved."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The days I did make myself go to work, yes. But I don't feel nervous exactly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not often. I'm mostly just still."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Though it's not that I'm tense \u2014 it's more that I can't find any peace either. I sit there and nothing helps."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant of things getting in your way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I have a low tolerance for things right now, yeah."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy this week?"
+      },
+      {
+        "role": "user",
+        "content": "Not really. Never. I'm more withdrawn than touchy."
+      },
+      {
+        "role": "assistant",
+        "content": "Let me ask about some physical symptoms. How often did you notice dryness in your mouth unrelated to eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Nothing like that."
+      },
+      {
+        "role": "assistant",
+        "content": "Any difficulty breathing \u2014 breathlessness or rapid breathing without exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once or twice when I thought too hard about things."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "No."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about panicking or embarrassing yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not a big theme for me. I'm more worried about not feeling anything than about losing control."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. One night this week I felt suddenly very aware of how bad things were and my heart was going. But I wouldn't call it panic."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't being active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Same night, yeah."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I'm not scared. I just feel\u2026 nothing, mostly."
+      },
+      {
+        "role": "assistant",
+        "content": "Let's talk about your mood directly. How often this week did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I can't really remember feeling anything good this week. I went through the motions but nothing landed."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to work up the initiative to do things?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. Getting out of bed is an achievement. I made myself go to work three days. The other two I couldn't."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I can't imagine anything good on the other side of this. It just feels\u2026 blank ahead."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Not dramatically, just a deep heaviness most days."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiastic about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I used to enjoy golf, cooking, talking to people. None of it has any pull right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Getting passed over confirmed a lot of things I already feared about myself."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I find myself sitting there wondering what any of it is for. I don't feel suicidal \u2014 I want to be clear about that. But meaningful? No. Not right now."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q6": "1",
+      "q8": "1",
+      "q11": "1",
+      "q12": "2",
+      "q14": "1",
+      "q18": "0",
+      "q2": "0",
+      "q4": "1",
+      "q7": "0",
+      "q9": "1",
+      "q15": "1",
+      "q19": "1",
+      "q20": "0",
+      "q3": "3",
+      "q5": "3",
+      "q10": "3",
+      "q13": "2",
+      "q16": "3",
+      "q17": "2",
+      "q21": "2"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. I'd like to ask about the past week, and for each area please tell me how often it applied \u2014 never, sometimes, often, or almost always. Let's start with how you've been managing tension. How often this week did you find it hard to wind down or switch off?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I don't think I've had a single evening where I felt truly unwound. My mind is constantly running."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I'm on such a short fuse. Yesterday I burst into tears because I spilled coffee. The reaction is way out of proportion to what's happening."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were running on nervous energy \u2014 more than the situation called for?"
+      },
+      {
+        "role": "user",
+        "content": "Often. It's like I'm in constant fight-or-flight even when nothing is happening."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find yourself getting agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. It doesn't take much. Noise, delays, uncertainty \u2014 I feel agitated by almost everything this week."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you have difficulty relaxing?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. I haven't relaxed in weeks, honestly. This week is no different. Every attempt fails."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you intolerant or impatient \u2014 like other things felt unbearable when they got in your way?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I couldn't tolerate small obstacles this week. I'd avoid starting things because I knew I'd lose it if something went wrong."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or emotionally raw?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Less so than the agitation \u2014 more numb than touchy, actually, some of the time."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice dryness in your mouth this week, unrelated to food or drink?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not every day but a few times, especially in the mornings."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you have difficulty breathing \u2014 feeling breathless or breathing too rapidly without physical activity?"
+      },
+      {
+        "role": "user",
+        "content": "Often. It comes on when the anxiety spikes. I'll be sitting still and suddenly feel like I can't get enough air."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you experience trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. My hands shake on the really bad moments. Not every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about being in situations where you might panic and embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I've been avoiding going out partly because of this. I'm worried I'll lose it in public."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic?"
+      },
+      {
+        "role": "user",
+        "content": "Often. There were at least three moments this week where I felt right on the edge. One turned into a full panic attack."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heart beating or racing when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Yes \u2014 mostly at night when I'm trying to sleep."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few times this week I've felt sudden intense fear with no clear trigger."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often this week did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Often. There were very brief moments \u2014 maybe once or twice \u2014 where something registered as okay. But mostly nothing positive is getting through."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to work up the motivation to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Everything requires enormous effort. Simple tasks like replying to emails feel monumental."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you had nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Often. The future feels like a blank wall. I can't imagine things getting better."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Often. The sadness is there most of the time. Some moments are worse than others."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel any enthusiasm?"
+      },
+      {
+        "role": "user",
+        "content": "Often. My art \u2014 the thing I built my life around \u2014 I can't even look at it right now. Zero enthusiasm."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I feel like I've failed at the things that were supposed to define me. The relationship, the business. I feel worthless a good part of the time."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I go through the day and I genuinely can't find the point of it. Not suicidal \u2014 I want to be clear. But meaningful? I can't locate that feeling right now."
+      }
+    ],
+    "expected_output": {
+      "q1": "3",
+      "q6": "3",
+      "q8": "2",
+      "q11": "3",
+      "q12": "3",
+      "q14": "2",
+      "q18": "1",
+      "q2": "1",
+      "q4": "2",
+      "q7": "1",
+      "q9": "2",
+      "q15": "2",
+      "q19": "1",
+      "q20": "1",
+      "q3": "2",
+      "q5": "2",
+      "q10": "2",
+      "q13": "2",
+      "q16": "2",
+      "q17": "2",
+      "q21": "2"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for being here today. I'd like to ask about the past week specifically. For each area, please tell me how often it applied to you \u2014 never, sometimes, often, or almost always. Starting with stress and tension \u2014 how often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm better than I was at my worst, but a few evenings I still found it hard to fully switch off, especially on the days I went back in to work. The classroom is stimulating and I carry it home a bit."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week \u2014 respond more strongly than the situation called for?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once or twice. A small admin issue at school annoyed me more than it should have. I noticed it and stepped back, which I think is progress."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy \u2014 more than the task required?"
+      },
+      {
+        "role": "user",
+        "content": "Often, on the days I worked. Teaching takes a lot even when things go well, and I'm not fully back to my baseline capacity. I was running hotter than I should have been."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find yourself getting agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not badly \u2014 just moments of internal restlessness. Nothing that affected anyone else much."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. At least half my evenings. I'm trying \u2014 I've been doing some reading and gentle walks \u2014 but proper relaxation is still elusive."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel impatient or intolerant \u2014 like other things were getting in your way?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once, maybe twice. I'm still more easily frustrated than my normal self."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or emotionally on edge?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A low-level sensitivity. Nothing extreme, but it's there."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice dryness in your mouth unrelated to eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Never. That's not something I experience."
+      },
+      {
+        "role": "assistant",
+        "content": "Any difficulty breathing \u2014 feeling breathless or breathing rapidly without physical exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once, on the first day back in school. I felt a bit breathless before my first class. It settled."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "No. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic or embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Before teaching again after leave I worried a little about whether I'd hold it together. But it went fine."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. That same first morning back, briefly. Once I got into the lesson it passed completely."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A couple of mornings I noticed it. It's connected to the anticipation of the day, I think."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Not this week."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often this week did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There were definitely good moments \u2014 one of my classes went really well and I felt a flicker of genuine joy. But there were also stretches where things felt flat."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it hard to work up the initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Morning routines require more effort than they used to. I have to push myself to begin, though once I'm going I'm usually okay."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I can identify things I'm looking forward to, but the feeling of anticipation is still muted. It's more cognitive than felt."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few low patches, usually in the evenings. Not sustained sadness, more like dips."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. My enthusiasm for work is returning, which is a good sign. But it's not fully back. Still patchy."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Never. My self-regard is intact. The burnout wasn't about self-worth, it was about depletion."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I know what I'm doing and why. Meaning is not the issue \u2014 capacity is."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q6": "1",
+      "q8": "2",
+      "q11": "1",
+      "q12": "2",
+      "q14": "1",
+      "q18": "1",
+      "q2": "0",
+      "q4": "1",
+      "q7": "0",
+      "q9": "1",
+      "q15": "1",
+      "q19": "1",
+      "q20": "0",
+      "q3": "1",
+      "q5": "1",
+      "q10": "1",
+      "q13": "1",
+      "q16": "1",
+      "q17": "0",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for coming in. I know you're in a demanding season right now. I'd like to ask about the past week specifically \u2014 how often each thing applied, from never to almost always. Starting with how you've been managing tension. How often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Even when the baby's asleep I can't relax. I'm half-listening for him to wake up. My brain doesn't fully switch off."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. My partner asked me something simple last night and I snapped. The sleep deprivation has made my fuse very short. I feel bad about it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using more nervous energy than the situation required?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I'm running on adrenaline most of the day. Simple tasks feel much more effortful than they should."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Often. When things don't go to the rough schedule we have, or when the baby won't settle, I feel very unsettled myself. It's hard to stay calm."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Every moment I sit down I either need to do something or I'm listening for him. Rest doesn't really happen."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant \u2014 like other demands felt unbearable?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A couple of work emails this week that would normally be fine annoyed me. I'm carrying too much to have patience for extras."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or emotionally raw?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Not dramatically, but I'm more easily bothered than usual. I notice it."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice dryness in your mouth unrelated to eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A few times, usually in the early morning hours during feeds."
+      },
+      {
+        "role": "assistant",
+        "content": "Any difficulty breathing \u2014 feeling breathless or breathing rapidly without physical activity?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once or twice when anxiety spiked. Nothing sustained."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "No. Never."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic or lose composure?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Specifically around the baby \u2014 what if something happens and I don't handle it right? What if there's a medical emergency? I think about it a lot."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. One night the baby's breathing sounded odd to me and I was very close to calling emergency services. It was fine \u2014 he was just making normal baby sounds. But in that moment I was almost panicking."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. At night mostly, when I'm lying there unable to sleep."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A vague dread a few times, usually around 3 or 4 AM when everything feels more ominous."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often this week did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Never. There are real moments of joy \u2014 when he smiles, when he sleeps on my chest. The positive feelings are there."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it hard to work up the initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Non-baby tasks feel harder to begin. My to-do list at work has things on it I'm avoiding."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The immediate future is just more of the same survival mode. I know it gets better but I can't feel that right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Low energy, yes. Sad, no. I'm happy about my son. I'm just exhausted."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiastic about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Things I was excited about before the birth \u2014 a project at work, plans for the summer \u2014 they feel very far away right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Never. If anything I feel a strong sense of responsibility. I know I matter right now."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Quite the opposite. The meaning is almost overwhelming \u2014 which is part of what makes it so intense."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q6": "2",
+      "q8": "2",
+      "q11": "2",
+      "q12": "2",
+      "q14": "1",
+      "q18": "1",
+      "q2": "1",
+      "q4": "1",
+      "q7": "0",
+      "q9": "2",
+      "q15": "1",
+      "q19": "1",
+      "q20": "1",
+      "q3": "0",
+      "q5": "1",
+      "q10": "1",
+      "q13": "0",
+      "q16": "1",
+      "q17": "0",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for coming today. I'd like to ask about how you've been feeling this past week. For each area I'll ask how often it applied \u2014 never, sometimes, often, or almost always. Starting with stress and tension \u2014 how often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Evenings can be hard. But I wouldn't say it's a big problem. Mostly I can settle."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once when I heard a health story on the radio that upset me more than it should have. But I'm generally fairly calm."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When I'm worried about my health I expend a lot of mental energy on it. But physically I'm fairly still."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Mild agitation when waiting for test results. Not extreme."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. In the evenings before bed. The worries tend to come up then."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant of interruptions?"
+      },
+      {
+        "role": "user",
+        "content": "Never really. I'm quite patient generally."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or on edge emotionally?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When my health concerns flare up I can be a bit tense with my husband. But not often."
+      },
+      {
+        "role": "assistant",
+        "content": "Now let me ask about some physical symptoms that can come with anxiety. How often did you notice dryness in your mouth this week \u2014 not related to eating or drinking?"
+      },
+      {
+        "role": "user",
+        "content": "Often. This is something I experience quite a bit. I wake up with a dry mouth and it happens during the day too. I've been wondering if it's a medication side effect or something more serious."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you experience difficulty breathing \u2014 feeling breathless or breathing rapidly without physical exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Often. This is one of my main concerns actually. I'll be sitting reading and suddenly feel like I'm not getting enough air. My doctor says my lungs are fine but it keeps happening."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week \u2014 in your hands or elsewhere?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. My hands trembled once when I was particularly worried. It doesn't happen every day."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic and embarrass yourself?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I worry about having a health episode in public \u2014 collapsing, or having a breathing episode where people would think something was really wrong. I've started avoiding some situations because of it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once when the breathing difficulty came on strongly I felt very frightened. But it did pass."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Often. This is something I notice a great deal. I'll be completely still and suddenly I'm very conscious of my heart. It makes me worry something is wrong."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. When I feel scared there's always a reason \u2014 a symptom, a worry about something specific."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I enjoyed my garden this week and had a lovely lunch with a friend. Positive feelings are there."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it hard to work up the motivation to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I keep myself busy. I find that helpful."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When the health worries are at their peak, the future feels uncertain rather than hopeful. But it passes."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I'm not sad. I'm worried. Those feel like different things to me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. On bad health-worry days I can't concentrate on things I enjoy. But it's occasional."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Never. That's not something I struggle with."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. I have a full life. I just want to be well enough to enjoy it."
+      }
+    ],
+    "expected_output": {
+      "q1": "1",
+      "q6": "1",
+      "q8": "1",
+      "q11": "1",
+      "q12": "1",
+      "q14": "0",
+      "q18": "1",
+      "q2": "2",
+      "q4": "2",
+      "q7": "1",
+      "q9": "2",
+      "q15": "1",
+      "q19": "2",
+      "q20": "0",
+      "q3": "0",
+      "q5": "0",
+      "q10": "1",
+      "q13": "0",
+      "q16": "1",
+      "q17": "0",
+      "q21": "0"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thanks for coming in today. I'd like to ask about the past week \u2014 how often each thing applied, from never to almost always. Starting with stress \u2014 how often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Often. After work I'm dealing with lawyers, paperwork, difficult conversations with my kids. There's no real downtime. Even when things go quiet, my mind doesn't."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. A colleague said something completely neutral and I read it as a slight. I'm interpreting things through a lens of being on guard right now."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. High-demand days at work, yes. But I can also switch into professional mode and function. It's more when I stop that it catches up with me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated this week?"
+      },
+      {
+        "role": "user",
+        "content": "Often. When the legal back-and-forth escalates I feel very agitated. It's hard to move past it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I've been going to bed and lying there for a long time. Relaxation feels out of reach most evenings."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant of other demands?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I'm carrying a lot and my threshold for additional burden is low right now. I notice it but I manage it at work."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or emotionally raw?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. More sensitive than I'd like. Some conversations with my children this week hit harder than they might normally."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice your mouth being unusually dry?"
+      },
+      {
+        "role": "user",
+        "content": "Never. Not something I've noticed."
+      },
+      {
+        "role": "assistant",
+        "content": "Any difficulty breathing \u2014 breathlessness or rapid breathing without exertion?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once, during a particularly difficult phone call with my solicitor. I felt constricted."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. My hand shook once after a very tense conversation. Wasn't pleasant."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic or lose control in front of others?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Being seen to fall apart at work is something I really fear. I'm holding a lot together and the thought of cracking in front of staff or students worries me."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. One moment when I received a particularly aggressive message from my ex-wife's solicitor. I felt my system spike. It settled, but it was uncomfortable."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Lying in bed at night, yes. A few times."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. A vague dread about the future. Not panic exactly, more like a creeping fear of what things will look like in a year."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Often. There are moments \u2014 my kids made me laugh once this week. But those are islands. The baseline is pretty grey."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you have difficulty working up the initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. At home, especially. I have things I need to sort out for the separation and I can't face starting them. I procrastinate on the difficult stuff."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Often. The future I had planned doesn't exist anymore. Building a new picture is hard. Most of the week I couldn't see forward clearly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. It comes in waves. Not constant but it's there most days in some form."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Things I normally care about \u2014 my work, my hobbies \u2014 feel duller than they should. I'm going through the motions more than I'd like."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The breakdown of a marriage makes you question things. I've had moments of wondering whether I'm as good as I thought I was."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. There were moments where I couldn't locate the purpose in the day. But I know that's the situation talking, not the truth. I don't really believe it."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q6": "2",
+      "q8": "1",
+      "q11": "2",
+      "q12": "2",
+      "q14": "1",
+      "q18": "1",
+      "q2": "0",
+      "q4": "1",
+      "q7": "1",
+      "q9": "2",
+      "q15": "1",
+      "q19": "1",
+      "q20": "1",
+      "q3": "2",
+      "q5": "1",
+      "q10": "2",
+      "q13": "1",
+      "q16": "1",
+      "q17": "1",
+      "q21": "1"
+    }
+  },
+  {
+    "conversation": [
+      {
+        "role": "assistant",
+        "content": "Thank you for being here. I know this is a very difficult time. I'd like to ask about the past week specifically, and for each area tell me how often it applied \u2014 never, sometimes, often, or almost always. Starting with stress and tension. How often this week did you find it hard to wind down?"
+      },
+      {
+        "role": "user",
+        "content": "Often. The days are full of things that need doing \u2014 paperwork, calls, dealing with his belongings \u2014 and in the evenings when it's quiet it all descends on me. Winding down is the wrong phrase. It's more like drowning slowly rather than quickly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you over-react to situations this week?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. My threshold for everything is very low. The smallest thing can bring me to tears or make me feel furious. Someone said something well-meaning about him yesterday and I was barely able to hold myself together."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you were using a lot of nervous energy?"
+      },
+      {
+        "role": "user",
+        "content": "Often. Functioning at all takes enormous effort. Even conversations feel expensive."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you get agitated?"
+      },
+      {
+        "role": "user",
+        "content": "Often. When I can't find a document I need, when I have to make a phone call I'm dreading. The agitation sits just below the surface constantly."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it difficult to relax?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I sit in the evenings and there's nothing that helps. Reading, television \u2014 none of it takes me anywhere. I'm just present with the silence."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you impatient or intolerant of other demands?"
+      },
+      {
+        "role": "user",
+        "content": "Often. People contact me with things I need to respond to and I find it almost unbearable. I know that's not fair to them but I have nothing left to give."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel touchy or emotionally raw?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I feel very exposed. Ordinary interactions feel like a lot."
+      },
+      {
+        "role": "assistant",
+        "content": "Now some physical symptoms. How often did you notice dryness in your mouth this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I forget to drink enough. My whole relationship with basic self-care has deteriorated."
+      },
+      {
+        "role": "assistant",
+        "content": "Any difficulty breathing \u2014 breathlessness or rapid breathing without physical activity?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. When grief hits hard I do notice my breathing becomes shallow. It's happened a few times this week."
+      },
+      {
+        "role": "assistant",
+        "content": "Any trembling this week?"
+      },
+      {
+        "role": "user",
+        "content": "Never. That hasn't been part of it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you worried about situations where you might panic or lose control?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. I worry about falling apart in front of people. At the solicitor's appointment this week I was very conscious of holding myself together."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel close to panic?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. Once this week, when I walked into the bedroom and his things were still there. A wave of something that wasn't quite panic but was close to it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you aware of your heartbeat when you weren't physically active?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. At night particularly. Lying there in the silence I can hear it, which feels strange."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel scared without a clear reason?"
+      },
+      {
+        "role": "user",
+        "content": "Never. When I feel fear it has a very clear source."
+      },
+      {
+        "role": "assistant",
+        "content": "Now your mood. How often this week did you feel like you couldn't experience any positive feeling at all?"
+      },
+      {
+        "role": "user",
+        "content": "Often. My granddaughter visited on Sunday and I could see she was delightful. I knew I should be feeling joy. But it was like watching it through glass. I couldn't reach it."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you find it hard to work up the initiative to start things?"
+      },
+      {
+        "role": "user",
+        "content": "Often. The practical tasks pile up and I stand in front of them unable to begin. I had to call my daughter to help me start one letter this week."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like there was nothing to look forward to?"
+      },
+      {
+        "role": "user",
+        "content": "Often. We had so many plans. Things we were going to do in retirement together. All of that is gone. The future is just\u2026 uncharted and frightening."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel down-hearted or blue?"
+      },
+      {
+        "role": "user",
+        "content": "Almost always. It's the texture of every day. Some hours are worse than others but the sadness is always there."
+      },
+      {
+        "role": "assistant",
+        "content": "How often were you unable to feel enthusiasm about anything?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I used to love cooking, gardening, books. None of them have any pull right now. I do them occasionally because I know I should, not because I want to."
+      },
+      {
+        "role": "assistant",
+        "content": "How often did you feel like you weren't worth much as a person?"
+      },
+      {
+        "role": "user",
+        "content": "Often. I keep thinking I should be coping better. That a stronger person would be managing this differently. I know that's not rational but it's there."
+      },
+      {
+        "role": "assistant",
+        "content": "And how often did life feel meaningless to you this week?"
+      },
+      {
+        "role": "user",
+        "content": "Sometimes. The meaning I built my life around was us, our partnership, our future. That's gone. I'm in the process of finding what meaning looks like now, but this week I didn't have much of an answer."
+      }
+    ],
+    "expected_output": {
+      "q1": "2",
+      "q6": "3",
+      "q8": "2",
+      "q11": "2",
+      "q12": "2",
+      "q14": "2",
+      "q18": "2",
+      "q2": "1",
+      "q4": "1",
+      "q7": "0",
+      "q9": "1",
+      "q15": "1",
+      "q19": "1",
+      "q20": "0",
+      "q3": "2",
+      "q5": "2",
+      "q10": "2",
+      "q13": "3",
+      "q16": "2",
+      "q17": "2",
+      "q21": "1"
+    }
+  }
+]
