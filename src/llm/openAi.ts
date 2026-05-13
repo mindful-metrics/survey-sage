@@ -38,7 +38,7 @@ export const validateRequest = (request: LLMRequest): Error | null => {
 export const buildRequestBody = (
   config: LLMConfig,
   request: LLMRequest,
-  systemPrompt: string
+  systemPrompt: string,
 ): Record<string, unknown> => {
   const messages = [
     {
@@ -53,7 +53,21 @@ export const buildRequestBody = (
     messages,
     max_tokens: config.maxTokens,
     temperature: config.temperature,
+    response_format: { type: 'json_object' },
   }
+}
+
+const isValidLLMResponse = (value: unknown): value is LLMResponse => {
+    if (!value || typeof value !== 'object') {
+        return false
+    }
+
+    const parsed = value as Partial<LLMResponse>
+
+    return (
+        (parsed.action === 'followup' || parsed.action === 'submit') &&
+        typeof parsed.content === 'string'
+    )
 }
 
 export const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLMError => {
@@ -71,38 +85,31 @@ export const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLM
         }
     }
 
-    const choice = response.choices[0]
-    const content = choice?.message?.content || ''
+    const content = response.choices[0]?.message?.content ?? ''
 
     try {
-        const parsed = JSON.parse(content)
-        if (parsed.action && (parsed.action === 'followup' || parsed.action === 'submit')) {
+        const parsed = JSON.parse(content) as unknown
+        if (isValidLLMResponse(parsed)) {
             return parsed
         }
-    } catch {
-        // Assume the content is a non-JSON string
         return {
-            action: "followup",
-            content: content
+            action: 'error',
+            content: 'Invalid response format: action must be followup or submit and content must be a string',
         }
+    } catch {
         return {
             action: 'error',
             content: 'Failed to parse LLM response as JSON',
         }
     }
-
-    return {
-        action: 'error',
-        content: 'Invalid response format: action must be followup or submit',
-    }
 }
 
-export const fetchOpenAI = async (config: LLMConfig, body: Record<string, unknown>) => {
+export const fetchOpenAI = async (config: LLMConfig, body: Record<string, unknown>): Promise<Response> => {
     return fetch(config.apiUrl || '', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': config.apiKey ? `Bearer ${config.apiKey}` : ''
+            Authorization: config.apiKey ? `Bearer ${config.apiKey}` : ''
         },
         body: JSON.stringify(body)
     })

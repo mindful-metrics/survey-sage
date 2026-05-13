@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.0",
     "@types/bun": "latest",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -28,8 +29,13 @@
     "tailwindcss": "^4.2.1"
   },
   "scripts": {
+    "dev": "bun server.ts",
+    "dev:server": "bun server.ts",
     "dev:client": "vite",
     "build:client": "vite build",
-    "preview:client": "vite preview"
+    "preview:client": "vite preview",
+    "test": "bun test",
+    "typecheck": "bun run tsc --noEmit",
+    "eval": "bun src/evaluation/runEvaluation.ts"
   }
 }

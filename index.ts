@@ -1,8 +1,8 @@
 import { Elysia } from 'elysia'
-import { getConfig, TLLMError, TLLMResponse, type LLMError, type LLMResponse } from './src/llm'
+import { getConfig, TLLMError, TLLMResponse } from './src/llm'
 import staticPlugin from '@elysiajs/static'
 import { type DataExtractor } from './src/llm/extractor/surveyExtractor'
-import { type LLMClient } from './src/llm/openAi'
+import { type LLMClient, processTranscript } from './src/llm/openAi'
 import { TLLMSubmitRequest } from './src/llm/types'
 import type { SurveySpec } from './src/llm/extractor/types'
 import { runSurveyPipeline } from './src/services/surveyPipeline'
@@ -18,13 +18,9 @@ export interface LLMClientOptions {
 }
 
 const defaultSurveySpec = getSurveySpec('gad7')
-const defaultDataExtractor: DataExtractor = {
-  callLLM: async () => ({ action: 'success', content: {} }),
-}
 
 const createApp = (options: LLMClientOptions) => {
   const surveySpec = options.surveySpec ?? defaultSurveySpec
-  const dataExtractor = options.dataExtractor ?? defaultDataExtractor
 
   return new Elysia()
     .use(
@@ -36,15 +32,27 @@ const createApp = (options: LLMClientOptions) => {
     .post(
       '/',
       async ({ body, status }) => {
+        const hasPipelineDependencies = Boolean(options.dataExtractor)
+
+        if (!hasPipelineDependencies) {
+          const result = await processTranscript(body.transcript, options.conversationEngine)
+
+          if (result.action === 'error') {
+            return status(500, result)
+          }
+
+          return result
+        }
+
         const result = await runSurveyPipeline(
           body.transcript,
           body.taskId ?? 'local-task',
           {
             conversationEngine: options.conversationEngine,
-            dataExtractor,
+            dataExtractor: options.dataExtractor as DataExtractor,
             surveySpec,
             submitAnswers: options.submitAnswers,
-          }
+          },
         )
 
         if (result.action === 'error') {

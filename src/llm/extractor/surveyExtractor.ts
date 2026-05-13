@@ -14,35 +14,48 @@ interface Success {
   content: unknown
 }
 
+export type SubmitFormData = (
+  taskId: string,
+  answers: Record<string, string | number>,
+) => Promise<{ status: 'success' | 'failure' }>
+
+export type LegacySubmitFormData = (
+  taskId: string,
+  answers: Record<string, number>,
+) => Promise<{ status: 'success' | 'failure' }>
+
 export async function extractAnswers(
   transcript: Message[],
   dataExtractor: DataExtractor,
   surveySpec?: SurveySpec,
 ): Promise<SurveyAnswers>
+
 export async function extractAnswers(
   transcript: Message[],
   taskId: string,
   llmClient: { callLLM: (request: LLMRequest) => Promise<{ action: string; content: unknown }> },
-  submitFormData: SubmitFormData,
+  submitFormData: LegacySubmitFormData,
 ): Promise<{ status: 'success' | 'failure' }>
+
 export async function extractAnswers(
   transcript: Message[],
   extractorOrTaskId: DataExtractor | string,
   surveySpecOrClient?: SurveySpec | { callLLM: (request: LLMRequest) => Promise<{ action: string; content: unknown }> },
-  submitFormData?: SubmitFormData,
+  submitFormData?: SubmitFormData | LegacySubmitFormData,
 ): Promise<SurveyAnswers | { status: 'success' | 'failure' }> {
   if (typeof extractorOrTaskId === 'string') {
     return extractSurveyAnswers(
       transcript,
       extractorOrTaskId,
       surveySpecOrClient as { callLLM: (request: LLMRequest) => Promise<{ action: string; content: unknown }> },
-      submitFormData as SubmitFormData,
+      submitFormData as LegacySubmitFormData,
     )
   }
 
   const dataExtractor = extractorOrTaskId
   const surveySpec = surveySpecOrClient as SurveySpec | undefined
   const result = await dataExtractor.callLLM({ transcript })
+  
   if (result.action === 'error') {
     throw new Error(result.content)
   }
@@ -65,13 +78,36 @@ export const parseSubmissionToolCall = async (response: string) => JSON.parse(re
  * Creates a single tool that is exposed to the model.
  * The tool represents the entire survey, allowing the model to use this tool to make its submission.
  */
-export const createSubmissionTool = (): Tool => ({
-  type: 'function',
-  name: 'submit',
-  description: '',
-  parameters: {},
-  strict: true,
-})
+export const createSubmissionTool = (surveySpec?: SurveySpec): Tool => {
+  const properties: Record<string, unknown> = {}
+  const required: string[] = []
+
+  if (surveySpec) {
+    for (const field of surveySpec.fields) {
+      properties[field.key] = {
+        type: 'string',
+        description: `${field.prompt} Integer score from ${field.min} to ${field.max}.`,
+      }
+
+      if (field.required !== false) {
+        required.push(field.key)
+      }
+    }
+  }
+
+  return {
+    type: 'function',
+    name: 'submit',
+    description: 'Submit completed survey answers.',
+    parameters: {
+      type: 'object',
+      properties,
+      required,
+      additionalProperties: false,
+    },
+    strict: true,
+  }
+}
 
 const parseExtractorContent = (content: string): Success | LLMError => {
   try {
@@ -87,7 +123,7 @@ const parseExtractorContent = (content: string): Success | LLMError => {
   }
 }
 
-export const createDataExtractor = (survey: Survey | SurveySpec, config: LLMConfig = getConfig()) => {
+export const createDataExtractor = (survey: Survey | SurveySpec, config: LLMConfig = getConfig()): DataExtractor => {
   const systemPrompt = 'fields' in survey
     ? getSurveySpecPrompt(survey)
     : getSystemPrompt(JSON.stringify(survey))
@@ -129,8 +165,7 @@ export const createDataExtractor = (survey: Survey | SurveySpec, config: LLMConf
         }
       }
 
-      const choice = data.choices[0]
-      const content = choice?.message?.content || ''
+      const content = data.choices[0]?.message?.content ?? ''
       return parseExtractorContent(content)
     } catch (error) {
       return {
@@ -143,15 +178,17 @@ export const createDataExtractor = (survey: Survey | SurveySpec, config: LLMConf
   return { callLLM }
 }
 
-export type SubmitFormData = (
-  taskId: string,
-  answers: Record<string, number>,
-) => Promise<{ status: 'success' | 'failure' }>
-
 const legacyQuestionsPrompt = `Extract answers for these predefined questions:
 - How satisfied are you?
 - Would you recommend us?
-Return JSON with a surveyAnswers object.`
+
+Return JSON with this exact shape:
+{
+  "surveyAnswers": {
+    "How satisfied are you?": 5,
+    "Would you recommend us?": 10
+  }
+}`
 
 const parseLegacyAnswers = (content: unknown): Record<string, number> => {
   const parsed = typeof content === 'string' ? JSON.parse(content) : content
@@ -163,7 +200,7 @@ export const extractSurveyAnswers = async (
   transcript: Message[],
   taskId: string,
   llmClient: { callLLM: (request: LLMRequest) => Promise<{ action: string; content: unknown }> },
-  submitFormData: SubmitFormData,
+  submitFormData: LegacySubmitFormData,
 ): Promise<{ status: 'success' | 'failure' }> => {
   const result = await llmClient.callLLM({
     transcript: [

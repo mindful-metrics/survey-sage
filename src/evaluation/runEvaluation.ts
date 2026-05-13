@@ -16,15 +16,18 @@ const datasetBySurvey: Record<string, string> = {
 
 const loadDataset = async (path: string): Promise<EvaluationCase[]> => {
   const file = Bun.file(path)
+
   if (!(await file.exists())) {
     throw new Error(`Dataset not found: ${path}`)
   }
+
   return JSON.parse(await file.text()) as EvaluationCase[]
 }
 
 export const runEvaluation = async (surveyId = Bun.env.SURVEY_ID || 'gad7') => {
   const spec = getSurveySpec(surveyId)
   const datasetPath = datasetBySurvey[spec.id]
+
   if (!datasetPath) {
     throw new Error(`No evaluation dataset registered for ${spec.id}`)
   }
@@ -35,6 +38,7 @@ export const runEvaluation = async (surveyId = Bun.env.SURVEY_ID || 'gad7') => {
 
   for (const [index, row] of data.entries()) {
     const result = await extractor.callLLM({ transcript: row.conversation as Message[] })
+
     if (result.action === 'error') {
       console.error(`case ${index}: ${result.content}`)
       predicted.push({})
@@ -42,9 +46,11 @@ export const runEvaluation = async (surveyId = Bun.env.SURVEY_ID || 'gad7') => {
     }
 
     const validation = validateSurveyAnswers(result.content, spec)
+
     if (!validation.ok) {
       console.error(`case ${index}: ${validation.errors.join(' ')}`)
     }
+
     predicted.push(validation.answers)
   }
 
@@ -52,7 +58,7 @@ export const runEvaluation = async (surveyId = Bun.env.SURVEY_ID || 'gad7') => {
 }
 
 if (import.meta.main) {
-  const surveyId = Bun.argv[2] || Bun.env.SURVET_ID || 'gad7'
+  const surveyId = Bun.argv[2] || Bun.env.SURVEY_ID || 'gad7'
   const summary = await runEvaluation(surveyId)
   console.log(JSON.stringify(summary, null, 2))
 }

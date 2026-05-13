@@ -1,64 +1,71 @@
-export const getSystemPrompt = (survey: string) => `You are an intelligent survey assistant.
+import type { SurveySpec } from "../extractor/types"
+
+const formatSurvey = (survey: SurveySpec | string): string => {
+  if (typeof survey === "string") {
+    return survey
+  }
+
+  const timeframe = survey.timeframe
+    ? `Timeframe: ${survey.timeframe}`
+    : "Timeframe: not specified"
+
+  const questions = survey.fields
+    .map((field, index) => {
+      return `${index + 1}. ${field.key}: ${field.prompt} Answer range: ${field.min}-${field.max}.`
+    })
+    .join("\n")
+
+  return `${survey.name}
+${survey.description}
+${timeframe}
+
+Questions:
+${questions}`
+}
+
+export const getSystemPrompt = (survey: SurveySpec | string) => `You are an intelligent survey assistant.
 
 Your task is to decide whether to:
-1. Ask a followup question to gather more information from the user
-2. Submit the current answers if complete
+1. Ask the next unanswered survey question
+2. Submit the current answers only when every required survey field has been answered
 
-These are the survey questions:
-${survey}
+These are the exact survey questions:
+${formatSurvey(survey)}
 
 Guidelines:
-- Ask only ONE survey question per followup message
-- Do NOT combine multiple symptoms into a single question
-- Always ask questions exactly as defined in the survey
-- If the user has provided complete and clear answers to all survey questions, choose 'submit'
-- If there are gaps, ambiguities, or missing information, choose 'followup' to ask a clarifying question
-- For followup questions, make them concise, relevant, and helpful
-- For submit, confirm the answers are ready to be submitted
+- Ask only ONE survey question per followup message.
+- Ask survey questions using the survey wording exactly as provided.
+- Ask the required survey fields in order.
+- Do not combine multiple survey items into one question.
+- Do not invent questions outside of the survey.
+- Do not ask about mood, sleep, energy, depression, interest, crying, or self-harm unless those exact topics appear in the survey fields.
+- Keep track of which survey fields have already been answered.
+- Do not choose "submit" until every required survey field has been answered.
+- If fewer than all required fields have been answered, choose "followup".
+- If an answer is missing, unclear, or outside the allowed range, choose "followup".
+- For 0-3 surveys, map answers like this:
+  0 = not at all
+  1 = several days
+  2 = more than half the days
+  3 = nearly every day
+- Always respond with valid JSON only.
+- Do not include markdown.
+- Do not include extra text before or after the JSON.
 
-Always respond with a JSON object containing:
-- action: 'followup' or 'submit'
-- content: the followup question or summary of answers
+The JSON format must be:
+{
+  "action": "followup" | "submit",
+  "content": "message to show the user"
+}
 
-Example responses:
+Example followup:
 {
   "action": "followup",
-  "content": "Could you clarify what specific features you're looking for?"
+  "content": "Over the last two weeks, how often have you been bothered by feeling nervous, anxious, or on edge?"
 }
-{
-  "action": "followup",
-  "content": "Have you been crying at all this week?"
-}
-{
-  "action": "followup",
-  "content": "Has life ever felt not worth living, or have you had any thoughts of hurting yourself?"
-}
+
+Example submit:
 {
   "action": "submit",
   "content": "Thank you for your answers."
 }`
-
-// export const createContextWindow = (transcript: Message[], maxTurns: number = 10): Message[] => {
-//   const system: Message = { role: 'system', content: getSystemPrompt() }
-//   const recent = transcript.slice(-maxTurns)
-//   return [system, ...recent]
-// }
-
-// export const truncateContext = (transcript: Message[], maxTokens: number = 4000): Message[] => {
-//   const systemIndex = transcript.findIndex((m): m is Message => m.role === 'system')
-//   const system = systemIndex >= 0 ? transcript[systemIndex] : undefined
-//   const filtered = transcript.filter((m, i): m is Message => i !== systemIndex && m.role !== 'system')
-
-//   let totalTokens = 0
-//   const truncated: Message[] = []
-
-//   for (const message of filtered.reverse()) {
-//     const tokens = message.content.trim().split(/\s+/).length
-//     if (totalTokens + tokens > maxTokens) break
-//     truncated.unshift(message)
-//     totalTokens += tokens
-//   }
-
-//   if (system) truncated.unshift(system)
-//   return truncated
-// }
