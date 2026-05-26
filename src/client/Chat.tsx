@@ -1,18 +1,13 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-interface ChatProps extends ComponentPropsWithoutRef<"div"> {
-
-}
+interface ChatProps extends ComponentPropsWithoutRef<"div"> {}
 
 export function Chat(props: ChatProps) {
-    const {
-        children,
-        ...rest
-    } = props;
+  const { children, className = "", ...rest } = props;
 
-    return (
-        <div {...rest}>
-            {children}
-        </div>
-    )
+  return (
+    <div className={className} {...rest}>
+      {children}
+    </div>
+  )
 }

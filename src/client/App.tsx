@@ -1,4 +1,4 @@
-import { useMemo, useState, type KeyboardEventHandler } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent, type KeyboardEventHandler } from "react";
 import { Chat } from "./Chat";
 import { ChatIcon } from "./ChatIcon";
 import { ChatMessage } from "./ChatMessage";
@@ -29,8 +29,14 @@ export function App() {
     },
   ]);
 
+  const [draft, setDraft] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isComplete, setIsComplete] = useState(false)
+  const endOfMessagesRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    endOfMessagesRef.current?.scrollIntoView({ behavior: 'smooth' })
+  }, [messages, isLoading])
 
   const postMessages = async (nextMessages: Message[]) => {
     setIsLoading(true)
@@ -84,15 +90,14 @@ export function App() {
     }
   }
 
-  const handleSubmit: KeyboardEventHandler<HTMLInputElement> = async (event) => {
-    const input = event.currentTarget
-    const message = input.value.trim()
+  const submitDraft = async () => {
+    const message = draft.trim()
 
-    if (event.key !== "Enter" || !message || isLoading || isComplete) {
+    if (!message || isLoading || isComplete) {
       return
     }
 
-    input.value = ''
+    setDraft('')
 
     const nextMessages: Message[] = [
       ...messages,
@@ -106,62 +111,85 @@ export function App() {
     await postMessages(nextMessages)
   }
 
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    await submitDraft()
+  }
+
+  const handleKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = async (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault()
+      await submitDraft()
+    }
+  }
+
   return (
-    <div className="min-h-screen">
-      <div
-        id="chat-interface-background"
-        className="max-w-7xl mx-auto p-8 m-8 rounded-xl text-center relative z-10"
-      >
-        <div className="size-full mx-auto min-h-96 rounded-xl bg-white/75 flex-row">
-          <h1 className="text-5xl font-bold my-4 leading-tight">Good Morning!</h1>
-
-          <div className="lg:p-4 h-full">
-            <Chat className="flex-row gap-2">
-              {messages.map((message, index) => (
-                <ChatMessage
-                  key={`${message.role}-${index}`}
-                  className={
-                    message.role === 'assistant'
-                      ? 'w-full flex-row gap-2 inline-flex items-center text-left'
-                      : 'w-full flex-row-reverse gap-2 inline-flex items-center text-right'
-                  }
-                >
-                  <ChatIcon />
-                  <ChatText
-                    role={message.role}
-                    className={
-                      message.role === 'assistant'
-                        ? 'bg-white max-w-sm rounded-t-xl rounded-br-xl p-2'
-                        : 'bg-white max-w-sm rounded-t-xl rounded-bl-xl p-2'
-                    }
-                  >
-                    {message.content}
-                  </ChatText>
-                </ChatMessage>
-              ))}
-
-              {isLoading && (
-                <ChatMessage className="w-full flex-row gap-2 inline-flex items-center text-left">
-                  <ChatIcon />
-                  <ChatText role="assistant" className="bg-white max-w-sm rounded-t-xl rounded-br-xl p-2">
-                    Thinking...
-                  </ChatText>
-                </ChatMessage>
-              )}
-
-              <div className="w-full min-h-6 bg-white rounded-xl p-2 mt-4">
-                <input
-                  className="w-full outline-none disabled:opacity-50"
-                  onKeyDown={handleSubmit}
-                  disabled={isLoading || isComplete}
-                  placeholder={isComplete ? 'Survey complete' : 'Type your answer and press Enter'}
-                />
+    <main className="min-h-screen bg-slate-950 px-4 py-6 text-slate-950 sm:px-6 lg:px-8">
+      <section id="chat-interface-background" className="mx-auto flex min-h-[calc(100vh-3rem)] max-w-5xl items-center rounded-[2rem] p-3 shadow-2xl shadow-slate-950/30 sm:p-6">
+        <div className="flex h-[calc(100vh-6rem)] min-h-[640px] w-full flex-col overflow-hidden rounded-[1.5rem] border border-white/60 bg-white/85 shadow-xl backdrop-blur-xl">
+          <header className="border-b border-slate-200/80 bg-white/80 px-5 py-4 backdrop-blur sm:px-7">
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-700">Survey Sage</p>
+                <h1 className="mt-1 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">Guided check-in</h1>
               </div>
-            </Chat>
-          </div>
+              <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+                {isComplete ? 'Complete' : 'In progress'}
+              </span>
+            </div>
+          </header>
+
+          <Chat className="flex-1 space-y-5 overflow-y-auto px-4 py-6 sm:px-7">
+            {messages.map((message, index) => (
+              <ChatMessage
+                key={`${message.role}-${index}`}
+                className={message.role === 'assistant' ? 'justify-start' : 'justify-end'}
+              >
+                {message.role === 'assistant' && <ChatIcon role="assistant" />}
+                <ChatText role={message.role}>{message.content}</ChatText>
+                {message.role === 'user' && <ChatIcon role="user" />}
+              </ChatMessage>
+            ))}
+
+            {isLoading && (
+              <ChatMessage className="justify-start">
+                <ChatIcon role="assistant" />
+                <ChatText role="assistant">
+                  <span className="inline-flex items-center gap-2 text-slate-500">
+                    <span className="size-2 animate-pulse rounded-full bg-slate-400" />
+                    Thinking...
+                  </span>
+                </ChatText>
+              </ChatMessage>
+            )}
+
+            <div ref={endOfMessagesRef} />
+          </Chat>
+
+          <form onSubmit={handleSubmit} className="border-t border-slate-200/80 bg-white/90 p-4 sm:p-5">
+            <div className="flex items-end gap-3 rounded-2xl border border-slate-200 bg-white p-2 shadow-sm transition focus-within:border-sky-300 focus-within:ring-4 focus-within:ring-sky-100">
+              <textarea
+                className="max-h-32 min-h-12 flex-1 resize-none bg-transparent px-3 py-3 text-sm leading-6 text-slate-900 outline-none placeholder:text-slate-400 disabled:cursor-not-allowed disabled:opacity-60"
+                value={draft}
+                onChange={(event) => setDraft(event.target.value)}
+                onKeyDown={handleKeyDown}
+                disabled={isLoading || isComplete}
+                placeholder={isComplete ? 'Survey complete' : 'Type your answer...'}
+                rows={1}
+              />
+              <button
+                className="rounded-xl bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-300 disabled:text-slate-500"
+                type="submit"
+                disabled={!draft.trim() || isLoading || isComplete}
+              >
+                Send
+              </button>
+            </div>
+            <p className="mt-2 text-center text-xs text-slate-500">Press Enter to send. Use Shift + Enter for a new line.</p>
+          </form>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
