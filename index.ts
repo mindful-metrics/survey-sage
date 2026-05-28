@@ -26,6 +26,7 @@ const createApp = (options: LLMClientOptions) => {
     .use(
       staticPlugin({
         assets: 'src/client/',
+        bunFullstack: true,
         prefix: '/',
       }),
     )
