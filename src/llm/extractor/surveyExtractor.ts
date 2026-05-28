@@ -1,5 +1,5 @@
 import { getConfig, type LLMConfig } from '../config'
-import { buildRequestBody, fetchOpenAI, validateRequest, type OpenAIResponse } from '../openAi'
+import { buildRequestBody, fetchOpenAI, normalizeOpenAIContent, validateRequest, type OpenAIResponse } from '../openAi'
 import type { LLMError, LLMRequest, Message } from '../types'
 import { getSurveySpecPrompt, getSystemPrompt } from './prompt'
 import type { Survey, SurveyAnswers, SurveySpec, Tool } from './types'
@@ -109,11 +109,31 @@ export const createSubmissionTool = (surveySpec?: SurveySpec): Tool => {
   }
 }
 
+const unwrapExtractorAnswers = (parsed: unknown): unknown => {
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    return parsed
+  }
+
+  const object = parsed as Record<string, unknown>
+
+  if (object.surveyAnswers && typeof object.surveyAnswers === 'object') {
+    return object.surveyAnswers
+  }
+
+  if (object.answers && typeof object.answers === 'object') {
+    return object.answers
+  }
+
+  return parsed
+}
+
 const parseExtractorContent = (content: string): Success | LLMError => {
   try {
+    const parsed = JSON.parse(content)
+
     return {
       action: 'success',
-      content: JSON.parse(content),
+      content: unwrapExtractorAnswers(parsed),
     }
   } catch (error) {
     return {
@@ -165,7 +185,7 @@ export const createDataExtractor = (survey: Survey | SurveySpec, config: LLMConf
         }
       }
 
-      const content = data.choices[0]?.message?.content ?? ''
+      const content = normalizeOpenAIContent(data.choices[0]?.message?.content)
       return parseExtractorContent(content)
     } catch (error) {
       return {

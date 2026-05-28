@@ -48,7 +48,9 @@ Guidelines:
   1 = several days
   2 = more than half the days
   3 = nearly every day
-- Always respond with valid JSON only.
+- Always respond with one valid JSON object only.
+- The first character must be { and the last character must be }.
+- Do not wrap the JSON in markdown code fences.
 - Do not include markdown.
 - Do not include extra text before or after the JSON.
 

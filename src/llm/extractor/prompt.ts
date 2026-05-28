@@ -19,7 +19,7 @@ Rules:
 Survey schema:
 ${survey}
 
-Output valid minified JSON only.`
+Output valid minified JSON only. Return the answers as a flat object using the exact outputKeys, for example {"q1":"0","q2":"1"}. Do not wrap the answers inside "surveyAnswers", "answers", or any other parent key.`
 
 export const getSurveySpecPrompt = (spec: SurveySpec) => getSystemPrompt(JSON.stringify({
   id: spec.id,

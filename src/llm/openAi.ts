@@ -3,7 +3,7 @@ import type { LLMError, LLMRequest, LLMResponse, Message } from "./types"
 
 export interface OpenAIChoice {
     index?: number
-    message: Message
+    message: Message | { role?: string; content?: unknown }
     finish_reason?: string
 }
 
@@ -70,6 +70,53 @@ const isValidLLMResponse = (value: unknown): value is LLMResponse => {
     )
 }
 
+export const normalizeOpenAIContent = (content: unknown): string => {
+    if (typeof content === 'string') {
+        return content
+    }
+
+    if (Array.isArray(content)) {
+        return content
+            .map((part) => {
+                if (typeof part === 'string') {
+                    return part
+                }
+
+                if (part && typeof part === 'object' && 'text' in part) {
+                    const text = (part as { text?: unknown }).text
+                    return typeof text === 'string' ? text : ''
+                }
+
+                return ''
+            })
+            .join('')
+    }
+
+    return ''
+}
+
+const parseJsonObject = (content: string): unknown => {
+    const trimmed = content.trim()
+
+    try {
+        return JSON.parse(trimmed)
+    } catch {
+        const withoutFence = trimmed
+            .replace(/^```(?:json)?\s*/i, '')
+            .replace(/```$/i, '')
+            .trim()
+
+        const start = withoutFence.indexOf('{')
+        const end = withoutFence.lastIndexOf('}')
+
+        if (start >= 0 && end > start) {
+            return JSON.parse(withoutFence.slice(start, end + 1))
+        }
+
+        throw new Error('No JSON object found in LLM response')
+    }
+}
+
 export const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLMError => {
     if (response.error) {
         return {
@@ -85,16 +132,16 @@ export const parseOpenAIResponse = (response: OpenAIResponse): LLMResponse | LLM
         }
     }
 
-    const content = response.choices[0]?.message?.content ?? ''
+    const content = normalizeOpenAIContent(response.choices[0]?.message?.content)
 
     try {
-        const parsed = JSON.parse(content) as unknown
+        const parsed = parseJsonObject(content)
         if (isValidLLMResponse(parsed)) {
             return parsed
         }
         return {
             action: 'error',
-            content: 'Invalid response format: action must be followup or submit and content must be a string',
+            content: `Invalid response format: ${JSON.stringify(parsed)}`,
         }
     } catch {
         return {
